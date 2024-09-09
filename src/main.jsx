@@ -8,6 +8,7 @@ import ProductPage from './pages/ProductPage';
 import BuilderPage from './pages/BuilderPage';
 import CartPage from './pages/CartPage';
 import './assets/css/index.css';
+import { ProductLoader } from './data/ProductsLoader.jsx';
 
 const router = createBrowserRouter([
    {
@@ -15,8 +16,12 @@ const router = createBrowserRouter([
       element: <App />,
       children: [
          { path: '', element: <HomePage /> },
-         { path: 'shop', element: <ShopPage /> },
-         { path: 'product/:productId', element: <ProductPage /> },
+         { path: 'shop', element: <ShopPage />, loader: ProductLoader },
+         {
+            path: 'product/:productId',
+            element: <ProductPage />,
+            loader: ProductLoader,
+         },
          { path: 'builder', element: <BuilderPage /> },
          { path: 'cart', element: <CartPage /> },
       ],

@@ -9,7 +9,7 @@ const App = () => {
       <>
          <Header />
          <main>
-            <Outlet /> {/* Nested routes will render here */}
+            <Outlet />
          </main>
          <Footer />
       </>
