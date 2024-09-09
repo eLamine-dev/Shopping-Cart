@@ -1,7 +1,9 @@
-import React from 'react';
+import { useCart } from '../contexts/UseCart';
 
-function AddButton() {
-   return <div>AddButton</div>;
+function AddButton({ product }) {
+   const { addToCart } = useCart();
+
+   return <button onClick={() => addToCart(product)}>Add to Cart</button>;
 }
 
 export default AddButton;
