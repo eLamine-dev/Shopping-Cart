@@ -1,8 +1,9 @@
 import { Link } from 'react-router-dom';
-import { useCart } from '../contexts/UseCart';
+import { useContext } from 'react';
+import { CartContext } from '../contexts/CartContext';
 
 function Header() {
-   const { cart } = useCart();
+   const { cart } = useContext(CartContext);
    return (
       <>
          <Link to="/">Home</Link>
