@@ -1,4 +1,4 @@
-import { useParams } from 'react-router-dom';
+import { useOutletContext, useParams } from 'react-router-dom';
 import { useLoaderData } from 'react-router-dom';
 import { useContext } from 'react';
 import { CartContext } from '../contexts/CartContext';
@@ -6,7 +6,7 @@ import { CartContext } from '../contexts/CartContext';
 function ProductPage() {
    const { productId } = useParams();
    const { addToCart } = useContext(CartContext);
-   const Products = useLoaderData();
+   const Products = useOutletContext();
    let product = Object.values(Products)
       .flat()
       .find((p) => p.id === productId);

@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react';
 import ProductCard from '../components/ProductCard';
-import { useLoaderData } from 'react-router-dom';
+import { useOutletContext } from 'react-router-dom';
 
 function ShopPage() {
-   const Products = useLoaderData();
+   const Products = useOutletContext();
 
    return (
       <div>

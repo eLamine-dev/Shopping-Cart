@@ -1,7 +1,10 @@
-import React from 'react';
+import { useState } from 'react';
+import { useLoaderData } from 'react-router-dom';
+import { CartContext } from '../contexts/CartContext';
+import { useContext } from 'react';
 
-function BuilderPage() {
-   return <div>BuilderPage</div>;
-}
+const BuilderPage = () => {
+   return <div>Builder Page</div>;
+};
 
 export default BuilderPage;
