@@ -9,7 +9,7 @@ const BuilderPage = () => {
 
    const [selectedParts, setSelectedParts] = useState({
       cpu: '',
-      gpu: '',
+      'video-card': '',
       memory: '',
    });
 
@@ -70,13 +70,15 @@ const BuilderPage = () => {
                   onChange={(e) => handlePartSelection('gpu', e)}
                >
                   <option value="">Select a GPU</option>
-                  {products.gpu.map((product) => (
+                  {products['video-card'].map((product) => (
                      <option key={product.id} value={product.id}>
                         {product.name}
                      </option>
                   ))}
                </select>
-               {selectedParts.gpu && <span> - ${selectedParts.gpu.price}</span>}
+               {selectedParts['video-card'] && (
+                  <span> - ${selectedParts.gpu.price}</span>
+               )}
             </div>
          </form>
 

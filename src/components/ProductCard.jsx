@@ -7,7 +7,7 @@ function ProductCard({ product }) {
       <div className="product-card">
          <h2>{product.name}</h2>
          <p>Price: ${product.price}</p>
-         <Link to={`/product/${product.id}`}>View Details</Link>
+         <Link to={`/${product.id}`}>View Details</Link>
          <AddButton product={product} />
       </div>
    );
