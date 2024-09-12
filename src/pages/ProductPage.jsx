@@ -4,7 +4,7 @@ import { useContext } from 'react';
 import { CartContext } from '../contexts/CartContext';
 
 function ProductPage() {
-   const { category, productId } = useParams();
+   const { productId } = useParams();
 
    const { addToCart } = useContext(CartContext);
    const Products = useOutletContext();
