@@ -17,10 +17,16 @@ const router = createBrowserRouter([
       loader: ProductsLoader,
       children: [
          { path: '', element: <HomePage /> },
-         { path: 'shop', element: <ShopPage /> },
-         { path: 'shop/:category', element: <ShopPage /> },
-         { path: 'shop/:category/:productName', element: <ProductPage /> },
-         { path: 'shop/:productId', element: <ProductPage /> },
+
+         {
+            path: 'shop',
+            element: <ShopPage />,
+         },
+         {
+            path: 'shop/:category',
+            element: <ShopPage />,
+         },
+         { path: 'shop/:category/:productId', element: <ProductPage /> },
          { path: 'builder', element: <BuilderPage /> },
          { path: 'cart', element: <CartPage /> },
       ],
