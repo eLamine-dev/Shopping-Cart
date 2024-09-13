@@ -50,7 +50,7 @@ function ShopPage() {
                        <ProductCard
                           key={product.id}
                           product={product}
-                          category={product.category}
+                          selectedCategory={product.category}
                           selectedManufacturer={manufacturer}
                        />
                     ))}

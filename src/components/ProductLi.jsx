@@ -25,7 +25,7 @@ function ProductLi({ product, selectedCategory, selectedManufacturer }) {
 
 ProductLi.propTypes = {
    product: PropTypes.object.isRequired,
-   selectedCategory: PropTypes.string.isRequired,
+   selectedCategory: PropTypes.string,
    selectedManufacturer: PropTypes.string,
 };
 

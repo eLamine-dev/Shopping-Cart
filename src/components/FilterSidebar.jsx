@@ -38,7 +38,7 @@ function Filter({ categories, selectedCategory }) {
                {manufacturers.map((manufacturer) => (
                   <NavLink
                      key={manufacturer}
-                     to={`/shop/${selectedCategory}/manufacturers/${manufacturer}`}
+                     to={`/shop/${selectedCategory}/manufacturer/${manufacturer}`}
                      style={{ textAlign: 'start' }}
                   >
                      {manufacturer}

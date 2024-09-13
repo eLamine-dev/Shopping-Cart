@@ -12,6 +12,7 @@ export const data = {
          manufacturer: 'Corsair',
          id: '440c3cc5-3027-4256-a584-5d435048044f',
          category: 'case-fan',
+         slug: 'corsair-icue-sp120-rgb-elite-3-pack',
       },
       {
          name: 'Lian Li Uni Fan SL-Infinity 3-Pack',
@@ -25,6 +26,7 @@ export const data = {
          manufacturer: 'Lian',
          id: '3b3e10ee-a091-4177-8f04-ffc5cbf2a025',
          category: 'case-fan',
+         slug: 'lian-li-uni-fan-sl-infinity-3-pack',
       },
       {
          name: 'Noctua NF-A12x25 PWM chromax.black.swap',
@@ -38,6 +40,7 @@ export const data = {
          manufacturer: 'Noctua',
          id: '58651cce-7a51-4ed0-b846-9d8e6b0de7c0',
          category: 'case-fan',
+         slug: 'noctua-nf-a12x25-pwm-chromaxblackswap',
       },
       {
          name: 'Lian Li Uni Fan SL-Infinity 3-Pack',
@@ -51,6 +54,7 @@ export const data = {
          manufacturer: 'Lian',
          id: '5941cbb8-5a74-4058-8678-3d3f48c67d9f',
          category: 'case-fan',
+         slug: 'lian-li-uni-fan-sl-infinity-3-pack',
       },
       {
          name: 'Lian Li UNI FAN SL V2 3-Pack',
@@ -64,6 +68,7 @@ export const data = {
          manufacturer: 'Lian',
          id: '10937d60-ed9d-4523-aa7a-916786b06f64',
          category: 'case-fan',
+         slug: 'lian-li-uni-fan-sl-v2-3-pack',
       },
       {
          name: 'ARCTIC P12 PST 5-Pack',
@@ -77,6 +82,7 @@ export const data = {
          manufacturer: 'ARCTIC',
          id: 'cbeafa90-71f1-4fe7-af9e-c44a02120699',
          category: 'case-fan',
+         slug: 'arctic-p12-pst-5-pack',
       },
       {
          name: 'Corsair iCUE LINK QX120 RGB Starter Kit 3-Pack',
@@ -90,6 +96,7 @@ export const data = {
          manufacturer: 'Corsair',
          id: 'ff850aef-ed9f-4362-8bff-d3d6b86bd46a',
          category: 'case-fan',
+         slug: 'corsair-icue-link-qx120-rgb-starter-kit-3-pack',
       },
       {
          name: 'Thermalright TL-C12C-S X3 3-Pack',
@@ -103,6 +110,7 @@ export const data = {
          manufacturer: 'Thermalright',
          id: 'f1189209-dd27-453a-9610-78f1070a756e',
          category: 'case-fan',
+         slug: 'thermalright-tl-c12c-s-x3-3-pack',
       },
       {
          name: 'Lian Li UNI FAN SL V2 3-Pack',
@@ -116,6 +124,7 @@ export const data = {
          manufacturer: 'Lian',
          id: '642dcfd6-4369-40a5-8f93-ced80e908988',
          category: 'case-fan',
+         slug: 'lian-li-uni-fan-sl-v2-3-pack',
       },
       {
          name: 'Lian Li Uni Fan SL-Infinity',
@@ -129,6 +138,7 @@ export const data = {
          manufacturer: 'Lian',
          id: '8abfb49c-31c6-4c69-9b80-0cbd51889969',
          category: 'case-fan',
+         slug: 'lian-li-uni-fan-sl-infinity',
       },
       {
          name: 'NZXT F120 RGB 3-Pack',
@@ -142,6 +152,7 @@ export const data = {
          manufacturer: 'NZXT',
          id: '60cd262d-394c-44ed-89d7-40a6c37693bf',
          category: 'case-fan',
+         slug: 'nzxt-f120-rgb-3-pack',
       },
       {
          name: 'Lian Li Uni Fan SL-Infinity',
@@ -155,6 +166,7 @@ export const data = {
          manufacturer: 'Lian',
          id: '7be95a5d-b4a1-48e5-a4c8-8a66aca67bbd',
          category: 'case-fan',
+         slug: 'lian-li-uni-fan-sl-infinity',
       },
       {
          name: 'ARCTIC P12',
@@ -168,6 +180,7 @@ export const data = {
          manufacturer: 'ARCTIC',
          id: 'e09df2c6-deb6-4ab8-bf95-f9c88504f569',
          category: 'case-fan',
+         slug: 'arctic-p12',
       },
       {
          name: 'NZXT F120 RGB 3-Pack',
@@ -181,6 +194,7 @@ export const data = {
          manufacturer: 'NZXT',
          id: '9c0b5a03-2e68-4611-9583-70327c47f8b1',
          category: 'case-fan',
+         slug: 'nzxt-f120-rgb-3-pack',
       },
       {
          name: 'Corsair iCUE LINK QX120 RGB Starter Kit 3-Pack',
@@ -194,6 +208,7 @@ export const data = {
          manufacturer: 'Corsair',
          id: '05abfe2b-7414-4aa6-a568-e5c2236f4d3f',
          category: 'case-fan',
+         slug: 'corsair-icue-link-qx120-rgb-starter-kit-3-pack',
       },
       {
          name: 'Lian Li UNI FAN SL-INF Reverse Blade',
@@ -207,6 +222,7 @@ export const data = {
          manufacturer: 'Lian',
          id: '082e24f3-671e-4421-b3ad-f205ea6f816f',
          category: 'case-fan',
+         slug: 'lian-li-uni-fan-sl-inf-reverse-blade',
       },
       {
          name: 'Noctua A12x25 PWM',
@@ -220,6 +236,7 @@ export const data = {
          manufacturer: 'Noctua',
          id: 'c0df1d0d-1c18-48dd-91ba-d9a563f32ec2',
          category: 'case-fan',
+         slug: 'noctua-a12x25-pwm',
       },
       {
          name: 'Thermalright TL-C12C X3 3-Pack',
@@ -233,6 +250,7 @@ export const data = {
          manufacturer: 'Thermalright',
          id: '558f0742-173a-4fcf-a637-ada356707fe5',
          category: 'case-fan',
+         slug: 'thermalright-tl-c12c-x3-3-pack',
       },
       {
          name: 'Noctua A14 PWM chromax.black.swap',
@@ -246,6 +264,7 @@ export const data = {
          manufacturer: 'Noctua',
          id: '733f86d9-4ecf-42c1-a714-ab96f2f2ce6b',
          category: 'case-fan',
+         slug: 'noctua-a14-pwm-chromaxblackswap',
       },
       {
          name: 'be quiet! Silent Wings Pro 4',
@@ -259,6 +278,7 @@ export const data = {
          manufacturer: 'be',
          id: 'd0c02feb-00f2-484e-b44a-539319b1ef0d',
          category: 'case-fan',
+         slug: 'be-quiet-silent-wings-pro-4',
       },
       {
          name: 'ARCTIC P12 Max',
@@ -272,6 +292,7 @@ export const data = {
          manufacturer: 'ARCTIC',
          id: '5b70be84-ac1d-46ce-a998-7c325fb87f3a',
          category: 'case-fan',
+         slug: 'arctic-p12-max',
       },
       {
          name: 'NZXT F120 RGB Core',
@@ -285,6 +306,7 @@ export const data = {
          manufacturer: 'NZXT',
          id: '8e272311-e309-4f39-9db0-be20f114ccf1',
          category: 'case-fan',
+         slug: 'nzxt-f120-rgb-core',
       },
       {
          name: 'Corsair iCUE SP120 RGB ELITE',
@@ -298,6 +320,7 @@ export const data = {
          manufacturer: 'Corsair',
          id: '4980f5e8-94d1-415c-bd62-160074867a41',
          category: 'case-fan',
+         slug: 'corsair-icue-sp120-rgb-elite',
       },
       {
          name: 'Corsair iCUE AF120 RGB ELITE 3-Pack',
@@ -311,6 +334,7 @@ export const data = {
          manufacturer: 'Corsair',
          id: '41a5246f-c7b7-439f-af3a-ec72d819c643',
          category: 'case-fan',
+         slug: 'corsair-icue-af120-rgb-elite-3-pack',
       },
    ],
    case: [
@@ -326,6 +350,7 @@ export const data = {
          manufacturer: 'Corsair',
          id: 'bf15d065-e7b9-49e7-9e11-eab47d40e0e8',
          category: 'case',
+         slug: 'corsair-4000d-airflow',
       },
       {
          name: 'NZXT H5 Flow',
@@ -339,6 +364,7 @@ export const data = {
          manufacturer: 'NZXT',
          id: '57f70d09-2dee-472e-b2e5-885aa5773cc3',
          category: 'case',
+         slug: 'nzxt-h5-flow',
       },
       {
          name: 'NZXT H9 Flow',
@@ -352,6 +378,7 @@ export const data = {
          manufacturer: 'NZXT',
          id: 'abbe056e-43c0-4728-80be-b5a9d0bc35d1',
          category: 'case',
+         slug: 'nzxt-h9-flow',
       },
       {
          name: 'Lian Li O11 Dynamic EVO',
@@ -365,6 +392,7 @@ export const data = {
          manufacturer: 'Lian',
          id: '9381a212-4062-4f77-9aa8-049985c01625',
          category: 'case',
+         slug: 'lian-li-o11-dynamic-evo',
       },
       {
          name: 'NZXT H5 Flow',
@@ -378,6 +406,7 @@ export const data = {
          manufacturer: 'NZXT',
          id: '32637664-c01a-4743-a31b-23e8301ce514',
          category: 'case',
+         slug: 'nzxt-h5-flow',
       },
       {
          name: 'NZXT H9 Flow',
@@ -391,6 +420,7 @@ export const data = {
          manufacturer: 'NZXT',
          id: 'b55a2aa0-c056-483e-9413-2ec6465a3a3d',
          category: 'case',
+         slug: 'nzxt-h9-flow',
       },
       {
          name: 'Phanteks Eclipse G300A (1 Fan)',
@@ -404,6 +434,7 @@ export const data = {
          manufacturer: 'Phanteks',
          id: 'b80b16b9-9681-4489-99d0-60861458a3bc',
          category: 'case',
+         slug: 'phanteks-eclipse-g300a-1-fan',
       },
       {
          name: 'Deepcool CC560',
@@ -417,6 +448,7 @@ export const data = {
          manufacturer: 'Deepcool',
          id: 'c2174917-bab1-4fa1-9b0f-8f6d4cbf1bbe',
          category: 'case',
+         slug: 'deepcool-cc560',
       },
       {
          name: 'Montech AIR 903 MAX',
@@ -430,6 +462,7 @@ export const data = {
          manufacturer: 'Montech',
          id: '5f99456d-1669-42ea-af94-9de8e3783b00',
          category: 'case',
+         slug: 'montech-air-903-max',
       },
       {
          name: 'Cooler Master MasterBox Q300L',
@@ -443,6 +476,7 @@ export const data = {
          manufacturer: 'Cooler',
          id: '9159610a-28ae-4d98-bb26-82f966f14c62',
          category: 'case',
+         slug: 'cooler-master-masterbox-q300l',
       },
       {
          name: 'Lian Li O11 Dynamic EVO',
@@ -456,6 +490,7 @@ export const data = {
          manufacturer: 'Lian',
          id: 'e2d3839b-d809-41f4-b879-d5c6a4691960',
          category: 'case',
+         slug: 'lian-li-o11-dynamic-evo',
       },
       {
          name: 'NZXT H6 Flow',
@@ -469,6 +504,7 @@ export const data = {
          manufacturer: 'NZXT',
          id: '28eec708-c8dd-4aea-b48a-c3af2c01c397',
          category: 'case',
+         slug: 'nzxt-h6-flow',
       },
       {
          name: 'NZXT H6 Flow',
@@ -482,6 +518,7 @@ export const data = {
          manufacturer: 'NZXT',
          id: 'd1d50b71-69b9-428e-9a90-139b40d60b37',
          category: 'case',
+         slug: 'nzxt-h6-flow',
       },
       {
          name: 'Corsair iCUE 4000X RGB',
@@ -495,6 +532,7 @@ export const data = {
          manufacturer: 'Corsair',
          id: 'b71dcdb5-a945-46ee-8003-3d1e9d9a7dd9',
          category: 'case',
+         slug: 'corsair-icue-4000x-rgb',
       },
       {
          name: 'Fractal Design North',
@@ -508,6 +546,7 @@ export const data = {
          manufacturer: 'Fractal',
          id: 'c6af9ab9-9537-4ea8-b480-ec21076fb045',
          category: 'case',
+         slug: 'fractal-design-north',
       },
       {
          name: 'Montech X3 Mesh',
@@ -521,6 +560,7 @@ export const data = {
          manufacturer: 'Montech',
          id: '5ab10169-8405-4d64-ad6e-301878eb8b4c',
          category: 'case',
+         slug: 'montech-x3-mesh',
       },
       {
          name: 'Corsair 4000D Airflow',
@@ -534,6 +574,7 @@ export const data = {
          manufacturer: 'Corsair',
          id: '66eadc07-e137-425c-af45-cde5f5cb2624',
          category: 'case',
+         slug: 'corsair-4000d-airflow',
       },
       {
          name: 'NZXT H7 Flow',
@@ -547,6 +588,7 @@ export const data = {
          manufacturer: 'NZXT',
          id: '5d4bf7d6-c5aa-42e6-a85a-d0ac774f790c',
          category: 'case',
+         slug: 'nzxt-h7-flow',
       },
       {
          name: 'Silverstone ALTA F2',
@@ -560,6 +602,7 @@ export const data = {
          manufacturer: 'Silverstone',
          id: '505548ff-e02f-4902-be05-a12fd3090ce9',
          category: 'case',
+         slug: 'silverstone-alta-f2',
       },
       {
          name: 'Deepcool CH370',
@@ -573,6 +616,7 @@ export const data = {
          manufacturer: 'Deepcool',
          id: '79bdc513-792f-4cd8-ac05-23619f457beb',
          category: 'case',
+         slug: 'deepcool-ch370',
       },
       {
          name: 'Montech AIR 100 ARGB',
@@ -586,6 +630,7 @@ export const data = {
          manufacturer: 'Montech',
          id: '0dd4b215-126a-4982-a78e-9cbd4948d4fb',
          category: 'case',
+         slug: 'montech-air-100-argb',
       },
       {
          name: 'Lian Li LANCOOL 216',
@@ -599,6 +644,7 @@ export const data = {
          manufacturer: 'Lian',
          id: '932211b4-eeab-4185-baa5-9fe52e6ab59b',
          category: 'case',
+         slug: 'lian-li-lancool-216',
       },
       {
          name: 'Asus Prime AP201',
@@ -612,6 +658,7 @@ export const data = {
          manufacturer: 'Asus',
          id: '8175901f-a78c-43f6-9be8-77732e22b9f8',
          category: 'case',
+         slug: 'asus-prime-ap201',
       },
       {
          name: 'Lian Li O11 Dynamic Mini Snow Edition',
@@ -625,6 +672,7 @@ export const data = {
          manufacturer: 'Lian',
          id: 'eecc26d3-8c29-4c7b-aaf3-c837d95a3b97',
          category: 'case',
+         slug: 'lian-li-o11-dynamic-mini-snow-edition',
       },
    ],
    'cpu-cooler': [
@@ -638,6 +686,7 @@ export const data = {
          manufacturer: 'Cooler',
          id: 'dd2ed219-19a0-48a8-85f0-ff5f9edcd49e',
          category: 'cpu-cooler',
+         slug: 'cooler-master-hyper-212-black-edition',
       },
       {
          name: 'Thermalright Peerless Assassin 120 SE',
@@ -649,6 +698,7 @@ export const data = {
          manufacturer: 'Thermalright',
          id: '5f45489c-67c4-4f0b-b2e5-3cc5d0e908d4',
          category: 'cpu-cooler',
+         slug: 'thermalright-peerless-assassin-120-se',
       },
       {
          name: 'Cooler Master MASTERLIQUID ML240L RGB V2',
@@ -660,6 +710,7 @@ export const data = {
          manufacturer: 'Cooler',
          id: '7eef0d3b-3081-4c25-bf60-36593f6149ac',
          category: 'cpu-cooler',
+         slug: 'cooler-master-masterliquid-ml240l-rgb-v2',
       },
       {
          name: 'be quiet! Dark Rock Pro 4',
@@ -671,6 +722,7 @@ export const data = {
          manufacturer: 'be',
          id: '4a5cb3c7-ab0f-4efc-8b10-f2bb24d025c9',
          category: 'cpu-cooler',
+         slug: 'be-quiet-dark-rock-pro-4',
       },
       {
          name: 'Corsair iCUE H150i ELITE CAPELLIX XT',
@@ -682,6 +734,7 @@ export const data = {
          manufacturer: 'Corsair',
          id: '3c56a5de-3e3d-439d-81cb-d564ca00dd5d',
          category: 'cpu-cooler',
+         slug: 'corsair-icue-h150i-elite-capellix-xt',
       },
       {
          name: 'NZXT Kraken Elite 360 RGB',
@@ -693,6 +746,7 @@ export const data = {
          manufacturer: 'NZXT',
          id: '65516633-92c8-422d-b850-bb6b070a2d69',
          category: 'cpu-cooler',
+         slug: 'nzxt-kraken-elite-360-rgb',
       },
       {
          name: 'Deepcool AG400 BK ARGB',
@@ -704,6 +758,7 @@ export const data = {
          manufacturer: 'Deepcool',
          id: '34830b42-0630-4d1e-9e42-60b1e4e8bb2e',
          category: 'cpu-cooler',
+         slug: 'deepcool-ag400-bk-argb',
       },
       {
          name: 'NZXT Kraken 240',
@@ -715,6 +770,7 @@ export const data = {
          manufacturer: 'NZXT',
          id: '43543ae8-f23a-4f4b-adde-4df48589cc6f',
          category: 'cpu-cooler',
+         slug: 'nzxt-kraken-240',
       },
       {
          name: 'Noctua NH-D15 chromax.black',
@@ -726,6 +782,7 @@ export const data = {
          manufacturer: 'Noctua',
          id: '109ec3e1-9063-49f6-b1b9-44df1f1d7d0d',
          category: 'cpu-cooler',
+         slug: 'noctua-nh-d15-chromaxblack',
       },
       {
          name: 'NZXT Kraken Elite 360 RGB',
@@ -737,6 +794,7 @@ export const data = {
          manufacturer: 'NZXT',
          id: 'f08b956e-abd2-4387-b96f-ac695741d33a',
          category: 'cpu-cooler',
+         slug: 'nzxt-kraken-elite-360-rgb',
       },
       {
          name: 'Corsair iCUE H100i RGB ELITE',
@@ -748,6 +806,7 @@ export const data = {
          manufacturer: 'Corsair',
          id: '3916c766-da02-4830-a2b3-88cfba4899c5',
          category: 'cpu-cooler',
+         slug: 'corsair-icue-h100i-rgb-elite',
       },
       {
          name: 'ARCTIC Liquid Freezer II 360',
@@ -759,6 +818,7 @@ export const data = {
          manufacturer: 'ARCTIC',
          id: 'd5f084fc-2d93-4ee0-b379-e5619b39fdde',
          category: 'cpu-cooler',
+         slug: 'arctic-liquid-freezer-ii-360',
       },
       {
          name: 'Thermalright Phantom Spirit 120 SE',
@@ -770,6 +830,7 @@ export const data = {
          manufacturer: 'Thermalright',
          id: '079b5400-15b3-40e3-8f1e-365e82137450',
          category: 'cpu-cooler',
+         slug: 'thermalright-phantom-spirit-120-se',
       },
       {
          name: 'NZXT Kraken 240 RGB',
@@ -781,6 +842,7 @@ export const data = {
          manufacturer: 'NZXT',
          id: 'aaa0b4a7-2dc0-4294-9e69-d9ecc9ba5b50',
          category: 'cpu-cooler',
+         slug: 'nzxt-kraken-240-rgb',
       },
       {
          name: 'Deepcool AK400',
@@ -792,6 +854,7 @@ export const data = {
          manufacturer: 'Deepcool',
          id: '88e03b3c-32aa-40d1-8534-b943066d3524',
          category: 'cpu-cooler',
+         slug: 'deepcool-ak400',
       },
       {
          name: 'NZXT Kraken 360',
@@ -803,6 +866,7 @@ export const data = {
          manufacturer: 'NZXT',
          id: '1c3ed7ee-e4bc-47d7-8e72-da6af0e5c4da',
          category: 'cpu-cooler',
+         slug: 'nzxt-kraken-360',
       },
       {
          name: 'Noctua NH-D15',
@@ -814,6 +878,7 @@ export const data = {
          manufacturer: 'Noctua',
          id: '120fd37d-c6f7-4647-b3c9-aaf4030b3f7e',
          category: 'cpu-cooler',
+         slug: 'noctua-nh-d15',
       },
       {
          name: 'Cooler Master Hyper 212 RGB Black Edition',
@@ -825,6 +890,7 @@ export const data = {
          manufacturer: 'Cooler',
          id: '729eb1d5-9255-4e48-bed7-5cebdb8e8455',
          category: 'cpu-cooler',
+         slug: 'cooler-master-hyper-212-rgb-black-edition',
       },
       {
          name: 'Deepcool LS520 SE',
@@ -836,6 +902,7 @@ export const data = {
          manufacturer: 'Deepcool',
          id: 'e2395f33-9833-4eab-bdc5-3e0336388b45',
          category: 'cpu-cooler',
+         slug: 'deepcool-ls520-se',
       },
       {
          name: 'Thermalright Assassin X 120 Refined SE',
@@ -847,6 +914,7 @@ export const data = {
          manufacturer: 'Thermalright',
          id: '49c00b15-28bd-4565-98d4-dbe33727750c',
          category: 'cpu-cooler',
+         slug: 'thermalright-assassin-x-120-refined-se',
       },
       {
          name: 'Corsair iCUE H150i ELITE LCD XT',
@@ -858,6 +926,7 @@ export const data = {
          manufacturer: 'Corsair',
          id: '0f83d188-e462-4b3d-b345-ce7ace300dd6',
          category: 'cpu-cooler',
+         slug: 'corsair-icue-h150i-elite-lcd-xt',
       },
       {
          name: 'ARCTIC Liquid Freezer II 240',
@@ -869,6 +938,7 @@ export const data = {
          manufacturer: 'ARCTIC',
          id: '14cba8dc-1d8a-4227-9ce7-182fc0a2236e',
          category: 'cpu-cooler',
+         slug: 'arctic-liquid-freezer-ii-240',
       },
       {
          name: 'Noctua NH-U12S chromax.black',
@@ -880,6 +950,7 @@ export const data = {
          manufacturer: 'Noctua',
          id: 'a066c7a9-7760-4d4b-a98f-46211d709b71',
          category: 'cpu-cooler',
+         slug: 'noctua-nh-u12s-chromaxblack',
       },
       {
          name: 'Thermalright Peerless Assassin 120 SE WHITE ARGB',
@@ -891,6 +962,7 @@ export const data = {
          manufacturer: 'Thermalright',
          id: 'e812ba17-a4ba-43a4-9924-51b4efc2bec1',
          category: 'cpu-cooler',
+         slug: 'thermalright-peerless-assassin-120-se-white-argb',
       },
    ],
    cpu: [
@@ -906,6 +978,7 @@ export const data = {
          manufacturer: 'AMD',
          id: '9584bae0-94e0-4f43-a695-25dfcd0eb28f',
          category: 'cpu',
+         slug: 'amd-ryzen-7-7800x3d',
       },
       {
          name: 'AMD Ryzen 5 5600X',
@@ -919,6 +992,7 @@ export const data = {
          manufacturer: 'AMD',
          id: '2dcdbc5c-874a-491a-ba07-7868ff8e0bbf',
          category: 'cpu',
+         slug: 'amd-ryzen-5-5600x',
       },
       {
          name: 'AMD Ryzen 5 7600X',
@@ -932,6 +1006,7 @@ export const data = {
          manufacturer: 'AMD',
          id: '81882bdf-5d75-4741-af3a-d30aa94d7411',
          category: 'cpu',
+         slug: 'amd-ryzen-5-7600x',
       },
       {
          name: 'AMD Ryzen 5 7600',
@@ -945,6 +1020,7 @@ export const data = {
          manufacturer: 'AMD',
          id: '52f8b894-f5f4-418c-9452-ea3b3a181168',
          category: 'cpu',
+         slug: 'amd-ryzen-5-7600',
       },
       {
          name: 'Intel Core i7-13700K',
@@ -958,6 +1034,7 @@ export const data = {
          manufacturer: 'Intel',
          id: 'eaf2d937-b235-4fc0-914b-334568bd7913',
          category: 'cpu',
+         slug: 'intel-core-i7-13700k',
       },
       {
          name: 'Intel Core i9-14900K',
@@ -971,6 +1048,7 @@ export const data = {
          manufacturer: 'Intel',
          id: 'a71b6967-ea88-49ae-9e25-3655922af014',
          category: 'cpu',
+         slug: 'intel-core-i9-14900k',
       },
       {
          name: 'AMD Ryzen 7 5800X',
@@ -984,6 +1062,7 @@ export const data = {
          manufacturer: 'AMD',
          id: '29d3e3f8-b2b7-44af-9226-b9c3eac1168d',
          category: 'cpu',
+         slug: 'amd-ryzen-7-5800x',
       },
       {
          name: 'AMD Ryzen 5 5600',
@@ -997,6 +1076,7 @@ export const data = {
          manufacturer: 'AMD',
          id: 'a848670b-0b32-496a-808b-3b2b85546fb2',
          category: 'cpu',
+         slug: 'amd-ryzen-5-5600',
       },
       {
          name: 'Intel Core i5-12400F',
@@ -1010,6 +1090,7 @@ export const data = {
          manufacturer: 'Intel',
          id: '5dc200cf-92ba-49bd-bb33-406e140a14ec',
          category: 'cpu',
+         slug: 'intel-core-i5-12400f',
       },
       {
          name: 'AMD Ryzen 5 3600',
@@ -1023,6 +1104,7 @@ export const data = {
          manufacturer: 'AMD',
          id: 'a9f91ed4-fe64-4f2e-866b-4279051ac15d',
          category: 'cpu',
+         slug: 'amd-ryzen-5-3600',
       },
       {
          name: 'AMD Ryzen 5 5500',
@@ -1036,6 +1118,7 @@ export const data = {
          manufacturer: 'AMD',
          id: '97fc09e1-63fa-4c1c-a6af-b660d1a66f0d',
          category: 'cpu',
+         slug: 'amd-ryzen-5-5500',
       },
       {
          name: 'Intel Core i5-13600K',
@@ -1049,6 +1132,7 @@ export const data = {
          manufacturer: 'Intel',
          id: '111beb3c-fd55-4ec2-a173-42867563f8c0',
          category: 'cpu',
+         slug: 'intel-core-i5-13600k',
       },
       {
          name: 'AMD Ryzen 7 5700X',
@@ -1062,6 +1146,7 @@ export const data = {
          manufacturer: 'AMD',
          id: '5d8d5bf6-a632-4f45-a733-bb2335f8500c',
          category: 'cpu',
+         slug: 'amd-ryzen-7-5700x',
       },
       {
          name: 'Intel Core i5-12600K',
@@ -1075,6 +1160,7 @@ export const data = {
          manufacturer: 'Intel',
          id: 'c646fe59-1364-4fdc-b753-8949afd99571',
          category: 'cpu',
+         slug: 'intel-core-i5-12600k',
       },
       {
          name: 'AMD Ryzen 7 7700X',
@@ -1088,6 +1174,7 @@ export const data = {
          manufacturer: 'AMD',
          id: '0a0fbc21-a1ad-44d5-b749-ffa8447024a5',
          category: 'cpu',
+         slug: 'amd-ryzen-7-7700x',
       },
       {
          name: 'Intel Core i7-12700K',
@@ -1101,6 +1188,7 @@ export const data = {
          manufacturer: 'Intel',
          id: 'b9e88ddc-6edd-4913-a21e-9ca6e7e333b9',
          category: 'cpu',
+         slug: 'intel-core-i7-12700k',
       },
       {
          name: 'AMD Ryzen 9 7950X3D',
@@ -1114,6 +1202,7 @@ export const data = {
          manufacturer: 'AMD',
          id: 'ee588806-b3df-44ab-b172-1752cb01feee',
          category: 'cpu',
+         slug: 'amd-ryzen-9-7950x3d',
       },
       {
          name: 'Intel Core i7-14700K',
@@ -1127,6 +1216,7 @@ export const data = {
          manufacturer: 'Intel',
          id: '61272359-ed06-4eb7-9720-949415731baf',
          category: 'cpu',
+         slug: 'intel-core-i7-14700k',
       },
       {
          name: 'AMD Ryzen 7 5800X3D',
@@ -1140,6 +1230,7 @@ export const data = {
          manufacturer: 'AMD',
          id: 'fc9f3dcb-79ae-428e-8e14-463bed700e02',
          category: 'cpu',
+         slug: 'amd-ryzen-7-5800x3d',
       },
       {
          name: 'AMD Ryzen 5 5600G',
@@ -1153,6 +1244,7 @@ export const data = {
          manufacturer: 'AMD',
          id: 'c7a9c2d5-037c-4710-80a3-20676bd445c5',
          category: 'cpu',
+         slug: 'amd-ryzen-5-5600g',
       },
       {
          name: 'Intel Core i3-12100F',
@@ -1166,6 +1258,7 @@ export const data = {
          manufacturer: 'Intel',
          id: '4b276a73-6f3c-4525-927f-8e18a2fc3350',
          category: 'cpu',
+         slug: 'intel-core-i3-12100f',
       },
       {
          name: 'Intel Core i5-12600KF',
@@ -1179,6 +1272,7 @@ export const data = {
          manufacturer: 'Intel',
          id: '608259b0-7edc-466c-baa4-eb13f9bec32a',
          category: 'cpu',
+         slug: 'intel-core-i5-12600kf',
       },
       {
          name: 'AMD Ryzen 9 7900X',
@@ -1192,6 +1286,7 @@ export const data = {
          manufacturer: 'AMD',
          id: '033f91b3-ad0f-42ff-bcb5-f8d0b6075c24',
          category: 'cpu',
+         slug: 'amd-ryzen-9-7900x',
       },
       {
          name: 'AMD Ryzen 9 5900X',
@@ -1205,6 +1300,7 @@ export const data = {
          manufacturer: 'AMD',
          id: '3eaf7bb6-b408-44ae-99c0-71281af5ce1d',
          category: 'cpu',
+         slug: 'amd-ryzen-9-5900x',
       },
    ],
    'external-hard-drive': [
@@ -1219,6 +1315,7 @@ export const data = {
          manufacturer: 'Western',
          id: '4643ee66-58a0-42fe-a156-6c294ed29b08',
          category: 'external-hard-drive',
+         slug: 'western-digital-my-book-duo',
       },
       {
          name: 'Sabrent Rocket XTRM-Q',
@@ -1231,6 +1328,7 @@ export const data = {
          manufacturer: 'Sabrent',
          id: 'dc12b94f-bd87-48db-95b4-2f62efde076f',
          category: 'external-hard-drive',
+         slug: 'sabrent-rocket-xtrm-q',
       },
       {
          name: 'Western Digital My Book Duo',
@@ -1243,6 +1341,7 @@ export const data = {
          manufacturer: 'Western',
          id: '2895b5d9-3116-47c5-9e59-5d61de4af63c',
          category: 'external-hard-drive',
+         slug: 'western-digital-my-book-duo',
       },
       {
          name: 'Western Digital ELEMENTS',
@@ -1255,6 +1354,7 @@ export const data = {
          manufacturer: 'Western',
          id: '8432d900-e4f1-4d52-899e-6ec01e83444b',
          category: 'external-hard-drive',
+         slug: 'western-digital-elements',
       },
       {
          name: 'Seagate One Touch',
@@ -1267,6 +1367,7 @@ export const data = {
          manufacturer: 'Seagate',
          id: '5c1061ee-b866-4bd2-bfdf-72f81691218b',
          category: 'external-hard-drive',
+         slug: 'seagate-one-touch',
       },
       {
          name: 'Western Digital WD_BLACK P10',
@@ -1279,6 +1380,7 @@ export const data = {
          manufacturer: 'Western',
          id: '0d55bc66-5d65-4a76-9633-d27fa5cf2e32',
          category: 'external-hard-drive',
+         slug: 'western-digital-wd_black-p10',
       },
       {
          name: 'Samsung T9 Portable',
@@ -1291,6 +1393,7 @@ export const data = {
          manufacturer: 'Samsung',
          id: 'ff1921db-2f3b-4b6b-9ca7-6ba2841f3af8',
          category: 'external-hard-drive',
+         slug: 'samsung-t9-portable',
       },
       {
          name: 'Western Digital My Passport',
@@ -1303,6 +1406,7 @@ export const data = {
          manufacturer: 'Western',
          id: 'fe166602-be54-4848-a230-4a51a0faea76',
          category: 'external-hard-drive',
+         slug: 'western-digital-my-passport',
       },
       {
          name: 'Samsung T5 EVO Portable',
@@ -1315,6 +1419,7 @@ export const data = {
          manufacturer: 'Samsung',
          id: '85b77128-9568-4c4a-b035-a429812eaa47',
          category: 'external-hard-drive',
+         slug: 'samsung-t5-evo-portable',
       },
       {
          name: 'Western Digital easystore',
@@ -1327,6 +1432,7 @@ export const data = {
          manufacturer: 'Western',
          id: '9833df40-f838-462c-9dc9-b7e3de508fc9',
          category: 'external-hard-drive',
+         slug: 'western-digital-easystore',
       },
       {
          name: 'Samsung T7 Shield',
@@ -1339,6 +1445,7 @@ export const data = {
          manufacturer: 'Samsung',
          id: '5ea82a05-31c0-41f9-b1e8-81b94d63ec38',
          category: 'external-hard-drive',
+         slug: 'samsung-t7-shield',
       },
       {
          name: 'Verbatim Vx460',
@@ -1351,6 +1458,7 @@ export const data = {
          manufacturer: 'Verbatim',
          id: 'd6b51b2f-d25c-4654-8b97-254674b648ba',
          category: 'external-hard-drive',
+         slug: 'verbatim-vx460',
       },
       {
          name: 'Western Digital ELEMENTS',
@@ -1363,6 +1471,7 @@ export const data = {
          manufacturer: 'Western',
          id: '3e08f487-0c01-4dd3-be5e-5761e79b871f',
          category: 'external-hard-drive',
+         slug: 'western-digital-elements',
       },
       {
          name: 'Seagate One Touch',
@@ -1375,6 +1484,7 @@ export const data = {
          manufacturer: 'Seagate',
          id: 'be9de06e-4e45-40b7-b85a-87493af01d1f',
          category: 'external-hard-drive',
+         slug: 'seagate-one-touch',
       },
       {
          name: 'Western Digital My Book Duo',
@@ -1387,6 +1497,7 @@ export const data = {
          manufacturer: 'Western',
          id: '215b62f8-e5aa-4a4c-8f4a-d1fd25a30426',
          category: 'external-hard-drive',
+         slug: 'western-digital-my-book-duo',
       },
       {
          name: 'Seagate One Touch',
@@ -1399,6 +1510,7 @@ export const data = {
          manufacturer: 'Seagate',
          id: '717c3900-33c6-46a4-a7b7-cd80cc6a6bd7',
          category: 'external-hard-drive',
+         slug: 'seagate-one-touch',
       },
       {
          name: 'Corsair EX100U',
@@ -1411,6 +1523,7 @@ export const data = {
          manufacturer: 'Corsair',
          id: 'd855d7cc-43d9-4110-a2d9-ae78e0714fbb',
          category: 'external-hard-drive',
+         slug: 'corsair-ex100u',
       },
       {
          name: 'Western Digital easystore',
@@ -1423,6 +1536,7 @@ export const data = {
          manufacturer: 'Western',
          id: 'cc4467cd-932a-49d9-9339-2e48c2e8f863',
          category: 'external-hard-drive',
+         slug: 'western-digital-easystore',
       },
       {
          name: 'Samsung T5',
@@ -1435,6 +1549,7 @@ export const data = {
          manufacturer: 'Samsung',
          id: '05cf1d17-c60a-420c-a2c3-b2d7f36b8713',
          category: 'external-hard-drive',
+         slug: 'samsung-t5',
       },
       {
          name: 'Seagate Backup Plus Portable',
@@ -1447,6 +1562,7 @@ export const data = {
          manufacturer: 'Seagate',
          id: '26541e4f-a624-4ed7-910f-298d83f6de78',
          category: 'external-hard-drive',
+         slug: 'seagate-backup-plus-portable',
       },
       {
          name: 'Crucial X10 Pro',
@@ -1459,6 +1575,7 @@ export const data = {
          manufacturer: 'Crucial',
          id: '3859582f-aba8-4ed1-854d-9825c6b74323',
          category: 'external-hard-drive',
+         slug: 'crucial-x10-pro',
       },
       {
          name: 'Samsung T9 Portable',
@@ -1471,6 +1588,7 @@ export const data = {
          manufacturer: 'Samsung',
          id: '2859c431-998f-4395-b74e-4cb94a1cd61c',
          category: 'external-hard-drive',
+         slug: 'samsung-t9-portable',
       },
       {
          name: 'Samsung T7 Shield',
@@ -1483,6 +1601,7 @@ export const data = {
          manufacturer: 'Samsung',
          id: '10c4d244-e389-4952-b2da-a52e23f155ff',
          category: 'external-hard-drive',
+         slug: 'samsung-t7-shield',
       },
       {
          name: 'Seagate Backup Plus Slim',
@@ -1495,6 +1614,7 @@ export const data = {
          manufacturer: 'Seagate',
          id: '355dc349-4960-4702-bd73-747273f94885',
          category: 'external-hard-drive',
+         slug: 'seagate-backup-plus-slim',
       },
    ],
    'fan-controller': [
@@ -1509,6 +1629,7 @@ export const data = {
          manufacturer: 'NZXT',
          id: '99bd0766-bd51-487a-a20f-17dfe7e20725',
          category: 'fan-controller',
+         slug: 'nzxt-sentry-mix-2',
       },
       {
          name: 'Thermaltake Commander FT',
@@ -1521,6 +1642,7 @@ export const data = {
          manufacturer: 'Thermaltake',
          id: '4a0227f2-a3ae-4fea-8471-7d226f1c3113',
          category: 'fan-controller',
+         slug: 'thermaltake-commander-ft',
       },
       {
          name: 'Kingwin FPX-001',
@@ -1533,6 +1655,7 @@ export const data = {
          manufacturer: 'Kingwin',
          id: '3fd783f3-cf0f-4525-861f-7e3929422b09',
          category: 'fan-controller',
+         slug: 'kingwin-fpx-001',
       },
       {
          name: 'NZXT SENTRY 3',
@@ -1545,6 +1668,7 @@ export const data = {
          manufacturer: 'NZXT',
          id: '403d228a-073c-4b4a-80ba-8f7fd12e96af',
          category: 'fan-controller',
+         slug: 'nzxt-sentry-3',
       },
       {
          name: 'Thermaltake Commander F6 RGB',
@@ -1557,6 +1681,7 @@ export const data = {
          manufacturer: 'Thermaltake',
          id: 'ecdef955-f150-46d8-8a28-0fde47df7f85',
          category: 'fan-controller',
+         slug: 'thermaltake-commander-f6-rgb',
       },
       {
          name: 'Lamptron FC-CF525-BK',
@@ -1569,6 +1694,7 @@ export const data = {
          manufacturer: 'Lamptron',
          id: 'd567d23d-9c84-4048-85f1-d0371d5d225f',
          category: 'fan-controller',
+         slug: 'lamptron-fc-cf525-bk',
       },
       {
          name: 'Lamptron FC-FC5V3-BK',
@@ -1581,6 +1707,7 @@ export const data = {
          manufacturer: 'Lamptron',
          id: '18241c79-c512-42a1-a0f7-1ea103386463',
          category: 'fan-controller',
+         slug: 'lamptron-fc-fc5v3-bk',
       },
       {
          name: 'Aerocool Touch 2100',
@@ -1593,6 +1720,7 @@ export const data = {
          manufacturer: 'Aerocool',
          id: '63ccc713-92fa-49cf-946f-f8d04169c3bb',
          category: 'fan-controller',
+         slug: 'aerocool-touch-2100',
       },
       {
          name: 'Deepcool ROCK MASTER V3.0',
@@ -1605,6 +1733,7 @@ export const data = {
          manufacturer: 'Deepcool',
          id: '1545db04-9137-41d5-948e-1fc8c959f5d8',
          category: 'fan-controller',
+         slug: 'deepcool-rock-master-v30',
       },
       {
          name: 'Lamptron FC2',
@@ -1617,6 +1746,7 @@ export const data = {
          manufacturer: 'Lamptron',
          id: 'aa602327-8a15-4f65-8013-cd7c44f92439',
          category: 'fan-controller',
+         slug: 'lamptron-fc2',
       },
       {
          name: 'Kingwin FPX-005',
@@ -1629,6 +1759,7 @@ export const data = {
          manufacturer: 'Kingwin',
          id: 'f08522cd-fa10-4ab2-99d3-821b82bad6c0',
          category: 'fan-controller',
+         slug: 'kingwin-fpx-005',
       },
       {
          name: 'NZXT Sentry LX',
@@ -1641,6 +1772,7 @@ export const data = {
          manufacturer: 'NZXT',
          id: '2954ddf4-cb86-4ee2-b8d0-64f5ab7a1684',
          category: 'fan-controller',
+         slug: 'nzxt-sentry-lx',
       },
       {
          name: 'NZXT Sentry Mesh',
@@ -1653,6 +1785,7 @@ export const data = {
          manufacturer: 'NZXT',
          id: 'cb348166-651d-472f-9174-21273e6c4d55',
          category: 'fan-controller',
+         slug: 'nzxt-sentry-mesh',
       },
       {
          name: 'Thermaltake AC-001-BN1NAN-A1',
@@ -1665,6 +1798,7 @@ export const data = {
          manufacturer: 'Thermaltake',
          id: 'bb3d2b59-8f18-4a0e-95d1-ddf79599258f',
          category: 'fan-controller',
+         slug: 'thermaltake-ac-001-bn1nan-a1',
       },
       {
          name: 'Kingwin FPX-003',
@@ -1677,6 +1811,7 @@ export const data = {
          manufacturer: 'Kingwin',
          id: 'd2222cb9-f376-483e-951e-ac5487444193',
          category: 'fan-controller',
+         slug: 'kingwin-fpx-003',
       },
       {
          name: 'Scythe Kaze Master Flat II',
@@ -1689,6 +1824,7 @@ export const data = {
          manufacturer: 'Scythe',
          id: '917f1d66-fbb4-4497-90a8-e24828e53044',
          category: 'fan-controller',
+         slug: 'scythe-kaze-master-flat-ii',
       },
       {
          name: 'Lamptron FC-FC5V2-B',
@@ -1701,6 +1837,7 @@ export const data = {
          manufacturer: 'Lamptron',
          id: '7eb93afa-d1c5-4e88-ace4-fa4fcae4428b',
          category: 'fan-controller',
+         slug: 'lamptron-fc-fc5v2-b',
       },
       {
          name: 'NZXT Sentry 2',
@@ -1713,6 +1850,7 @@ export const data = {
          manufacturer: 'NZXT',
          id: '09148a5a-399b-41db-b3c9-3259c64e381b',
          category: 'fan-controller',
+         slug: 'nzxt-sentry-2',
       },
       {
          name: 'BitFenix Recon (Black)',
@@ -1725,6 +1863,7 @@ export const data = {
          manufacturer: 'BitFenix',
          id: '4ed63c88-e226-4053-b319-b3eb4a09ffc4',
          category: 'fan-controller',
+         slug: 'bitfenix-recon-black',
       },
       {
          name: 'Lamptron FC9',
@@ -1737,6 +1876,7 @@ export const data = {
          manufacturer: 'Lamptron',
          id: 'adb760ba-dc80-4ac2-aa23-dfa85a3251cf',
          category: 'fan-controller',
+         slug: 'lamptron-fc9',
       },
       {
          name: 'Silverstone FP59B',
@@ -1749,6 +1889,7 @@ export const data = {
          manufacturer: 'Silverstone',
          id: '95ca5ce5-885a-4538-963b-28416af4dd81',
          category: 'fan-controller',
+         slug: 'silverstone-fp59b',
       },
       {
          name: 'Aerocool CoolTouch-R Black',
@@ -1761,6 +1902,7 @@ export const data = {
          manufacturer: 'Aerocool',
          id: '709d5e1a-cec8-40c8-a344-8bd8a0971c7b',
          category: 'fan-controller',
+         slug: 'aerocool-cooltouch-r-black',
       },
       {
          name: 'Aerocool Touch 2000',
@@ -1773,6 +1915,7 @@ export const data = {
          manufacturer: 'Aerocool',
          id: '1bd3ee72-a2cf-4d8c-ac74-2d6b38620ee6',
          category: 'fan-controller',
+         slug: 'aerocool-touch-2000',
       },
       {
          name: 'Lamptron Fanatic',
@@ -1785,6 +1928,7 @@ export const data = {
          manufacturer: 'Lamptron',
          id: '5ca44516-4722-4996-8300-3ee3f4fb3bb5',
          category: 'fan-controller',
+         slug: 'lamptron-fanatic',
       },
    ],
    headphones: [
@@ -1800,6 +1944,7 @@ export const data = {
          manufacturer: 'HiFiMAN',
          id: '2523ced7-3526-48c0-ac0c-ff80be18739b',
          category: 'headphones',
+         slug: 'hifiman-susvara',
       },
       {
          name: 'HP HyperX Cloud II',
@@ -1813,6 +1958,7 @@ export const data = {
          manufacturer: 'HP',
          id: '2b3175be-57a7-45d3-af03-d7d3d21d8ae5',
          category: 'headphones',
+         slug: 'hp-hyperx-cloud-ii',
       },
       {
          name: 'Razer BlackShark V2 X',
@@ -1826,6 +1972,7 @@ export const data = {
          manufacturer: 'Razer',
          id: 'ae4e1f58-2c98-42a6-8504-b4ded9637cb6',
          category: 'headphones',
+         slug: 'razer-blackshark-v2-x',
       },
       {
          name: 'SteelSeries Arctis Nova Pro Wireless for PC, PS5, and PS4',
@@ -1839,6 +1986,7 @@ export const data = {
          manufacturer: 'SteelSeries',
          id: 'ae3581dd-8b63-4429-b557-5a80a6097276',
          category: 'headphones',
+         slug: 'steelseries-arctis-nova-pro-wireless-for-pc-ps5-and-ps4',
       },
       {
          name: 'Logitech Pro X',
@@ -1852,6 +2000,7 @@ export const data = {
          manufacturer: 'Logitech',
          id: '15741611-1ae5-42f3-b246-0b4e080d8331',
          category: 'headphones',
+         slug: 'logitech-pro-x',
       },
       {
          name: 'Beyerdynamic DT 770 PRO',
@@ -1865,6 +2014,7 @@ export const data = {
          manufacturer: 'Beyerdynamic',
          id: 'b46c2262-2233-4196-86ae-1ae94dd8e2a4',
          category: 'headphones',
+         slug: 'beyerdynamic-dt-770-pro',
       },
       {
          name: 'Logitech PRO X 2 LIGHTSPEED',
@@ -1878,6 +2028,7 @@ export const data = {
          manufacturer: 'Logitech',
          id: 'e0343ace-6305-443b-a623-9b497cef5e61',
          category: 'headphones',
+         slug: 'logitech-pro-x-2-lightspeed',
       },
       {
          name: 'HP HyperX Cloud',
@@ -1891,6 +2042,7 @@ export const data = {
          manufacturer: 'HP',
          id: '78745740-1510-4849-a6f1-956c01fd1d39',
          category: 'headphones',
+         slug: 'hp-hyperx-cloud',
       },
       {
          name: 'Razer BlackShark V2 Pro (2023)',
@@ -1904,6 +2056,7 @@ export const data = {
          manufacturer: 'Razer',
          id: 'e6ef80f7-e82c-4bda-9de1-7bbea4c9d3cb',
          category: 'headphones',
+         slug: 'razer-blackshark-v2-pro-2023',
       },
       {
          name: 'Logitech G733',
@@ -1917,6 +2070,7 @@ export const data = {
          manufacturer: 'Logitech',
          id: '06b336cf-b529-419e-b263-3221ec5b1938',
          category: 'headphones',
+         slug: 'logitech-g733',
       },
       {
          name: 'SteelSeries Arctis 1',
@@ -1930,6 +2084,7 @@ export const data = {
          manufacturer: 'SteelSeries',
          id: '648c7581-d839-47f7-989c-30acdc72786e',
          category: 'headphones',
+         slug: 'steelseries-arctis-1',
       },
       {
          name: 'SteelSeries Arctis 1',
@@ -1943,6 +2098,7 @@ export const data = {
          manufacturer: 'SteelSeries',
          id: '14187246-2ce1-401a-8b85-6bc3d94380f4',
          category: 'headphones',
+         slug: 'steelseries-arctis-1',
       },
       {
          name: 'Logitech G432',
@@ -1956,6 +2112,7 @@ export const data = {
          manufacturer: 'Logitech',
          id: '5362f688-9881-4e5b-84ca-2e5b9788d4fe',
          category: 'headphones',
+         slug: 'logitech-g432',
       },
       {
          name: 'Logitech PRO X 2 LIGHTSPEED',
@@ -1969,6 +2126,7 @@ export const data = {
          manufacturer: 'Logitech',
          id: '74c57e64-e2cb-4bbf-8e33-e6824b5b0cce',
          category: 'headphones',
+         slug: 'logitech-pro-x-2-lightspeed',
       },
       {
          name: 'Logitech G435',
@@ -1982,6 +2140,7 @@ export const data = {
          manufacturer: 'Logitech',
          id: '59ec9f0b-4fd0-45d5-b62f-ac684b4ed6ac',
          category: 'headphones',
+         slug: 'logitech-g435',
       },
       {
          name: 'Beyerdynamic DT 990 Pro 250',
@@ -1995,6 +2154,7 @@ export const data = {
          manufacturer: 'Beyerdynamic',
          id: 'dd4f7e82-273d-4c62-94d9-67e63dd33006',
          category: 'headphones',
+         slug: 'beyerdynamic-dt-990-pro-250',
       },
       {
          name: 'Corsair Virtuoso RGB',
@@ -2008,6 +2168,7 @@ export const data = {
          manufacturer: 'Corsair',
          id: 'ede51589-544a-4894-a7c8-aa583873dea8',
          category: 'headphones',
+         slug: 'corsair-virtuoso-rgb',
       },
       {
          name: 'Sennheiser HD 820',
@@ -2021,6 +2182,7 @@ export const data = {
          manufacturer: 'Sennheiser',
          id: 'e95ef92f-ea83-4a6c-b785-8ae6774cdd69',
          category: 'headphones',
+         slug: 'sennheiser-hd-820',
       },
       {
          name: 'HP HyperX Cloud Alpha',
@@ -2034,6 +2196,7 @@ export const data = {
          manufacturer: 'HP',
          id: 'd8e1bdd7-f765-4946-becc-8b14000631b0',
          category: 'headphones',
+         slug: 'hp-hyperx-cloud-alpha',
       },
       {
          name: 'Corsair VOID RGB ELITE',
@@ -2047,6 +2210,7 @@ export const data = {
          manufacturer: 'Corsair',
          id: '36820720-791f-47e0-9f9f-a89b7fdfc75b',
          category: 'headphones',
+         slug: 'corsair-void-rgb-elite',
       },
       {
          name: 'Astro A50 + Base Station',
@@ -2060,6 +2224,7 @@ export const data = {
          manufacturer: 'Astro',
          id: 'f718c7d1-29e6-4945-9592-aea38a52e010',
          category: 'headphones',
+         slug: 'astro-a50-base-station',
       },
       {
          name: 'Sony XM5',
@@ -2073,6 +2238,7 @@ export const data = {
          manufacturer: 'Sony',
          id: '0083a08e-0dc1-4b37-8307-48418ddb80b4',
          category: 'headphones',
+         slug: 'sony-xm5',
       },
       {
          name: 'SteelSeries Arctis Nova 7',
@@ -2086,6 +2252,7 @@ export const data = {
          manufacturer: 'SteelSeries',
          id: '18e29bfe-0b79-4e23-96a9-ead2100fa1a2',
          category: 'headphones',
+         slug: 'steelseries-arctis-nova-7',
       },
       {
          name: 'Beyerdynamic DT990 Premium Limited-Edition',
@@ -2099,6 +2266,7 @@ export const data = {
          manufacturer: 'Beyerdynamic',
          id: '546de2cf-70a6-4f41-af82-8da449232b17',
          category: 'headphones',
+         slug: 'beyerdynamic-dt990-premium-limited-edition',
       },
    ],
    'internal-hard-drive': [
@@ -2114,6 +2282,7 @@ export const data = {
          manufacturer: 'Samsung',
          id: '764a1a5e-dde8-42f4-9091-b863eb82ad9d',
          category: 'internal-hard-drive',
+         slug: 'samsung-980-pro',
       },
       {
          name: 'Samsung 970 Evo Plus',
@@ -2127,6 +2296,7 @@ export const data = {
          manufacturer: 'Samsung',
          id: '35edd1ee-a820-48e8-a039-dba6d06c5e78',
          category: 'internal-hard-drive',
+         slug: 'samsung-970-evo-plus',
       },
       {
          name: 'Kingston NV2',
@@ -2140,6 +2310,7 @@ export const data = {
          manufacturer: 'Kingston',
          id: '979d40b5-3b2e-40a7-8c59-0aa1cba8f006',
          category: 'internal-hard-drive',
+         slug: 'kingston-nv2',
       },
       {
          name: 'Samsung 980 Pro',
@@ -2153,6 +2324,7 @@ export const data = {
          manufacturer: 'Samsung',
          id: '1d1be891-b213-4799-a2ff-2032e097a007',
          category: 'internal-hard-drive',
+         slug: 'samsung-980-pro',
       },
       {
          name: 'Samsung 990 Pro',
@@ -2166,6 +2338,7 @@ export const data = {
          manufacturer: 'Samsung',
          id: '3602634b-f2e6-4527-b363-3262fb0ba1bf',
          category: 'internal-hard-drive',
+         slug: 'samsung-990-pro',
       },
       {
          name: 'Seagate Barracuda Compute',
@@ -2179,6 +2352,7 @@ export const data = {
          manufacturer: 'Seagate',
          id: '2ce427ab-c591-4a40-97bc-f1cc83812689',
          category: 'internal-hard-drive',
+         slug: 'seagate-barracuda-compute',
       },
       {
          name: 'Crucial P3',
@@ -2192,6 +2366,7 @@ export const data = {
          manufacturer: 'Crucial',
          id: 'f2971e5a-1439-4ea2-b931-89b955cbbe50',
          category: 'internal-hard-drive',
+         slug: 'crucial-p3',
       },
       {
          name: 'Western Digital Black SN850X',
@@ -2205,6 +2380,7 @@ export const data = {
          manufacturer: 'Western',
          id: 'a98a2a80-8e68-47d8-85d6-2a8d47163074',
          category: 'internal-hard-drive',
+         slug: 'western-digital-black-sn850x',
       },
       {
          name: 'Samsung 990 Pro',
@@ -2218,6 +2394,7 @@ export const data = {
          manufacturer: 'Samsung',
          id: 'e14a5df1-105c-4634-9735-7fa9b4bb9c91',
          category: 'internal-hard-drive',
+         slug: 'samsung-990-pro',
       },
       {
          name: 'Crucial P3 Plus',
@@ -2231,6 +2408,7 @@ export const data = {
          manufacturer: 'Crucial',
          id: 'a909f61c-602d-4f20-aec7-4e2c874aaaec',
          category: 'internal-hard-drive',
+         slug: 'crucial-p3-plus',
       },
       {
          name: 'Crucial P3 Plus',
@@ -2244,6 +2422,7 @@ export const data = {
          manufacturer: 'Crucial',
          id: '3626d019-6746-4d9d-bb4f-ae4e45640125',
          category: 'internal-hard-drive',
+         slug: 'crucial-p3-plus',
       },
       {
          name: 'Western Digital Black SN770',
@@ -2257,6 +2436,7 @@ export const data = {
          manufacturer: 'Western',
          id: '65b0ee07-c180-46f4-a637-267245c5b64f',
          category: 'internal-hard-drive',
+         slug: 'western-digital-black-sn770',
       },
       {
          name: 'Samsung 970 Evo Plus',
@@ -2270,6 +2450,7 @@ export const data = {
          manufacturer: 'Samsung',
          id: 'a30a39db-a101-4260-939d-1c97190c7898',
          category: 'internal-hard-drive',
+         slug: 'samsung-970-evo-plus',
       },
       {
          name: 'Samsung 870 Evo',
@@ -2283,6 +2464,7 @@ export const data = {
          manufacturer: 'Samsung',
          id: '8c120492-8761-4f02-b2aa-96be9e4752d5',
          category: 'internal-hard-drive',
+         slug: 'samsung-870-evo',
       },
       {
          name: 'TEAMGROUP MP33',
@@ -2296,6 +2478,7 @@ export const data = {
          manufacturer: 'TEAMGROUP',
          id: '8e1da279-36e6-4d31-8a2d-88022063149c',
          category: 'internal-hard-drive',
+         slug: 'teamgroup-mp33',
       },
       {
          name: 'Intel 750',
@@ -2309,6 +2492,7 @@ export const data = {
          manufacturer: 'Intel',
          id: 'd29a20d7-5961-4e05-a466-ea845a2b287d',
          category: 'internal-hard-drive',
+         slug: 'intel-750',
       },
       {
          name: 'Western Digital Black SN770',
@@ -2322,6 +2506,7 @@ export const data = {
          manufacturer: 'Western',
          id: 'c5d9058b-15da-4530-a40d-5984090963db',
          category: 'internal-hard-drive',
+         slug: 'western-digital-black-sn770',
       },
       {
          name: 'Mushkin Source HC',
@@ -2335,6 +2520,7 @@ export const data = {
          manufacturer: 'Mushkin',
          id: 'bb0a3a8e-8828-4250-85c0-bd0b608720ac',
          category: 'internal-hard-drive',
+         slug: 'mushkin-source-hc',
       },
       {
          name: 'Western Digital Black SN850X',
@@ -2348,6 +2534,7 @@ export const data = {
          manufacturer: 'Western',
          id: '3f99e251-5a22-4a12-9297-ed0de082dac3',
          category: 'internal-hard-drive',
+         slug: 'western-digital-black-sn850x',
       },
       {
          name: 'Samsung 990 Pro',
@@ -2361,6 +2548,7 @@ export const data = {
          manufacturer: 'Samsung',
          id: '34513322-78e0-49e2-87fa-e0a7a0bd3ab5',
          category: 'internal-hard-drive',
+         slug: 'samsung-990-pro',
       },
       {
          name: 'Seagate BarraCuda',
@@ -2374,6 +2562,7 @@ export const data = {
          manufacturer: 'Seagate',
          id: 'c30b0d8a-17bb-4c3e-97d0-86e31527b1cb',
          category: 'internal-hard-drive',
+         slug: 'seagate-barracuda',
       },
       {
          name: 'Western Digital Black SN850X',
@@ -2387,6 +2576,7 @@ export const data = {
          manufacturer: 'Western',
          id: '626d5f66-8d82-4159-b87a-beaaaae5a120',
          category: 'internal-hard-drive',
+         slug: 'western-digital-black-sn850x',
       },
       {
          name: 'TEAMGROUP T-Force Cardea Z44L',
@@ -2400,6 +2590,7 @@ export const data = {
          manufacturer: 'TEAMGROUP',
          id: '84515a3b-77a0-4112-b8d8-d9ebf48602d0',
          category: 'internal-hard-drive',
+         slug: 'teamgroup-t-force-cardea-z44l',
       },
       {
          name: 'Crucial P3',
@@ -2413,6 +2604,7 @@ export const data = {
          manufacturer: 'Crucial',
          id: 'd0249fa2-7ed6-4ccd-a08c-f4637824742c',
          category: 'internal-hard-drive',
+         slug: 'crucial-p3',
       },
    ],
    keyboard: [
@@ -2428,6 +2620,7 @@ export const data = {
          manufacturer: 'HP',
          id: '6c203191-4c79-47eb-a193-69326bd0dc40',
          category: 'keyboard',
+         slug: 'hp-hyperx-alloy-core-rgb',
       },
       {
          name: 'Razer Huntsman Mini',
@@ -2441,6 +2634,7 @@ export const data = {
          manufacturer: 'Razer',
          id: '859ef9d2-6c12-47ea-836d-6901f854e6f0',
          category: 'keyboard',
+         slug: 'razer-huntsman-mini',
       },
       {
          name: 'Microsoft Natural Desktop 7000',
@@ -2454,6 +2648,7 @@ export const data = {
          manufacturer: 'Microsoft',
          id: '42130b2e-32b5-455b-86af-050e845cc8d0',
          category: 'keyboard',
+         slug: 'microsoft-natural-desktop-7000',
       },
       {
          name: 'Corsair K60 RGB Pro',
@@ -2467,6 +2662,7 @@ export const data = {
          manufacturer: 'Corsair',
          id: '1fe358d3-6522-4adb-a84a-3ea766511bbe',
          category: 'keyboard',
+         slug: 'corsair-k60-rgb-pro',
       },
       {
          name: 'RK Royal Kludge RK61',
@@ -2480,6 +2676,7 @@ export const data = {
          manufacturer: 'RK',
          id: '9bbb12cd-7c65-47d1-bc15-86367d2361b2',
          category: 'keyboard',
+         slug: 'rk-royal-kludge-rk61',
       },
       {
          name: 'SteelSeries Apex Pro TKL (2023)',
@@ -2493,6 +2690,7 @@ export const data = {
          manufacturer: 'SteelSeries',
          id: '3d7796fa-78f4-4ac7-8654-c4be5eaaff1c',
          category: 'keyboard',
+         slug: 'steelseries-apex-pro-tkl-2023',
       },
       {
          name: 'Logitech G915 Lightspeed',
@@ -2506,6 +2704,7 @@ export const data = {
          manufacturer: 'Logitech',
          id: '7b7bb666-a575-4f47-8449-09f30f2d3d4a',
          category: 'keyboard',
+         slug: 'logitech-g915-lightspeed',
       },
       {
          name: 'Logitech K120',
@@ -2519,6 +2718,7 @@ export const data = {
          manufacturer: 'Logitech',
          id: '56a3c93e-b5e2-4893-a100-690371430596',
          category: 'keyboard',
+         slug: 'logitech-k120',
       },
       {
          name: 'Redragon K552',
@@ -2532,6 +2732,7 @@ export const data = {
          manufacturer: 'Redragon',
          id: '40fa7055-5c70-4d8c-a0f5-d21e928098dc',
          category: 'keyboard',
+         slug: 'redragon-k552',
       },
       {
          name: 'Razer Huntsman Mini',
@@ -2545,6 +2746,7 @@ export const data = {
          manufacturer: 'Razer',
          id: 'b0063925-34f7-4b4f-8621-e1f1dae5809a',
          category: 'keyboard',
+         slug: 'razer-huntsman-mini',
       },
       {
          name: 'Corsair K95 RGB PLATINUM',
@@ -2558,6 +2760,7 @@ export const data = {
          manufacturer: 'Corsair',
          id: '52ca0ae6-8647-4e9c-b4f3-b882f2d647ea',
          category: 'keyboard',
+         slug: 'corsair-k95-rgb-platinum',
       },
       {
          name: 'SteelSeries Apex Pro',
@@ -2571,6 +2774,7 @@ export const data = {
          manufacturer: 'SteelSeries',
          id: 'd99375a8-b500-4b55-8fed-f97a4de821d1',
          category: 'keyboard',
+         slug: 'steelseries-apex-pro',
       },
       {
          name: 'Corsair K55 RGB PRO',
@@ -2584,6 +2788,7 @@ export const data = {
          manufacturer: 'Corsair',
          id: '2d65a543-23b2-44a5-971d-6a7d77f76cf6',
          category: 'keyboard',
+         slug: 'corsair-k55-rgb-pro',
       },
       {
          name: 'Razer BlackWidow V3',
@@ -2597,6 +2802,7 @@ export const data = {
          manufacturer: 'Razer',
          id: 'd1ad509a-f806-46e3-9cb6-ea3288403bb9',
          category: 'keyboard',
+         slug: 'razer-blackwidow-v3',
       },
       {
          name: 'Corsair K70 RGB PRO',
@@ -2610,6 +2816,7 @@ export const data = {
          manufacturer: 'Corsair',
          id: 'd11e3444-6f4a-438e-a4cd-ba3f19de929b',
          category: 'keyboard',
+         slug: 'corsair-k70-rgb-pro',
       },
       {
          name: 'Logitech G413 SE',
@@ -2623,6 +2830,7 @@ export const data = {
          manufacturer: 'Logitech',
          id: '6a718d2b-9b63-4114-9d25-e82766ada5b3',
          category: 'keyboard',
+         slug: 'logitech-g413-se',
       },
       {
          name: 'HP HyperX Alloy Origins Core',
@@ -2636,6 +2844,7 @@ export const data = {
          manufacturer: 'HP',
          id: '322145f0-e49b-4ff9-ae1d-53342477a1dd',
          category: 'keyboard',
+         slug: 'hp-hyperx-alloy-origins-core',
       },
       {
          name: 'Logitech G715',
@@ -2649,6 +2858,7 @@ export const data = {
          manufacturer: 'Logitech',
          id: '06e388b0-df4f-4dbc-875b-217fa87c9a2b',
          category: 'keyboard',
+         slug: 'logitech-g715',
       },
       {
          name: 'Logitech G915 TKL',
@@ -2662,6 +2872,7 @@ export const data = {
          manufacturer: 'Logitech',
          id: '8349a843-6711-4a52-84cd-5d597fcd5960',
          category: 'keyboard',
+         slug: 'logitech-g915-tkl',
       },
       {
          name: 'Asus ROG Azoth',
@@ -2675,6 +2886,7 @@ export const data = {
          manufacturer: 'Asus',
          id: 'ab034630-aef9-414f-86d3-804cfa514cb6',
          category: 'keyboard',
+         slug: 'asus-rog-azoth',
       },
       {
          name: 'Corsair K100 RGB',
@@ -2688,6 +2900,7 @@ export const data = {
          manufacturer: 'Corsair',
          id: 'e1082507-2d2d-4cfc-8fd3-73c454f6b9cc',
          category: 'keyboard',
+         slug: 'corsair-k100-rgb',
       },
       {
          name: 'Logitech G213 PRODIGY',
@@ -2701,6 +2914,7 @@ export const data = {
          manufacturer: 'Logitech',
          id: 'd2195ab6-6d78-4c63-b4ee-619335d15972',
          category: 'keyboard',
+         slug: 'logitech-g213-prodigy',
       },
       {
          name: 'Asus ROG CLAYMORE II',
@@ -2714,6 +2928,7 @@ export const data = {
          manufacturer: 'Asus',
          id: '39dc2f2d-c877-436a-bd0a-e91dc9817f41',
          category: 'keyboard',
+         slug: 'asus-rog-claymore-ii',
       },
       {
          name: 'SteelSeries Apex Pro TKL (2023)',
@@ -2727,6 +2942,7 @@ export const data = {
          manufacturer: 'SteelSeries',
          id: '477e0408-3d31-4b7c-944b-953066d57b26',
          category: 'keyboard',
+         slug: 'steelseries-apex-pro-tkl-2023',
       },
    ],
    memory: [
@@ -2742,6 +2958,7 @@ export const data = {
          manufacturer: 'Corsair',
          id: '3aa36160-9897-451f-825b-c85a54983bba',
          category: 'memory',
+         slug: 'corsair-vengeance-lpx-16-gb',
       },
       {
          name: 'Corsair Vengeance 32 GB',
@@ -2755,6 +2972,7 @@ export const data = {
          manufacturer: 'Corsair',
          id: '3fda747d-2d79-4ada-965a-6c9d07d66091',
          category: 'memory',
+         slug: 'corsair-vengeance-32-gb',
       },
       {
          name: 'Corsair Vengeance RGB Pro 32 GB',
@@ -2768,6 +2986,7 @@ export const data = {
          manufacturer: 'Corsair',
          id: '12bcc245-b13d-4b4d-a2b6-4a071bd18010',
          category: 'memory',
+         slug: 'corsair-vengeance-rgb-pro-32-gb',
       },
       {
          name: 'G.Skill Trident Z5 RGB 32 GB',
@@ -2781,6 +3000,7 @@ export const data = {
          manufacturer: 'G.Skill',
          id: 'd78f4e78-e95e-4767-ae1b-ba29e78934fc',
          category: 'memory',
+         slug: 'gskill-trident-z5-rgb-32-gb',
       },
       {
          name: 'G.Skill Trident Z5 RGB 64 GB',
@@ -2794,6 +3014,7 @@ export const data = {
          manufacturer: 'G.Skill',
          id: '4997f10f-591f-466a-9ded-8880c05302a6',
          category: 'memory',
+         slug: 'gskill-trident-z5-rgb-64-gb',
       },
       {
          name: 'Corsair Vengeance LPX 32 GB',
@@ -2807,6 +3028,7 @@ export const data = {
          manufacturer: 'Corsair',
          id: 'a2f5d54d-e722-41ca-bd1d-19c33586ccc9',
          category: 'memory',
+         slug: 'corsair-vengeance-lpx-32-gb',
       },
       {
          name: 'Corsair Vengeance RGB 32 GB',
@@ -2820,6 +3042,7 @@ export const data = {
          manufacturer: 'Corsair',
          id: '152b5bd7-9be6-45ec-a78a-ecfd7f336523',
          category: 'memory',
+         slug: 'corsair-vengeance-rgb-32-gb',
       },
       {
          name: 'G.Skill Flare X5 32 GB',
@@ -2833,6 +3056,7 @@ export const data = {
          manufacturer: 'G.Skill',
          id: '8116f435-ca42-4a49-a7a3-d2e6c395c31d',
          category: 'memory',
+         slug: 'gskill-flare-x5-32-gb',
       },
       {
          name: 'Corsair Vengeance RGB Pro 16 GB',
@@ -2846,6 +3070,7 @@ export const data = {
          manufacturer: 'Corsair',
          id: '19f4f450-7905-4ccc-a984-a3bf05262bcf',
          category: 'memory',
+         slug: 'corsair-vengeance-rgb-pro-16-gb',
       },
       {
          name: 'Corsair Vengeance RGB 32 GB',
@@ -2859,6 +3084,7 @@ export const data = {
          manufacturer: 'Corsair',
          id: 'd363dcd9-998e-4ec0-ae16-68405917559b',
          category: 'memory',
+         slug: 'corsair-vengeance-rgb-32-gb',
       },
       {
          name: 'TEAMGROUP T-Force Delta RGB 32 GB',
@@ -2872,6 +3098,7 @@ export const data = {
          manufacturer: 'TEAMGROUP',
          id: '06c346b2-6583-4112-a71d-12b41fa3afac',
          category: 'memory',
+         slug: 'teamgroup-t-force-delta-rgb-32-gb',
       },
       {
          name: 'G.Skill Ripjaws V 32 GB',
@@ -2885,6 +3112,7 @@ export const data = {
          manufacturer: 'G.Skill',
          id: '73724b90-5a2f-496d-b782-7c150be2847c',
          category: 'memory',
+         slug: 'gskill-ripjaws-v-32-gb',
       },
       {
          name: 'Corsair Vengeance LPX 16 GB',
@@ -2898,6 +3126,7 @@ export const data = {
          manufacturer: 'Corsair',
          id: '508d352e-50cb-4636-bb7d-3344ffd4ff75',
          category: 'memory',
+         slug: 'corsair-vengeance-lpx-16-gb',
       },
       {
          name: 'TEAMGROUP T-Force Delta RGB 32 GB',
@@ -2911,6 +3140,7 @@ export const data = {
          manufacturer: 'TEAMGROUP',
          id: 'e789803e-8e31-4bf0-bffe-20dac4a251a8',
          category: 'memory',
+         slug: 'teamgroup-t-force-delta-rgb-32-gb',
       },
       {
          name: 'Silicon Power GAMING 16 GB',
@@ -2924,6 +3154,7 @@ export const data = {
          manufacturer: 'Silicon',
          id: '5cc9c4cf-ad41-4dc4-945c-3caf04040ea9',
          category: 'memory',
+         slug: 'silicon-power-gaming-16-gb',
       },
       {
          name: 'G.Skill Ripjaws S5 32 GB',
@@ -2937,6 +3168,7 @@ export const data = {
          manufacturer: 'G.Skill',
          id: '485669ba-528f-466a-963c-d37bd792716f',
          category: 'memory',
+         slug: 'gskill-ripjaws-s5-32-gb',
       },
       {
          name: 'Corsair Vengeance 16 GB',
@@ -2950,6 +3182,7 @@ export const data = {
          manufacturer: 'Corsair',
          id: '7974a31a-e4db-400f-9b17-ae35fe65165b',
          category: 'memory',
+         slug: 'corsair-vengeance-16-gb',
       },
       {
          name: 'Corsair Vengeance 32 GB',
@@ -2963,6 +3196,7 @@ export const data = {
          manufacturer: 'Corsair',
          id: 'ad975f9b-22e8-4a03-89d2-f54064298789',
          category: 'memory',
+         slug: 'corsair-vengeance-32-gb',
       },
       {
          name: 'Corsair Vengeance RGB Pro SL 32 GB',
@@ -2976,6 +3210,7 @@ export const data = {
          manufacturer: 'Corsair',
          id: 'dfe95343-4b5f-426f-8613-c54b7611187f',
          category: 'memory',
+         slug: 'corsair-vengeance-rgb-pro-sl-32-gb',
       },
       {
          name: 'Corsair Vengeance 64 GB',
@@ -2989,6 +3224,7 @@ export const data = {
          manufacturer: 'Corsair',
          id: '1a2e7156-05c9-4de5-a764-887507b175dc',
          category: 'memory',
+         slug: 'corsair-vengeance-64-gb',
       },
       {
          name: 'Corsair Vengeance LPX 32 GB',
@@ -3002,6 +3238,7 @@ export const data = {
          manufacturer: 'Corsair',
          id: 'a5832db1-f4e0-41a1-8b1b-7f20e3cfd2d6',
          category: 'memory',
+         slug: 'corsair-vengeance-lpx-32-gb',
       },
       {
          name: 'TEAMGROUP T-Force Vulcan Z 16 GB',
@@ -3015,6 +3252,7 @@ export const data = {
          manufacturer: 'TEAMGROUP',
          id: 'fc82eea5-60e7-448c-aaa8-d28fc47f3fbb',
          category: 'memory',
+         slug: 'teamgroup-t-force-vulcan-z-16-gb',
       },
       {
          name: 'G.Skill Trident Z5 Neo RGB 32 GB',
@@ -3028,6 +3266,7 @@ export const data = {
          manufacturer: 'G.Skill',
          id: '2902ba74-0855-4110-866e-227ca1c3d6f1',
          category: 'memory',
+         slug: 'gskill-trident-z5-neo-rgb-32-gb',
       },
       {
          name: 'Corsair Vengeance RGB Pro 64 GB',
@@ -3041,6 +3280,7 @@ export const data = {
          manufacturer: 'Corsair',
          id: '43054e1a-6849-4a1f-bc00-d3c69671875e',
          category: 'memory',
+         slug: 'corsair-vengeance-rgb-pro-64-gb',
       },
    ],
    monitor: [
@@ -3056,6 +3296,7 @@ export const data = {
          manufacturer: 'Asus',
          id: 'a9539f19-5ed7-45a2-80c8-3d3e67acf4d9',
          category: 'monitor',
+         slug: 'asus-tuf-gaming-vg27aq',
       },
       {
          name: 'LG 65EP5G-B',
@@ -3069,6 +3310,7 @@ export const data = {
          manufacturer: 'LG',
          id: '6fecd229-aa53-433c-9ee9-7796c7d3c7cb',
          category: 'monitor',
+         slug: 'lg-65ep5g-b',
       },
       {
          name: 'Asus TUF Gaming VG249Q1A',
@@ -3082,6 +3324,7 @@ export const data = {
          manufacturer: 'Asus',
          id: '12fa3f46-e743-41ed-b94e-d73cbca87e3a',
          category: 'monitor',
+         slug: 'asus-tuf-gaming-vg249q1a',
       },
       {
          name: 'AOC C27G2Z',
@@ -3095,6 +3338,7 @@ export const data = {
          manufacturer: 'AOC',
          id: '7dec2a39-1fcf-4a9e-9605-8c7ad88fc9ef',
          category: 'monitor',
+         slug: 'aoc-c27g2z',
       },
       {
          name: 'KOORUI 24E3',
@@ -3108,6 +3352,7 @@ export const data = {
          manufacturer: 'KOORUI',
          id: '4cd953f7-4408-4e22-9e38-19b1730578a8',
          category: 'monitor',
+         slug: 'koorui-24e3',
       },
       {
          name: 'Samsung Odyssey Neo G95NC',
@@ -3121,6 +3366,7 @@ export const data = {
          manufacturer: 'Samsung',
          id: '0db156fa-ab6b-42f7-8930-724850de45f5',
          category: 'monitor',
+         slug: 'samsung-odyssey-neo-g95nc',
       },
       {
          name: 'Gigabyte G27Q',
@@ -3134,6 +3380,7 @@ export const data = {
          manufacturer: 'Gigabyte',
          id: 'a903549d-e694-4165-aeba-c54716de3df7',
          category: 'monitor',
+         slug: 'gigabyte-g27q',
       },
       {
          name: 'Asus ROG Swift Pro PG248QP',
@@ -3147,6 +3394,7 @@ export const data = {
          manufacturer: 'Asus',
          id: '72d594bc-57ba-4160-a086-d2505a7d93ce',
          category: 'monitor',
+         slug: 'asus-rog-swift-pro-pg248qp',
       },
       {
          name: 'Dell UP3218K',
@@ -3160,6 +3408,7 @@ export const data = {
          manufacturer: 'Dell',
          id: '7c229964-e937-439e-b7f8-63f5d2c1d00d',
          category: 'monitor',
+         slug: 'dell-up3218k',
       },
       {
          name: 'MSI G244F',
@@ -3173,6 +3422,7 @@ export const data = {
          manufacturer: 'MSI',
          id: 'b930ef16-17ed-4fe7-a810-cb4b225f1048',
          category: 'monitor',
+         slug: 'msi-g244f',
       },
       {
          name: 'Samsung Odyssey G7',
@@ -3186,6 +3436,7 @@ export const data = {
          manufacturer: 'Samsung',
          id: 'b805436f-05b0-43ce-8495-b12257d8e94a',
          category: 'monitor',
+         slug: 'samsung-odyssey-g7',
       },
       {
          name: 'Alienware AW3423DWF',
@@ -3199,6 +3450,7 @@ export const data = {
          manufacturer: 'Alienware',
          id: 'ef3583e7-9e5e-4baf-86ec-bc75c738393d',
          category: 'monitor',
+         slug: 'alienware-aw3423dwf',
       },
       {
          name: 'LG 32EP950-B',
@@ -3212,6 +3464,7 @@ export const data = {
          manufacturer: 'LG',
          id: '1cbb22d2-2cea-4022-a463-3daa9f350b9a',
          category: 'monitor',
+         slug: 'lg-32ep950-b',
       },
       {
          name: 'MSI G272QPF',
@@ -3225,6 +3478,7 @@ export const data = {
          manufacturer: 'MSI',
          id: '3bf5f87b-7eb0-4cc8-9664-2074be4858c4',
          category: 'monitor',
+         slug: 'msi-g272qpf',
       },
       {
          name: 'LG 27GN800-B',
@@ -3238,6 +3492,7 @@ export const data = {
          manufacturer: 'LG',
          id: 'dba9bf42-a91c-4158-8659-852369177afc',
          category: 'monitor',
+         slug: 'lg-27gn800-b',
       },
       {
          name: 'Gigabyte M27Q',
@@ -3251,6 +3506,7 @@ export const data = {
          manufacturer: 'Gigabyte',
          id: 'd5da438e-83f6-49c7-b123-9d27c3f2539b',
          category: 'monitor',
+         slug: 'gigabyte-m27q',
       },
       {
          name: 'Acer SB220Q bi',
@@ -3264,6 +3520,7 @@ export const data = {
          manufacturer: 'Acer',
          id: 'a150df12-ea31-41f4-a354-337bf85dfea2',
          category: 'monitor',
+         slug: 'acer-sb220q-bi',
       },
       {
          name: 'Acer Nitro XV1 XV271U',
@@ -3277,6 +3534,7 @@ export const data = {
          manufacturer: 'Acer',
          id: '7686f13f-6e9c-459f-aaa3-7fd8d1a5636b',
          category: 'monitor',
+         slug: 'acer-nitro-xv1-xv271u',
       },
       {
          name: 'Samsung Odyssey Neo G8',
@@ -3290,6 +3548,7 @@ export const data = {
          manufacturer: 'Samsung',
          id: '0ec722e5-15d4-4eda-b4c2-7022b8a79d81',
          category: 'monitor',
+         slug: 'samsung-odyssey-neo-g8',
       },
       {
          name: 'Asus ROG Swift OLED PG27AQDM',
@@ -3303,6 +3562,7 @@ export const data = {
          manufacturer: 'Asus',
          id: '0f8b0ffc-dc9f-4d0c-aebd-318f04dee836',
          category: 'monitor',
+         slug: 'asus-rog-swift-oled-pg27aqdm',
       },
       {
          name: 'Asus TUF Gaming VG279QM',
@@ -3316,6 +3576,7 @@ export const data = {
          manufacturer: 'Asus',
          id: '34b8b8a1-740b-4657-ae76-a024b5a470ce',
          category: 'monitor',
+         slug: 'asus-tuf-gaming-vg279qm',
       },
       {
          name: 'LG 27GR95QE-B',
@@ -3329,6 +3590,7 @@ export const data = {
          manufacturer: 'LG',
          id: 'a04cddbf-1d17-48e9-bbc7-29a5d1b61c07',
          category: 'monitor',
+         slug: 'lg-27gr95qe-b',
       },
       {
          name: 'Asus ROG Swift 360Hz PG27AQN',
@@ -3342,6 +3604,7 @@ export const data = {
          manufacturer: 'Asus',
          id: 'dfdcf3ac-3c24-4b9d-bd99-85d898f2f407',
          category: 'monitor',
+         slug: 'asus-rog-swift-360hz-pg27aqn',
       },
       {
          name: 'Asus ProArt PQ22UC',
@@ -3355,6 +3618,7 @@ export const data = {
          manufacturer: 'Asus',
          id: '68e52fcc-7b93-481f-a6d8-289945a00e9e',
          category: 'monitor',
+         slug: 'asus-proart-pq22uc',
       },
    ],
    motherboard: [
@@ -3369,6 +3633,7 @@ export const data = {
          manufacturer: 'MSI',
          id: 'f5b70986-d93d-48ef-9c39-40e983dd20be',
          category: 'motherboard',
+         slug: 'msi-b550-gaming-gen3',
       },
       {
          name: 'Asus ROG STRIX B650-A GAMING WIFI',
@@ -3381,6 +3646,7 @@ export const data = {
          manufacturer: 'Asus',
          id: '8e059c2e-2c84-4180-8ffa-26415a84b58c',
          category: 'motherboard',
+         slug: 'asus-rog-strix-b650-a-gaming-wifi',
       },
       {
          name: 'MSI B650 GAMING PLUS WIFI',
@@ -3393,6 +3659,7 @@ export const data = {
          manufacturer: 'MSI',
          id: '217f6e66-6da2-4019-8d5e-3bebbe3ac54d',
          category: 'motherboard',
+         slug: 'msi-b650-gaming-plus-wifi',
       },
       {
          name: 'Gigabyte B650 AORUS ELITE AX',
@@ -3405,6 +3672,7 @@ export const data = {
          manufacturer: 'Gigabyte',
          id: '9c29cfcd-a035-48cc-a8bb-fa1f357c6295',
          category: 'motherboard',
+         slug: 'gigabyte-b650-aorus-elite-ax',
       },
       {
          name: 'MSI B760 GAMING PLUS WIFI',
@@ -3417,6 +3685,7 @@ export const data = {
          manufacturer: 'MSI',
          id: '43eb508e-49f2-4323-a79a-59544dfcb528',
          category: 'motherboard',
+         slug: 'msi-b760-gaming-plus-wifi',
       },
       {
          name: 'Asus ROG STRIX B550-F GAMING WIFI II',
@@ -3429,6 +3698,7 @@ export const data = {
          manufacturer: 'Asus',
          id: '614c3e91-bbee-4298-8d4e-a969154addd6',
          category: 'motherboard',
+         slug: 'asus-rog-strix-b550-f-gaming-wifi-ii',
       },
       {
          name: 'ASRock B660M Pro RS',
@@ -3441,6 +3711,7 @@ export const data = {
          manufacturer: 'ASRock',
          id: '0f572bab-44e4-4ee4-87a9-50a3b6756ff5',
          category: 'motherboard',
+         slug: 'asrock-b660m-pro-rs',
       },
       {
          name: 'Gigabyte Z790 AORUS ELITE AX',
@@ -3453,6 +3724,7 @@ export const data = {
          manufacturer: 'Gigabyte',
          id: 'c7d28ca0-6b5b-4589-a5f3-ba0545166c8a',
          category: 'motherboard',
+         slug: 'gigabyte-z790-aorus-elite-ax',
       },
       {
          name: 'Asus PRIME B550M-A WIFI II',
@@ -3465,6 +3737,7 @@ export const data = {
          manufacturer: 'Asus',
          id: '0df9ee6a-bea3-47ca-a2e3-254e8259c1af',
          category: 'motherboard',
+         slug: 'asus-prime-b550m-a-wifi-ii',
       },
       {
          name: 'MSI MAG B650 TOMAHAWK WIFI',
@@ -3477,6 +3750,7 @@ export const data = {
          manufacturer: 'MSI',
          id: '08f723d9-64f2-424a-8c91-c5415427ff98',
          category: 'motherboard',
+         slug: 'msi-mag-b650-tomahawk-wifi',
       },
       {
          name: 'Gigabyte B550M K',
@@ -3489,6 +3763,7 @@ export const data = {
          manufacturer: 'Gigabyte',
          id: '2fd6e821-4aec-4424-8340-ee784b82cb39',
          category: 'motherboard',
+         slug: 'gigabyte-b550m-k',
       },
       {
          name: 'Gigabyte B650 GAMING X AX',
@@ -3501,6 +3776,7 @@ export const data = {
          manufacturer: 'Gigabyte',
          id: '6011ce84-7418-4a30-a8e4-0b1fed977b2f',
          category: 'motherboard',
+         slug: 'gigabyte-b650-gaming-x-ax',
       },
       {
          name: 'MSI MAG Z790 TOMAHAWK WIFI',
@@ -3513,6 +3789,7 @@ export const data = {
          manufacturer: 'MSI',
          id: '46afeee3-a0c3-4363-b9f8-c637dcef4c79',
          category: 'motherboard',
+         slug: 'msi-mag-z790-tomahawk-wifi',
       },
       {
          name: 'MSI PRO B650M-A WIFI',
@@ -3525,6 +3802,7 @@ export const data = {
          manufacturer: 'MSI',
          id: 'c3257ff4-9259-4a0e-9adb-15e466f43ec0',
          category: 'motherboard',
+         slug: 'msi-pro-b650m-a-wifi',
       },
       {
          name: 'MSI PRO B550M-VC WIFI',
@@ -3537,6 +3815,7 @@ export const data = {
          manufacturer: 'MSI',
          id: '5f60f45b-0d0f-4b77-9401-a0b3ada7cd25',
          category: 'motherboard',
+         slug: 'msi-pro-b550m-vc-wifi',
       },
       {
          name: 'MSI MAG B550 TOMAHAWK MAX WIFI',
@@ -3549,6 +3828,7 @@ export const data = {
          manufacturer: 'MSI',
          id: '5a9b663f-6561-489e-b86e-50b39b44cc88',
          category: 'motherboard',
+         slug: 'msi-mag-b550-tomahawk-max-wifi',
       },
       {
          name: 'MSI PRO B760-P WIFI DDR4',
@@ -3561,6 +3841,7 @@ export const data = {
          manufacturer: 'MSI',
          id: '8ec7ca49-b0bd-45e1-ba9c-c63911846109',
          category: 'motherboard',
+         slug: 'msi-pro-b760-p-wifi-ddr4',
       },
       {
          name: 'MSI PRO Z790-A MAX WIFI',
@@ -3573,6 +3854,7 @@ export const data = {
          manufacturer: 'MSI',
          id: '1e74c9d5-5a09-44ba-89fb-25c3bf00129a',
          category: 'motherboard',
+         slug: 'msi-pro-z790-a-max-wifi',
       },
       {
          name: 'Asus ROG MAXIMUS Z790 DARK HERO',
@@ -3585,6 +3867,7 @@ export const data = {
          manufacturer: 'Asus',
          id: '3b057ab1-baca-477e-822b-ac7402c46b12',
          category: 'motherboard',
+         slug: 'asus-rog-maximus-z790-dark-hero',
       },
       {
          name: 'Asus TUF GAMING B550-PLUS WIFI II',
@@ -3597,6 +3880,7 @@ export const data = {
          manufacturer: 'Asus',
          id: '7d8d43d5-2fd9-4ac4-bd07-ffdd1e02a656',
          category: 'motherboard',
+         slug: 'asus-tuf-gaming-b550-plus-wifi-ii',
       },
       {
          name: 'ASRock B650M Pro RS WiFi',
@@ -3609,6 +3893,7 @@ export const data = {
          manufacturer: 'ASRock',
          id: '89a77dd7-0641-443d-81cc-2934082ebffa',
          category: 'motherboard',
+         slug: 'asrock-b650m-pro-rs-wifi',
       },
       {
          name: 'MSI PRO Z790-P WIFI',
@@ -3621,6 +3906,7 @@ export const data = {
          manufacturer: 'MSI',
          id: 'b399902c-ee88-46ca-8583-b582843f679a',
          category: 'motherboard',
+         slug: 'msi-pro-z790-p-wifi',
       },
       {
          name: 'MSI B450M PRO-VDH MAX',
@@ -3633,6 +3919,7 @@ export const data = {
          manufacturer: 'MSI',
          id: '06d68b5c-b15c-406a-900e-c3ecc6f02c8e',
          category: 'motherboard',
+         slug: 'msi-b450m-pro-vdh-max',
       },
       {
          name: 'ASRock B650M Pro RS',
@@ -3645,6 +3932,7 @@ export const data = {
          manufacturer: 'ASRock',
          id: 'c6b2c3d7-9f69-4164-8ccf-b0d329fd9721',
          category: 'motherboard',
+         slug: 'asrock-b650m-pro-rs',
       },
    ],
    mouse: [
@@ -3659,6 +3947,7 @@ export const data = {
          manufacturer: 'Logitech',
          id: 'b6b7ec14-8a1f-48f2-8118-d1ac36e11ac7',
          category: 'mouse',
+         slug: 'logitech-g502-hero',
       },
       {
          name: 'Logitech G Pro X Superlight',
@@ -3671,6 +3960,7 @@ export const data = {
          manufacturer: 'Logitech',
          id: 'da8da831-9c7c-44e3-8c8b-c76e2965a3f7',
          category: 'mouse',
+         slug: 'logitech-g-pro-x-superlight',
       },
       {
          name: 'Logitech G305 (Black)',
@@ -3683,6 +3973,7 @@ export const data = {
          manufacturer: 'Logitech',
          id: '801cc696-5602-4c67-8a73-d7fa74b9b0dd',
          category: 'mouse',
+         slug: 'logitech-g305-black',
       },
       {
          name: 'FinalMouse Air58 Ninja',
@@ -3695,6 +3986,7 @@ export const data = {
          manufacturer: 'FinalMouse',
          id: '06747cf4-611e-4663-8ccc-8a161056fb19',
          category: 'mouse',
+         slug: 'finalmouse-air58-ninja',
       },
       {
          name: 'Razer Basilisk V3',
@@ -3707,6 +3999,7 @@ export const data = {
          manufacturer: 'Razer',
          id: 'ae201d89-ffcb-4517-8d7f-6ee50c892e25',
          category: 'mouse',
+         slug: 'razer-basilisk-v3',
       },
       {
          name: 'Logitech PRO X Superlight 2',
@@ -3719,6 +4012,7 @@ export const data = {
          manufacturer: 'Logitech',
          id: '20ca8801-0392-4a25-bd52-d832eb0ebe1a',
          category: 'mouse',
+         slug: 'logitech-pro-x-superlight-2',
       },
       {
          name: 'Logitech G502 LIGHTSPEED',
@@ -3731,6 +4025,7 @@ export const data = {
          manufacturer: 'Logitech',
          id: '488e9452-21e3-4da7-b73c-6fe88e7bcb38',
          category: 'mouse',
+         slug: 'logitech-g502-lightspeed',
       },
       {
          name: 'Logitech G203 Lightsync',
@@ -3743,6 +4038,7 @@ export const data = {
          manufacturer: 'Logitech',
          id: '4e7174a3-8193-4409-a245-544e3dacbe26',
          category: 'mouse',
+         slug: 'logitech-g203-lightsync',
       },
       {
          name: 'Logitech G Pro X Superlight',
@@ -3755,6 +4051,7 @@ export const data = {
          manufacturer: 'Logitech',
          id: '84cf6987-0182-4b08-b209-c23b6ae0e0dd',
          category: 'mouse',
+         slug: 'logitech-g-pro-x-superlight',
       },
       {
          name: 'Logitech PRO X Superlight 2',
@@ -3767,6 +4064,7 @@ export const data = {
          manufacturer: 'Logitech',
          id: '44a81239-a098-4ce4-adef-b55c249a92a2',
          category: 'mouse',
+         slug: 'logitech-pro-x-superlight-2',
       },
       {
          name: 'Logitech G305 (White)',
@@ -3779,6 +4077,7 @@ export const data = {
          manufacturer: 'Logitech',
          id: '3e105c4f-2e7b-400c-81a6-c2de6f33aab0',
          category: 'mouse',
+         slug: 'logitech-g305-white',
       },
       {
          name: 'Logitech G Pro Wireless',
@@ -3791,6 +4090,7 @@ export const data = {
          manufacturer: 'Logitech',
          id: '5364596e-2b35-4e2f-93c3-bd60495b224c',
          category: 'mouse',
+         slug: 'logitech-g-pro-wireless',
       },
       {
          name: 'Razer DeathAdder Essential',
@@ -3803,6 +4103,7 @@ export const data = {
          manufacturer: 'Razer',
          id: '4759276d-9d91-442e-9761-c95789f208ee',
          category: 'mouse',
+         slug: 'razer-deathadder-essential',
       },
       {
          name: 'Corsair M65 RGB ELITE',
@@ -3815,6 +4116,7 @@ export const data = {
          manufacturer: 'Corsair',
          id: 'd0ade7cb-dbc5-4010-9613-2d45096d7eb1',
          category: 'mouse',
+         slug: 'corsair-m65-rgb-elite',
       },
       {
          name: 'Razer Basilisk X HyperSpeed',
@@ -3827,6 +4129,7 @@ export const data = {
          manufacturer: 'Razer',
          id: '4b8b8db3-402a-47fb-9f07-2cf3392c4460',
          category: 'mouse',
+         slug: 'razer-basilisk-x-hyperspeed',
       },
       {
          name: 'Logitech G502 X Plus',
@@ -3839,6 +4142,7 @@ export const data = {
          manufacturer: 'Logitech',
          id: 'fe708ee6-6eb8-4c43-9c96-8a067fca94a1',
          category: 'mouse',
+         slug: 'logitech-g502-x-plus',
       },
       {
          name: 'Razer Basilisk V3 Pro + Mouse Dock Pro',
@@ -3851,6 +4155,7 @@ export const data = {
          manufacturer: 'Razer',
          id: 'f3c93f3c-4553-4400-8c08-8fea50a344a2',
          category: 'mouse',
+         slug: 'razer-basilisk-v3-pro-mouse-dock-pro',
       },
       {
          name: 'Logitech G502 X Plus',
@@ -3863,6 +4168,7 @@ export const data = {
          manufacturer: 'Logitech',
          id: '8cc6672c-5831-407c-9662-b122e19bfc93',
          category: 'mouse',
+         slug: 'logitech-g502-x-plus',
       },
       {
          name: 'Razer DeathAdder V3 Pro',
@@ -3875,6 +4181,7 @@ export const data = {
          manufacturer: 'Razer',
          id: '2ccd0056-14a5-4722-a609-c12f9a09c12a',
          category: 'mouse',
+         slug: 'razer-deathadder-v3-pro',
       },
       {
          name: 'SteelSeries Rival 3',
@@ -3887,6 +4194,7 @@ export const data = {
          manufacturer: 'SteelSeries',
          id: 'ffa66b46-a319-4e99-8325-1fb11f156488',
          category: 'mouse',
+         slug: 'steelseries-rival-3',
       },
       {
          name: 'Glorious MODEL O',
@@ -3899,6 +4207,7 @@ export const data = {
          manufacturer: 'Glorious',
          id: '50932eb8-e1d4-4bdc-9a6c-0c190d7d6d75',
          category: 'mouse',
+         slug: 'glorious-model-o',
       },
       {
          name: 'Razer Viper V2 Pro',
@@ -3911,6 +4220,7 @@ export const data = {
          manufacturer: 'Razer',
          id: '0e7d8ac4-4297-4fcc-879f-3be584f34245',
          category: 'mouse',
+         slug: 'razer-viper-v2-pro',
       },
       {
          name: 'Razer DeathAdder Essential',
@@ -3923,6 +4233,7 @@ export const data = {
          manufacturer: 'Razer',
          id: 'c16a771e-1af9-404d-8d4d-c2fbdfced665',
          category: 'mouse',
+         slug: 'razer-deathadder-essential',
       },
       {
          name: 'Razer Viper Ultimate w/Dock',
@@ -3935,6 +4246,7 @@ export const data = {
          manufacturer: 'Razer',
          id: '60e01747-fc56-459b-ad3c-b05b615f6407',
          category: 'mouse',
+         slug: 'razer-viper-ultimate-wdock',
       },
    ],
    os: [
@@ -3946,6 +4258,7 @@ export const data = {
          manufacturer: 'Microsoft',
          id: 'a29b6846-5d0b-46f9-b57d-54072505f26d',
          category: 'os',
+         slug: 'microsoft-windows-11-home-64-bit',
       },
       {
          name: 'Microsoft Windows 10 Home (64-bit)',
@@ -3955,6 +4268,7 @@ export const data = {
          manufacturer: 'Microsoft',
          id: 'd3c08686-8dab-4de7-8aed-c8d5be91b9c4',
          category: 'os',
+         slug: 'microsoft-windows-10-home-64-bit',
       },
       {
          name: 'Microsoft Windows 11 Pro (64-bit)',
@@ -3964,6 +4278,7 @@ export const data = {
          manufacturer: 'Microsoft',
          id: '29e6ee37-caaf-4c34-b596-8aca423b7b3c',
          category: 'os',
+         slug: 'microsoft-windows-11-pro-64-bit',
       },
       {
          name: 'Microsoft Windows 11 Home (64-bit)',
@@ -3973,6 +4288,7 @@ export const data = {
          manufacturer: 'Microsoft',
          id: 'c78a78f0-443d-41f0-9a76-1f04ebf961e2',
          category: 'os',
+         slug: 'microsoft-windows-11-home-64-bit',
       },
       {
          name: 'Microsoft Windows 10 Pro (64-bit)',
@@ -3982,6 +4298,7 @@ export const data = {
          manufacturer: 'Microsoft',
          id: '67db740b-c10a-462c-9080-8d4dc43d9ced',
          category: 'os',
+         slug: 'microsoft-windows-10-pro-64-bit',
       },
       {
          name: 'Microsoft Windows 11 Pro (64-bit)',
@@ -3991,6 +4308,7 @@ export const data = {
          manufacturer: 'Microsoft',
          id: 'ab1bac46-9f09-49b9-9df9-336823b86d2e',
          category: 'os',
+         slug: 'microsoft-windows-11-pro-64-bit',
       },
       {
          name: 'Microsoft Windows 11 Home (64-bit)',
@@ -4000,6 +4318,7 @@ export const data = {
          manufacturer: 'Microsoft',
          id: '257e8669-5189-4998-a8ef-90023d9f53fb',
          category: 'os',
+         slug: 'microsoft-windows-11-home-64-bit',
       },
       {
          name: 'Microsoft Windows 11 Pro (64-bit)',
@@ -4009,6 +4328,7 @@ export const data = {
          manufacturer: 'Microsoft',
          id: '071ff0f3-58f4-4aa9-bef1-7e4e9fa99dfc',
          category: 'os',
+         slug: 'microsoft-windows-11-pro-64-bit',
       },
       {
          name: 'Microsoft Windows 10 Pro (64-bit)',
@@ -4018,6 +4338,7 @@ export const data = {
          manufacturer: 'Microsoft',
          id: '3374e2fc-2e63-4f0d-8c88-93ef34d4f9bb',
          category: 'os',
+         slug: 'microsoft-windows-10-pro-64-bit',
       },
       {
          name: 'Microsoft Windows 10 Home (64-bit)',
@@ -4027,6 +4348,7 @@ export const data = {
          manufacturer: 'Microsoft',
          id: '54a5333e-bc62-4ced-b14e-9b4321d3c67a',
          category: 'os',
+         slug: 'microsoft-windows-10-home-64-bit',
       },
       {
          name: 'Microsoft Windows 10 Pro (32/64-bit)',
@@ -4036,6 +4358,7 @@ export const data = {
          manufacturer: 'Microsoft',
          id: '06e58267-29eb-4b2b-a7df-14b59ce19850',
          category: 'os',
+         slug: 'microsoft-windows-10-pro-3264-bit',
       },
       {
          name: 'Microsoft Windows 10 Pro (32/64-bit)',
@@ -4045,6 +4368,7 @@ export const data = {
          manufacturer: 'Microsoft',
          id: '2c912d58-615e-4819-8fa4-97f7ad2bed74',
          category: 'os',
+         slug: 'microsoft-windows-10-pro-3264-bit',
       },
       {
          name: 'Microsoft Windows 10 Home (64-bit)',
@@ -4054,6 +4378,7 @@ export const data = {
          manufacturer: 'Microsoft',
          id: '0bd2ee33-a2b3-402d-a414-ae86c44cc13b',
          category: 'os',
+         slug: 'microsoft-windows-10-home-64-bit',
       },
       {
          name: 'Microsoft Windows 10 Pro (32/64-bit)',
@@ -4063,6 +4388,7 @@ export const data = {
          manufacturer: 'Microsoft',
          id: 'fe9cf068-bd4d-48e8-b48b-af56d4c648ea',
          category: 'os',
+         slug: 'microsoft-windows-10-pro-3264-bit',
       },
       {
          name: 'Microsoft Windows 10 Home (32/64-bit)',
@@ -4072,6 +4398,7 @@ export const data = {
          manufacturer: 'Microsoft',
          id: '7376d4ef-4347-4ea3-ac63-0ced507b22bd',
          category: 'os',
+         slug: 'microsoft-windows-10-home-3264-bit',
       },
       {
          name: 'Microsoft Windows 7 Home Premium (32/64-bit)',
@@ -4081,6 +4408,7 @@ export const data = {
          manufacturer: 'Microsoft',
          id: '59616bb3-e176-4fe1-94ef-bc941222d3fc',
          category: 'os',
+         slug: 'microsoft-windows-7-home-premium-3264-bit',
       },
       {
          name: 'Microsoft Windows 7 Professional (32/64-bit)',
@@ -4090,6 +4418,7 @@ export const data = {
          manufacturer: 'Microsoft',
          id: 'f8961503-fe87-4be3-877d-106d5bf23713',
          category: 'os',
+         slug: 'microsoft-windows-7-professional-3264-bit',
       },
       {
          name: 'Microsoft Windows 10 Pro (32/64-bit)',
@@ -4099,6 +4428,7 @@ export const data = {
          manufacturer: 'Microsoft',
          id: '0bfd3e9b-280d-4e20-8c8c-baf437880e9e',
          category: 'os',
+         slug: 'microsoft-windows-10-pro-3264-bit',
       },
       {
          name: 'Microsoft Windows 10 Home (32/64-bit)',
@@ -4108,6 +4438,7 @@ export const data = {
          manufacturer: 'Microsoft',
          id: '0179e2d7-be0a-4ce8-bc91-f33d9a248a5e',
          category: 'os',
+         slug: 'microsoft-windows-10-home-3264-bit',
       },
       {
          name: 'Microsoft Windows 10 Home (32/64-bit)',
@@ -4117,6 +4448,7 @@ export const data = {
          manufacturer: 'Microsoft',
          id: '8240fa49-e370-45b1-b2e9-e5bae4ac54ae',
          category: 'os',
+         slug: 'microsoft-windows-10-home-3264-bit',
       },
       {
          name: 'Microsoft Windows 10 Home (32/64-bit)',
@@ -4126,6 +4458,7 @@ export const data = {
          manufacturer: 'Microsoft',
          id: '3a623661-febe-4e2c-aa8e-d81293e67185',
          category: 'os',
+         slug: 'microsoft-windows-10-home-3264-bit',
       },
       {
          name: 'Microsoft Windows 10 Home (32-bit)',
@@ -4135,6 +4468,7 @@ export const data = {
          manufacturer: 'Microsoft',
          id: '0f97b002-80e4-40b6-af92-4090b641917c',
          category: 'os',
+         slug: 'microsoft-windows-10-home-32-bit',
       },
       {
          name: 'Microsoft Windows 10 Pro (32-bit)',
@@ -4144,6 +4478,7 @@ export const data = {
          manufacturer: 'Microsoft',
          id: '37451803-faaa-48fd-9bb0-3b783328bd06',
          category: 'os',
+         slug: 'microsoft-windows-10-pro-32-bit',
       },
       {
          name: 'Microsoft Windows 8.1 Pro (64-bit)',
@@ -4153,6 +4488,7 @@ export const data = {
          manufacturer: 'Microsoft',
          id: '3b6032f9-fabf-4e61-9161-db0603139fb9',
          category: 'os',
+         slug: 'microsoft-windows-81-pro-64-bit',
       },
       {
          name: 'Microsoft Windows 7 Ultimate SP1 (64-bit)',
@@ -4162,6 +4498,7 @@ export const data = {
          manufacturer: 'Microsoft',
          id: '98c270ff-51c8-4d06-86f0-726de6cb52b2',
          category: 'os',
+         slug: 'microsoft-windows-7-ultimate-sp1-64-bit',
       },
       {
          name: 'Microsoft Windows 8 Pro (32-bit)',
@@ -4171,6 +4508,7 @@ export const data = {
          manufacturer: 'Microsoft',
          id: 'b0793828-44c1-411a-9bd5-91ad3196d41c',
          category: 'os',
+         slug: 'microsoft-windows-8-pro-32-bit',
       },
       {
          name: 'Microsoft Windows 7 Home Premium SP1 (32-bit)',
@@ -4180,6 +4518,7 @@ export const data = {
          manufacturer: 'Microsoft',
          id: 'af317506-d6aa-46f8-b55f-8f49014903fd',
          category: 'os',
+         slug: 'microsoft-windows-7-home-premium-sp1-32-bit',
       },
       {
          name: 'Microsoft Windows 8.1 Pro DE (64-bit)',
@@ -4189,6 +4528,7 @@ export const data = {
          manufacturer: 'Microsoft',
          id: 'b65fd32b-025f-485a-b35f-d1b649cc8d07',
          category: 'os',
+         slug: 'microsoft-windows-81-pro-de-64-bit',
       },
       {
          name: 'Microsoft Windows 8 (32-bit)',
@@ -4198,6 +4538,7 @@ export const data = {
          manufacturer: 'Microsoft',
          id: 'e3c6bf34-59f5-4331-8290-f3a7f6d2f03f',
          category: 'os',
+         slug: 'microsoft-windows-8-32-bit',
       },
       {
          name: 'Microsoft Windows 7 Professional SP1 (64-bit)',
@@ -4207,6 +4548,7 @@ export const data = {
          manufacturer: 'Microsoft',
          id: '233a2493-2e66-4b30-99b5-51eeddd29a30',
          category: 'os',
+         slug: 'microsoft-windows-7-professional-sp1-64-bit',
       },
       {
          name: 'Microsoft Windows 7 Pro SP1 DE (64-bit)',
@@ -4216,6 +4558,7 @@ export const data = {
          manufacturer: 'Microsoft',
          id: 'c7965b6e-5a78-4cea-a0d6-787a556b03c7',
          category: 'os',
+         slug: 'microsoft-windows-7-pro-sp1-de-64-bit',
       },
       {
          name: 'Microsoft Windows 7 Ultimate SP1 (32-bit)',
@@ -4225,6 +4568,7 @@ export const data = {
          manufacturer: 'Microsoft',
          id: '33e1ebbe-2867-4e0b-bc03-c84ce42b5112',
          category: 'os',
+         slug: 'microsoft-windows-7-ultimate-sp1-32-bit',
       },
       {
          name: 'Microsoft Windows 7 Home Premium SP1 (64-bit)',
@@ -4234,6 +4578,7 @@ export const data = {
          manufacturer: 'Microsoft',
          id: '3197e57d-2204-4820-b7bc-bbb0ccd9f710',
          category: 'os',
+         slug: 'microsoft-windows-7-home-premium-sp1-64-bit',
       },
       {
          name: 'Microsoft Windows 7 Ultimate (32/64-bit)',
@@ -4243,6 +4588,7 @@ export const data = {
          manufacturer: 'Microsoft',
          id: '7bea14b7-5395-4857-9922-495df5e527d9',
          category: 'os',
+         slug: 'microsoft-windows-7-ultimate-3264-bit',
       },
       {
          name: 'Microsoft Windows 7 Home Premium SP1 (32-bit)',
@@ -4252,6 +4598,7 @@ export const data = {
          manufacturer: 'Microsoft',
          id: '48fb8863-1522-48a0-9fdc-b2732174a96f',
          category: 'os',
+         slug: 'microsoft-windows-7-home-premium-sp1-32-bit',
       },
    ],
    'power-supply': [
@@ -4266,6 +4613,7 @@ export const data = {
          manufacturer: 'Corsair',
          id: '47940f89-9f83-4987-b722-e6d662dd2cc8',
          category: 'power-supply',
+         slug: 'corsair-rm750e-2023',
       },
       {
          name: 'Corsair RM850x (2021)',
@@ -4278,6 +4626,7 @@ export const data = {
          manufacturer: 'Corsair',
          id: 'c96c23f5-0755-4461-a575-af67a65ca4ad',
          category: 'power-supply',
+         slug: 'corsair-rm850x-2021',
       },
       {
          name: 'Corsair RM850e (2023)',
@@ -4290,6 +4639,7 @@ export const data = {
          manufacturer: 'Corsair',
          id: '1b2a91f6-d9d6-4fc8-bbc9-ca11c0c402ec',
          category: 'power-supply',
+         slug: 'corsair-rm850e-2023',
       },
       {
          name: 'Corsair RM1000e (2023)',
@@ -4302,6 +4652,7 @@ export const data = {
          manufacturer: 'Corsair',
          id: 'fa570e9f-96a4-402b-892f-c03b2a22d402',
          category: 'power-supply',
+         slug: 'corsair-rm1000e-2023',
       },
       {
          name: 'Corsair CX650M (2021)',
@@ -4314,6 +4665,7 @@ export const data = {
          manufacturer: 'Corsair',
          id: '60e43f92-bd30-492b-86aa-615df0db8008',
          category: 'power-supply',
+         slug: 'corsair-cx650m-2021',
       },
       {
          name: 'Thermaltake Smart',
@@ -4326,6 +4678,7 @@ export const data = {
          manufacturer: 'Thermaltake',
          id: '197aa846-8ebb-468d-8da4-eb446a232ca2',
          category: 'power-supply',
+         slug: 'thermaltake-smart',
       },
       {
          name: 'Corsair RM850',
@@ -4338,6 +4691,7 @@ export const data = {
          manufacturer: 'Corsair',
          id: '2f1d9cd0-b5b1-4f05-b796-52d68a1ed4e9',
          category: 'power-supply',
+         slug: 'corsair-rm850',
       },
       {
          name: 'Corsair SF750',
@@ -4350,6 +4704,7 @@ export const data = {
          manufacturer: 'Corsair',
          id: 'f1190517-bd1a-4255-92ad-46faf096c57a',
          category: 'power-supply',
+         slug: 'corsair-sf750',
       },
       {
          name: 'Corsair RM1000x (2021)',
@@ -4362,6 +4717,7 @@ export const data = {
          manufacturer: 'Corsair',
          id: '34f4749c-9089-4703-9379-565eca144e65',
          category: 'power-supply',
+         slug: 'corsair-rm1000x-2021',
       },
       {
          name: 'Cooler Master MWE Gold 850 - V2',
@@ -4374,6 +4730,7 @@ export const data = {
          manufacturer: 'Cooler',
          id: '5ee4fcc9-c2ff-4df4-a7d4-edf3410ae3a0',
          category: 'power-supply',
+         slug: 'cooler-master-mwe-gold-850-v2',
       },
       {
          name: 'Thermaltake Toughpower GX2',
@@ -4386,6 +4743,7 @@ export const data = {
          manufacturer: 'Thermaltake',
          id: 'a160c318-98d2-4762-8730-de1ba44dd06a',
          category: 'power-supply',
+         slug: 'thermaltake-toughpower-gx2',
       },
       {
          name: 'Gigabyte UD750GM',
@@ -4398,6 +4756,7 @@ export const data = {
          manufacturer: 'Gigabyte',
          id: '799b95b8-398c-4ff5-90b2-e4e9153bfdc2',
          category: 'power-supply',
+         slug: 'gigabyte-ud750gm',
       },
       {
          name: 'Thermaltake Smart',
@@ -4410,6 +4769,7 @@ export const data = {
          manufacturer: 'Thermaltake',
          id: 'd6ff3f17-a6c0-4549-ad90-c0065a0e5eb3',
          category: 'power-supply',
+         slug: 'thermaltake-smart',
       },
       {
          name: 'Corsair RM650 (2023)',
@@ -4422,6 +4782,7 @@ export const data = {
          manufacturer: 'Corsair',
          id: 'ce5624db-69d7-4580-a02a-8d676c054972',
          category: 'power-supply',
+         slug: 'corsair-rm650-2023',
       },
       {
          name: 'Corsair CX750M (2021)',
@@ -4434,6 +4795,7 @@ export const data = {
          manufacturer: 'Corsair',
          id: '0cf520d3-886f-416a-bf6f-e08aecb9201a',
          category: 'power-supply',
+         slug: 'corsair-cx750m-2021',
       },
       {
          name: 'MSI MAG A650BN',
@@ -4446,6 +4808,7 @@ export const data = {
          manufacturer: 'MSI',
          id: '5e3e78a8-b90f-4f6a-87e3-926c5bd06afb',
          category: 'power-supply',
+         slug: 'msi-mag-a650bn',
       },
       {
          name: 'MSI MAG A550BN',
@@ -4458,6 +4821,7 @@ export const data = {
          manufacturer: 'MSI',
          id: 'a2f2469c-86f3-4f07-87ef-a3489511981d',
          category: 'power-supply',
+         slug: 'msi-mag-a550bn',
       },
       {
          name: 'MSI MAG A750GL PCIE5',
@@ -4470,6 +4834,7 @@ export const data = {
          manufacturer: 'MSI',
          id: 'a6c8ec84-6eeb-43ec-b94e-4582d6d6a026',
          category: 'power-supply',
+         slug: 'msi-mag-a750gl-pcie5',
       },
       {
          name: 'Corsair RM750',
@@ -4482,6 +4847,7 @@ export const data = {
          manufacturer: 'Corsair',
          id: '1788da9f-6c96-4a0a-ba79-cedee1d012c5',
          category: 'power-supply',
+         slug: 'corsair-rm750',
       },
       {
          name: 'Corsair RM750x (2021)',
@@ -4494,6 +4860,7 @@ export const data = {
          manufacturer: 'Corsair',
          id: '7869671a-0153-42fd-b930-ec4389799124',
          category: 'power-supply',
+         slug: 'corsair-rm750x-2021',
       },
       {
          name: 'Asus ROG THOR 1600T Gaming',
@@ -4506,6 +4873,7 @@ export const data = {
          manufacturer: 'Asus',
          id: '6827ae9c-3f52-487d-95e4-60c3486c6ee0',
          category: 'power-supply',
+         slug: 'asus-rog-thor-1600t-gaming',
       },
       {
          name: 'be quiet! Pure Power 12 M',
@@ -4518,6 +4886,7 @@ export const data = {
          manufacturer: 'be',
          id: 'c5cba8ec-39a0-4203-8d33-884f52dd2fbc',
          category: 'power-supply',
+         slug: 'be-quiet-pure-power-12-m',
       },
       {
          name: 'Corsair CV650',
@@ -4530,6 +4899,7 @@ export const data = {
          manufacturer: 'Corsair',
          id: '8135159a-76e5-4ba2-a9cf-f5541678dfbc',
          category: 'power-supply',
+         slug: 'corsair-cv650',
       },
       {
          name: 'Apevia Prestige',
@@ -4542,6 +4912,7 @@ export const data = {
          manufacturer: 'Apevia',
          id: 'dbb6dc33-7d57-4bed-a3a4-93324de3528e',
          category: 'power-supply',
+         slug: 'apevia-prestige',
       },
    ],
    'sound-card': [
@@ -4557,6 +4928,7 @@ export const data = {
          manufacturer: 'Creative',
          id: '1643d68c-a466-4d7a-a187-e5ce5b9feb1d',
          category: 'sound-card',
+         slug: 'creative-labs-sound-blaster-ae-9',
       },
       {
          name: 'Creative Labs Sound BlasterX AE-5 Plus',
@@ -4570,6 +4942,7 @@ export const data = {
          manufacturer: 'Creative',
          id: '53948f39-ae0d-46ee-a00a-655f9f74bc14',
          category: 'sound-card',
+         slug: 'creative-labs-sound-blasterx-ae-5-plus',
       },
       {
          name: 'Creative Labs Sound Blaster Audigy Rx',
@@ -4583,6 +4956,7 @@ export const data = {
          manufacturer: 'Creative',
          id: '23eada65-4518-439d-9c21-86c11a4aff01',
          category: 'sound-card',
+         slug: 'creative-labs-sound-blaster-audigy-rx',
       },
       {
          name: 'Asus Xonar SE',
@@ -4596,6 +4970,7 @@ export const data = {
          manufacturer: 'Asus',
          id: 'a7ea94ca-9961-495b-afd3-4a3971e4d16d',
          category: 'sound-card',
+         slug: 'asus-xonar-se',
       },
       {
          name: 'Creative Labs Sound Blaster Z SE',
@@ -4609,6 +4984,7 @@ export const data = {
          manufacturer: 'Creative',
          id: 'd07667d9-260c-47d2-9243-e28c0250b408',
          category: 'sound-card',
+         slug: 'creative-labs-sound-blaster-z-se',
       },
       {
          name: 'Asus STRIX SOAR',
@@ -4622,6 +4998,7 @@ export const data = {
          manufacturer: 'Asus',
          id: 'b59c46bc-86ba-4f48-be7c-1187f30fdafa',
          category: 'sound-card',
+         slug: 'asus-strix-soar',
       },
       {
          name: 'Creative Labs Sound Blaster AE-7',
@@ -4635,6 +5012,7 @@ export const data = {
          manufacturer: 'Creative',
          id: 'e73d417a-f6b6-4d24-8cc1-7be4ecbc19d8',
          category: 'sound-card',
+         slug: 'creative-labs-sound-blaster-ae-7',
       },
       {
          name: 'Creative Labs Sound Blaster Zx',
@@ -4648,6 +5026,7 @@ export const data = {
          manufacturer: 'Creative',
          id: '1820f902-01f4-4461-b1ad-f97b640e9337',
          category: 'sound-card',
+         slug: 'creative-labs-sound-blaster-zx',
       },
       {
          name: 'Creative Labs 70SB157000000',
@@ -4661,6 +5040,7 @@ export const data = {
          manufacturer: 'Creative',
          id: '6f707647-9930-4a34-86fd-4c9a61fd0d48',
          category: 'sound-card',
+         slug: 'creative-labs-70sb157000000',
       },
       {
          name: 'Asus Xonar Essence STX',
@@ -4674,6 +5054,7 @@ export const data = {
          manufacturer: 'Asus',
          id: 'cbc6d1c6-30a1-41c2-80fb-baaf72ceb95f',
          category: 'sound-card',
+         slug: 'asus-xonar-essence-stx',
       },
       {
          name: 'Creative Labs Sound BlasterX AE-5 Plus Pure',
@@ -4687,6 +5068,7 @@ export const data = {
          manufacturer: 'Creative',
          id: '9bfae220-9a94-4780-8047-2d8b4c0ed25c',
          category: 'sound-card',
+         slug: 'creative-labs-sound-blasterx-ae-5-plus-pure',
       },
       {
          name: 'Creative Labs Sound Blaster Audigy Fx V2',
@@ -4700,6 +5082,7 @@ export const data = {
          manufacturer: 'Creative',
          id: 'fbcbd974-1d18-4cc0-b1e8-e4ff350ef7fa',
          category: 'sound-card',
+         slug: 'creative-labs-sound-blaster-audigy-fx-v2',
       },
       {
          name: 'Asus STRIX RAID DLX',
@@ -4713,6 +5096,7 @@ export const data = {
          manufacturer: 'Asus',
          id: '421201d6-fdeb-4421-9e76-1a37314c7b71',
          category: 'sound-card',
+         slug: 'asus-strix-raid-dlx',
       },
       {
          name: 'Asus Xonar Phoebus',
@@ -4726,6 +5110,7 @@ export const data = {
          manufacturer: 'Asus',
          id: 'cfd5d1fc-1324-44c1-a4f4-ef70e47bdf49',
          category: 'sound-card',
+         slug: 'asus-xonar-phoebus',
       },
       {
          name: 'Asus Xonar AE',
@@ -4739,6 +5124,7 @@ export const data = {
          manufacturer: 'Asus',
          id: 'b2dc3891-baca-4123-bd1c-f296fbb518e8',
          category: 'sound-card',
+         slug: 'asus-xonar-ae',
       },
       {
          name: 'Asus STRIX RAID PRO',
@@ -4752,6 +5138,7 @@ export const data = {
          manufacturer: 'Asus',
          id: 'bfee0ec3-865e-4ead-8ebd-ab4099734ef2',
          category: 'sound-card',
+         slug: 'asus-strix-raid-pro',
       },
       {
          name: 'Creative Labs Sound BlasterX AE-5',
@@ -4765,6 +5152,7 @@ export const data = {
          manufacturer: 'Creative',
          id: '33967e8d-3cf5-402e-ab66-ce01f50005b1',
          category: 'sound-card',
+         slug: 'creative-labs-sound-blasterx-ae-5',
       },
       {
          name: 'Creative Labs Sound Blaster Audigy Fx',
@@ -4778,6 +5166,7 @@ export const data = {
          manufacturer: 'Creative',
          id: 'd72a9bbb-8f23-445c-a528-f580f5109219',
          category: 'sound-card',
+         slug: 'creative-labs-sound-blaster-audigy-fx',
       },
       {
          name: 'Creative Labs Sound Blaster Z w/Shield',
@@ -4791,6 +5180,7 @@ export const data = {
          manufacturer: 'Creative',
          id: '6e8cb2f7-a0bf-43a6-aadb-8ccf888aa935',
          category: 'sound-card',
+         slug: 'creative-labs-sound-blaster-z-wshield',
       },
       {
          name: 'EVGA NU AUDIO PRO',
@@ -4804,6 +5194,7 @@ export const data = {
          manufacturer: 'EVGA',
          id: 'd949d214-f2db-415b-9402-8087aa9552a5',
          category: 'sound-card',
+         slug: 'evga-nu-audio-pro',
       },
       {
          name: 'Asus Xonar DGX',
@@ -4817,6 +5208,7 @@ export const data = {
          manufacturer: 'Asus',
          id: '0a8fe4a7-43b6-41a9-aa55-9654a4b68a94',
          category: 'sound-card',
+         slug: 'asus-xonar-dgx',
       },
       {
          name: 'Creative Labs Sound Blaster X-Fi Titanium HD',
@@ -4830,6 +5222,7 @@ export const data = {
          manufacturer: 'Creative',
          id: '029507c3-b891-4f28-8036-6352718d1a59',
          category: 'sound-card',
+         slug: 'creative-labs-sound-blaster-x-fi-titanium-hd',
       },
       {
          name: 'EVGA NU',
@@ -4843,6 +5236,7 @@ export const data = {
          manufacturer: 'EVGA',
          id: 'fab1f679-4dd7-4b5e-8758-acfb8c6bb8de',
          category: 'sound-card',
+         slug: 'evga-nu',
       },
       {
          name: 'Asus Essence STX II',
@@ -4856,6 +5250,7 @@ export const data = {
          manufacturer: 'Asus',
          id: '5179e8af-687b-4e66-8bc0-4a6bac9f041d',
          category: 'sound-card',
+         slug: 'asus-essence-stx-ii',
       },
    ],
    speakers: [
@@ -4869,6 +5264,7 @@ export const data = {
          manufacturer: 'KEF',
          id: 'b19c317f-e618-4e89-81c2-9ab405cb26fe',
          category: 'speakers',
+         slug: 'kef-lsxbl',
       },
       {
          name: 'Creative Labs Pebble 2.0',
@@ -4880,6 +5276,7 @@ export const data = {
          manufacturer: 'Creative',
          id: 'bed8faa8-a511-4fea-9313-e59a601e6c15',
          category: 'speakers',
+         slug: 'creative-labs-pebble-20',
       },
       {
          name: 'Logitech Z200',
@@ -4891,6 +5288,7 @@ export const data = {
          manufacturer: 'Logitech',
          id: 'f2800571-1168-4009-9589-d1e4d642439c',
          category: 'speakers',
+         slug: 'logitech-z200',
       },
       {
          name: 'Creative Labs Pebble 2.0',
@@ -4902,6 +5300,7 @@ export const data = {
          manufacturer: 'Creative',
          id: 'eb9864fb-8201-4910-84c1-43869b75c892',
          category: 'speakers',
+         slug: 'creative-labs-pebble-20',
       },
       {
          name: 'Logitech Z906',
@@ -4913,6 +5312,7 @@ export const data = {
          manufacturer: 'Logitech',
          id: 'fa9ffa08-a286-49a6-8e80-67f8a3da6b10',
          category: 'speakers',
+         slug: 'logitech-z906',
       },
       {
          name: 'Kanto TUK',
@@ -4924,6 +5324,7 @@ export const data = {
          manufacturer: 'Kanto',
          id: 'fab7c37a-ce91-4c0f-aee6-efadc73c0581',
          category: 'speakers',
+         slug: 'kanto-tuk',
       },
       {
          name: 'Kanto TUK',
@@ -4935,6 +5336,7 @@ export const data = {
          manufacturer: 'Kanto',
          id: '408ecf11-2c88-461b-a415-3b5c429d3cd1',
          category: 'speakers',
+         slug: 'kanto-tuk',
       },
       {
          name: 'Razer Leviathan V2 X',
@@ -4946,6 +5348,7 @@ export const data = {
          manufacturer: 'Razer',
          id: '87b30917-a13d-4306-9400-0912c0073ee6',
          category: 'speakers',
+         slug: 'razer-leviathan-v2-x',
       },
       {
          name: 'KEF LSXWH',
@@ -4957,6 +5360,7 @@ export const data = {
          manufacturer: 'KEF',
          id: '0a9e27bc-f729-4d2d-bcf5-8b5aed420b6f',
          category: 'speakers',
+         slug: 'kef-lsxwh',
       },
       {
          name: 'Logitech G560',
@@ -4968,6 +5372,7 @@ export const data = {
          manufacturer: 'Logitech',
          id: 'ac9b0e15-4ea7-4fcd-91c8-4e436c1874dc',
          category: 'speakers',
+         slug: 'logitech-g560',
       },
       {
          name: 'Logitech Z623',
@@ -4979,6 +5384,7 @@ export const data = {
          manufacturer: 'Logitech',
          id: '9d0d95da-a40c-43b9-8415-1b6d577fbf3a',
          category: 'speakers',
+         slug: 'logitech-z623',
       },
       {
          name: 'Logitech Z207 (Black)',
@@ -4990,6 +5396,7 @@ export const data = {
          manufacturer: 'Logitech',
          id: '8101863b-0cce-46af-8130-a5e3c6caa99d',
          category: 'speakers',
+         slug: 'logitech-z207-black',
       },
       {
          name: 'Edifier MR4',
@@ -5001,6 +5408,7 @@ export const data = {
          manufacturer: 'Edifier',
          id: '7d6b6666-a733-4330-ab9d-97b03fe00845',
          category: 'speakers',
+         slug: 'edifier-mr4',
       },
       {
          name: 'Razer Leviathan V2 Pro',
@@ -5012,6 +5420,7 @@ export const data = {
          manufacturer: 'Razer',
          id: '1679ed17-f323-441b-982d-cba7762d8803',
          category: 'speakers',
+         slug: 'razer-leviathan-v2-pro',
       },
       {
          name: 'Logitech X-540',
@@ -5023,6 +5432,7 @@ export const data = {
          manufacturer: 'Logitech',
          id: '4d396be9-e962-470e-af5d-1cc82fc455db',
          category: 'speakers',
+         slug: 'logitech-x-540',
       },
       {
          name: 'Klipsch ProMedia 2.1',
@@ -5034,6 +5444,7 @@ export const data = {
          manufacturer: 'Klipsch',
          id: '534e3042-7113-4049-bab6-f000f4469bae',
          category: 'speakers',
+         slug: 'klipsch-promedia-21',
       },
       {
          name: 'Cyber Acoustics CA-2016WB',
@@ -5045,6 +5456,7 @@ export const data = {
          manufacturer: 'Cyber',
          id: '1973fdd0-3d2b-4dd8-87a1-2635bc84e0f7',
          category: 'speakers',
+         slug: 'cyber-acoustics-ca-2016wb',
       },
       {
          name: 'Creative Labs Pebble Pro',
@@ -5056,6 +5468,7 @@ export const data = {
          manufacturer: 'Creative',
          id: 'ba596bbb-e17d-4219-a24b-11d9611c11c6',
          category: 'speakers',
+         slug: 'creative-labs-pebble-pro',
       },
       {
          name: 'Logitech Z213',
@@ -5067,6 +5480,7 @@ export const data = {
          manufacturer: 'Logitech',
          id: '236febc1-4db2-4f14-ac89-55b5b28057e3',
          category: 'speakers',
+         slug: 'logitech-z213',
       },
       {
          name: 'Logitech Z333',
@@ -5078,6 +5492,7 @@ export const data = {
          manufacturer: 'Logitech',
          id: '21b02b66-4a86-4698-8e0b-6de9fff1fef3',
          category: 'speakers',
+         slug: 'logitech-z333',
       },
       {
          name: 'Logitech Z313',
@@ -5089,6 +5504,7 @@ export const data = {
          manufacturer: 'Logitech',
          id: '7ef21931-ab15-465a-aec0-f4f313ac5f89',
          category: 'speakers',
+         slug: 'logitech-z313',
       },
       {
          name: 'Bose Companion 2 Series III',
@@ -5100,6 +5516,7 @@ export const data = {
          manufacturer: 'Bose',
          id: '4e78f641-98be-4eff-b2ba-bc74cf8f14fb',
          category: 'speakers',
+         slug: 'bose-companion-2-series-iii',
       },
       {
          name: 'SteelSeries Arena 9 US',
@@ -5111,6 +5528,7 @@ export const data = {
          manufacturer: 'SteelSeries',
          id: '944a86b4-3e84-4c2a-af21-6b4b13285409',
          category: 'speakers',
+         slug: 'steelseries-arena-9-us',
       },
       {
          name: 'Edifier MR4',
@@ -5122,6 +5540,7 @@ export const data = {
          manufacturer: 'Edifier',
          id: '9bd0ae87-b0b5-4982-b0f3-e65ad7df92cd',
          category: 'speakers',
+         slug: 'edifier-mr4',
       },
    ],
    ups: [
@@ -5133,6 +5552,7 @@ export const data = {
          manufacturer: 'APC',
          id: '7f18410c-be7c-4a07-9971-857fcc2baefd',
          category: 'ups',
+         slug: 'apc-surt20krmxlt',
       },
       {
          name: 'CyberPower CP1500PFCLCD',
@@ -5142,6 +5562,7 @@ export const data = {
          manufacturer: 'CyberPower',
          id: '221e1ca7-c139-4255-8601-32681ac9b83d',
          category: 'ups',
+         slug: 'cyberpower-cp1500pfclcd',
       },
       {
          name: 'APC SRT10KXLT',
@@ -5151,6 +5572,7 @@ export const data = {
          manufacturer: 'APC',
          id: 'a8429184-526c-4261-972a-425f3bde4de2',
          category: 'ups',
+         slug: 'apc-srt10kxlt',
       },
       {
          name: 'APC SRT10KRMXLT',
@@ -5160,6 +5582,7 @@ export const data = {
          manufacturer: 'APC',
          id: 'c38f9ceb-eace-4fb9-9f65-443cebaf662c',
          category: 'ups',
+         slug: 'apc-srt10krmxlt',
       },
       {
          name: 'APC Back-UPS 1500',
@@ -5169,6 +5592,7 @@ export const data = {
          manufacturer: 'APC',
          id: '73890c5f-99d3-4345-a7bc-dcad97d1d4f8',
          category: 'ups',
+         slug: 'apc-back-ups-1500',
       },
       {
          name: 'CyberPower CP1500AVRLCD',
@@ -5178,6 +5602,7 @@ export const data = {
          manufacturer: 'CyberPower',
          id: '7b1bf356-b5cd-4e7a-9a42-b301de68a763',
          category: 'ups',
+         slug: 'cyberpower-cp1500avrlcd',
       },
       {
          name: 'APC SRT10KXLI',
@@ -5187,6 +5612,7 @@ export const data = {
          manufacturer: 'APC',
          id: '96fdc484-0d32-48b7-97d8-e8b22435a990',
          category: 'ups',
+         slug: 'apc-srt10kxli',
       },
       {
          name: 'APC SRT10KRMXLI',
@@ -5196,6 +5622,7 @@ export const data = {
          manufacturer: 'APC',
          id: '2e79abdf-2fed-4767-8738-9b76a017eceb',
          category: 'ups',
+         slug: 'apc-srt10krmxli',
       },
       {
          name: 'APC Back-UPS Pro 1500S',
@@ -5205,6 +5632,7 @@ export const data = {
          manufacturer: 'APC',
          id: '68250f19-805f-465f-b66d-8631cd281324',
          category: 'ups',
+         slug: 'apc-back-ups-pro-1500s',
       },
       {
          name: 'APC SURTA3000XL',
@@ -5214,6 +5642,7 @@ export const data = {
          manufacturer: 'APC',
          id: 'acec5338-9b47-4e78-992d-a9ae61473160',
          category: 'ups',
+         slug: 'apc-surta3000xl',
       },
       {
          name: 'CyberPower CP1000PFCLCD',
@@ -5223,6 +5652,7 @@ export const data = {
          manufacturer: 'CyberPower',
          id: '1acb6063-5c8f-4dbf-9fcc-d2fb8bd22524',
          category: 'ups',
+         slug: 'cyberpower-cp1000pfclcd',
       },
       {
          name: 'CyberPower CP1500AVRLCD3',
@@ -5232,6 +5662,7 @@ export const data = {
          manufacturer: 'CyberPower',
          id: 'b55fe723-4b5b-4547-bac9-fd6e1bb60058',
          category: 'ups',
+         slug: 'cyberpower-cp1500avrlcd3',
       },
       {
          name: 'CyberPower PR2200LCDSL',
@@ -5241,6 +5672,7 @@ export const data = {
          manufacturer: 'CyberPower',
          id: 'cbde58ae-afb7-4af2-8ff6-50794e4e6fb8',
          category: 'ups',
+         slug: 'cyberpower-pr2200lcdsl',
       },
       {
          name: 'CyberPower ST425',
@@ -5250,6 +5682,7 @@ export const data = {
          manufacturer: 'CyberPower',
          id: 'c643690e-3c22-482d-af7b-ebb8406612a8',
          category: 'ups',
+         slug: 'cyberpower-st425',
       },
       {
          name: 'CyberPower CP550SLG',
@@ -5259,6 +5692,7 @@ export const data = {
          manufacturer: 'CyberPower',
          id: '48c45dbe-1882-4152-a9a9-46d4fdeb5462',
          category: 'ups',
+         slug: 'cyberpower-cp550slg',
       },
       {
          name: 'APC Back-UPS Pro 1500VA',
@@ -5268,6 +5702,7 @@ export const data = {
          manufacturer: 'APC',
          id: '7c5392e5-e6e1-4311-b4fd-61f040c5573e',
          category: 'ups',
+         slug: 'apc-back-ups-pro-1500va',
       },
       {
          name: 'APC Back-UPS Pro 1500',
@@ -5277,6 +5712,7 @@ export const data = {
          manufacturer: 'APC',
          id: 'c3f13440-9132-478f-bcae-8a5b7a9f05eb',
          category: 'ups',
+         slug: 'apc-back-ups-pro-1500',
       },
       {
          name: 'CyberPower PR3000LCD',
@@ -5286,6 +5722,7 @@ export const data = {
          manufacturer: 'CyberPower',
          id: '638844b6-d41b-4fca-b522-b87e8cb3a97a',
          category: 'ups',
+         slug: 'cyberpower-pr3000lcd',
       },
       {
          name: 'APC Back-UPS Pro 1500VA for Gaming',
@@ -5295,6 +5732,7 @@ export const data = {
          manufacturer: 'APC',
          id: '6679d31a-bc36-4887-894a-4cb06915ba70',
          category: 'ups',
+         slug: 'apc-back-ups-pro-1500va-for-gaming',
       },
       {
          name: 'CyberPower EC850LCD',
@@ -5304,6 +5742,7 @@ export const data = {
          manufacturer: 'CyberPower',
          id: 'bb8604a0-0c02-412c-a59d-2e029a289f3e',
          category: 'ups',
+         slug: 'cyberpower-ec850lcd',
       },
       {
          name: 'CyberPower OR2200PFCRT2U',
@@ -5313,6 +5752,7 @@ export const data = {
          manufacturer: 'CyberPower',
          id: '957c7aa5-f425-498a-b278-be0cd0144ff9',
          category: 'ups',
+         slug: 'cyberpower-or2200pfcrt2u',
       },
       {
          name: 'CyberPower PR2200LCD',
@@ -5322,6 +5762,7 @@ export const data = {
          manufacturer: 'CyberPower',
          id: 'a248e3d8-ca33-4ce6-aa9a-353282b5a5f5',
          category: 'ups',
+         slug: 'cyberpower-pr2200lcd',
       },
       {
          name: 'APC SMT2200I',
@@ -5331,6 +5772,7 @@ export const data = {
          manufacturer: 'APC',
          id: '9e650538-6a1b-430a-80c8-152629827147',
          category: 'ups',
+         slug: 'apc-smt2200i',
       },
       {
          name: 'CyberPower AVRG750U',
@@ -5340,6 +5782,7 @@ export const data = {
          manufacturer: 'CyberPower',
          id: 'a31042ba-6fba-4687-a0c1-1fb92624aa5b',
          category: 'ups',
+         slug: 'cyberpower-avrg750u',
       },
    ],
    'video-card': [
@@ -5355,6 +5798,7 @@ export const data = {
          manufacturer: 'MSI',
          id: '1a1fc8ab-5d6e-4c49-9ecd-7958964a1013',
          category: 'video-card',
+         slug: 'msi-geforce-rtx-3060-ventus-2x-12g',
       },
       {
          name: 'Gigabyte WINDFORCE OC',
@@ -5368,6 +5812,7 @@ export const data = {
          manufacturer: 'Gigabyte',
          id: 'f175f01d-f700-42e1-a423-29ac2a99d38d',
          category: 'video-card',
+         slug: 'gigabyte-windforce-oc',
       },
       {
          name: 'ASRock Radeon RX6700XT CLD 12G',
@@ -5381,6 +5826,7 @@ export const data = {
          manufacturer: 'ASRock',
          id: '54d105a6-2c7a-4866-b9f1-2fd11403ceb1',
          category: 'video-card',
+         slug: 'asrock-radeon-rx6700xt-cld-12g',
       },
       {
          name: 'Asus DUAL OC',
@@ -5394,6 +5840,7 @@ export const data = {
          manufacturer: 'Asus',
          id: 'c14d3316-e02d-4021-915b-f4f84b42dfa6',
          category: 'video-card',
+         slug: 'asus-dual-oc',
       },
       {
          name: 'Asus ROG STRIX GAMING OC',
@@ -5407,6 +5854,7 @@ export const data = {
          manufacturer: 'Asus',
          id: '61d03dd1-dd9e-4b70-a09f-bf8a31583614',
          category: 'video-card',
+         slug: 'asus-rog-strix-gaming-oc',
       },
       {
          name: 'Gigabyte EAGLE',
@@ -5420,6 +5868,7 @@ export const data = {
          manufacturer: 'Gigabyte',
          id: '19b9de5a-5045-44ce-8be8-3b38e4b376dc',
          category: 'video-card',
+         slug: 'gigabyte-eagle',
       },
       {
          name: 'ASRock Challenger D',
@@ -5433,6 +5882,7 @@ export const data = {
          manufacturer: 'ASRock',
          id: '6833ef65-a317-43f2-9bcf-a50b570475a5',
          category: 'video-card',
+         slug: 'asrock-challenger-d',
       },
       {
          name: 'Asus TUF GAMING OC',
@@ -5446,6 +5896,7 @@ export const data = {
          manufacturer: 'Asus',
          id: '2b75e243-2965-4f9a-986b-e283b3d631f3',
          category: 'video-card',
+         slug: 'asus-tuf-gaming-oc',
       },
       {
          name: 'Gigabyte GAMING OC',
@@ -5459,6 +5910,7 @@ export const data = {
          manufacturer: 'Gigabyte',
          id: 'efedeb93-84e0-42d8-8cbb-34671c92cd4c',
          category: 'video-card',
+         slug: 'gigabyte-gaming-oc',
       },
       {
          name: 'PNY VCNRTX6000ADA-PB',
@@ -5472,6 +5924,7 @@ export const data = {
          manufacturer: 'PNY',
          id: '3021e375-a0a1-4001-b0b0-ee0dced62e54',
          category: 'video-card',
+         slug: 'pny-vcnrtx6000ada-pb',
       },
       {
          name: 'Asus DUAL OC',
@@ -5485,6 +5938,7 @@ export const data = {
          manufacturer: 'Asus',
          id: '6a5c4bc3-e73b-41cf-9227-92ea3fc2db87',
          category: 'video-card',
+         slug: 'asus-dual-oc',
       },
       {
          name: 'MSI VENTUS 2X BLACK OC',
@@ -5498,6 +5952,7 @@ export const data = {
          manufacturer: 'MSI',
          id: '7e12b768-2cbf-4853-9bad-74b93f99b171',
          category: 'video-card',
+         slug: 'msi-ventus-2x-black-oc',
       },
       {
          name: 'Sapphire PULSE',
@@ -5511,6 +5966,7 @@ export const data = {
          manufacturer: 'Sapphire',
          id: '23e428d9-dbf3-49d9-85e3-d24018f93b8f',
          category: 'video-card',
+         slug: 'sapphire-pulse',
       },
       {
          name: 'XFX Speedster MERC 310 Black Edition',
@@ -5524,6 +5980,7 @@ export const data = {
          manufacturer: 'XFX',
          id: '83c328bb-1dbc-4f6f-99e8-aacd6dfc9c05',
          category: 'video-card',
+         slug: 'xfx-speedster-merc-310-black-edition',
       },
       {
          name: 'NVIDIA Founders Edition',
@@ -5537,6 +5994,7 @@ export const data = {
          manufacturer: 'NVIDIA',
          id: 'a1213f8e-25aa-441b-b93c-03538c29c6a1',
          category: 'video-card',
+         slug: 'nvidia-founders-edition',
       },
       {
          name: 'XFX GTR XXX',
@@ -5550,6 +6008,7 @@ export const data = {
          manufacturer: 'XFX',
          id: '1fe55eed-d57e-4ce6-a951-e55a020dd960',
          category: 'video-card',
+         slug: 'xfx-gtr-xxx',
       },
       {
          name: 'Gigabyte AERO OC',
@@ -5563,6 +6022,7 @@ export const data = {
          manufacturer: 'Gigabyte',
          id: 'c8dca448-d0a8-45bb-99c2-b409e77d21a4',
          category: 'video-card',
+         slug: 'gigabyte-aero-oc',
       },
       {
          name: 'MSI RTX 3060 Ventus 3X 12G OC',
@@ -5576,6 +6036,7 @@ export const data = {
          manufacturer: 'MSI',
          id: 'dcfab849-4a45-4728-8366-8ff0436808cc',
          category: 'video-card',
+         slug: 'msi-rtx-3060-ventus-3x-12g-oc',
       },
       {
          name: 'MSI VENTUS 3X OC',
@@ -5589,6 +6050,7 @@ export const data = {
          manufacturer: 'MSI',
          id: '80830732-408f-4633-b2fe-24c54506b1d5',
          category: 'video-card',
+         slug: 'msi-ventus-3x-oc',
       },
       {
          name: 'Gigabyte WINDFORCE OC',
@@ -5602,6 +6064,7 @@ export const data = {
          manufacturer: 'Gigabyte',
          id: 'c13f4251-ff0e-498d-b645-0392352df842',
          category: 'video-card',
+         slug: 'gigabyte-windforce-oc',
       },
       {
          name: 'XFX Speedster SWFT 319',
@@ -5615,6 +6078,7 @@ export const data = {
          manufacturer: 'XFX',
          id: '54dedbb3-315a-4bcf-b853-6a17fd7fbeb0',
          category: 'video-card',
+         slug: 'xfx-speedster-swft-319',
       },
       {
          name: 'Asus ROG STRIX GAMING OC',
@@ -5628,6 +6092,7 @@ export const data = {
          manufacturer: 'Asus',
          id: 'c2a592d2-eb81-4248-a5d8-b5ee15efd858',
          category: 'video-card',
+         slug: 'asus-rog-strix-gaming-oc',
       },
       {
          name: 'XFX Speedster MERC 310 Black Edition',
@@ -5641,6 +6106,7 @@ export const data = {
          manufacturer: 'XFX',
          id: '5e6b370c-ad2d-4211-a7fe-a2ea2a413ca1',
          category: 'video-card',
+         slug: 'xfx-speedster-merc-310-black-edition',
       },
       {
          name: 'PowerColor Fighter',
@@ -5654,6 +6120,7 @@ export const data = {
          manufacturer: 'PowerColor',
          id: '686843b0-3173-40cd-974e-e0cd8321b417',
          category: 'video-card',
+         slug: 'powercolor-fighter',
       },
    ],
    webcam: [
@@ -5668,6 +6135,7 @@ export const data = {
          manufacturer: 'Logitech',
          id: 'e2392dfc-d028-4e54-9614-6850d906667c',
          category: 'webcam',
+         slug: 'logitech-brio-ultra-hd-pro',
       },
       {
          name: 'OBSBOT Tiny 2',
@@ -5680,6 +6148,7 @@ export const data = {
          manufacturer: 'OBSBOT',
          id: 'c1f65f86-db57-416c-af61-8b4cd1e68af8',
          category: 'webcam',
+         slug: 'obsbot-tiny-2',
       },
       {
          name: 'Razer Kiyo Pro Ultra',
@@ -5692,6 +6161,7 @@ export const data = {
          manufacturer: 'Razer',
          id: '1714f659-f048-41e3-90a0-ad585da3571f',
          category: 'webcam',
+         slug: 'razer-kiyo-pro-ultra',
       },
       {
          name: 'Logitech C920 HD Pro',
@@ -5704,6 +6174,7 @@ export const data = {
          manufacturer: 'Logitech',
          id: 'eb110c09-90e4-4cf5-9de4-544c833c0d64',
          category: 'webcam',
+         slug: 'logitech-c920-hd-pro',
       },
       {
          name: 'Elgato Facecam Pro',
@@ -5716,6 +6187,7 @@ export const data = {
          manufacturer: 'Elgato',
          id: '17dc7281-5745-4f47-80a9-38c4250e895a',
          category: 'webcam',
+         slug: 'elgato-facecam-pro',
       },
       {
          name: 'Insta360 Insta360 Link',
@@ -5728,6 +6200,7 @@ export const data = {
          manufacturer: 'Insta360',
          id: '3fd51750-effa-43ae-9c04-7b43810f1a0d',
          category: 'webcam',
+         slug: 'insta360-insta360-link',
       },
       {
          name: 'Logitech C270',
@@ -5740,6 +6213,7 @@ export const data = {
          manufacturer: 'Logitech',
          id: 'b5944ef2-340b-42b6-bf00-851a44084cbe',
          category: 'webcam',
+         slug: 'logitech-c270',
       },
       {
          name: 'Anker PowerConf C200',
@@ -5752,6 +6226,7 @@ export const data = {
          manufacturer: 'Anker',
          id: '9e3842d3-9177-4bfa-803d-82b8936c2035',
          category: 'webcam',
+         slug: 'anker-powerconf-c200',
       },
       {
          name: 'Logitech C922 Pro Stream HD',
@@ -5764,6 +6239,7 @@ export const data = {
          manufacturer: 'Logitech',
          id: '88e33142-f42a-41a1-98fe-afb0f22002b6',
          category: 'webcam',
+         slug: 'logitech-c922-pro-stream-hd',
       },
       {
          name: 'Razer Kiyo',
@@ -5776,6 +6252,7 @@ export const data = {
          manufacturer: 'Razer',
          id: 'f9591b3f-a0ba-434e-b870-94210a1aabce',
          category: 'webcam',
+         slug: 'razer-kiyo',
       },
       {
          name: 'Logitech C920s HD Pro',
@@ -5788,6 +6265,7 @@ export const data = {
          manufacturer: 'Logitech',
          id: '502a29d6-ecd7-4ffc-a455-6ee9d6da58e4',
          category: 'webcam',
+         slug: 'logitech-c920s-hd-pro',
       },
       {
          name: 'Elgato Facecam Premium',
@@ -5800,6 +6278,7 @@ export const data = {
          manufacturer: 'Elgato',
          id: 'd4593fdf-288d-4dd8-8e73-587ddc3adff0',
          category: 'webcam',
+         slug: 'elgato-facecam-premium',
       },
       {
          name: 'Razer Kiyo Pro',
@@ -5812,6 +6291,7 @@ export const data = {
          manufacturer: 'Razer',
          id: 'f18ee0c7-4dc0-45c0-8331-7f0db57bb7ac',
          category: 'webcam',
+         slug: 'razer-kiyo-pro',
       },
       {
          name: 'Green Extreme T200',
@@ -5824,6 +6304,7 @@ export const data = {
          manufacturer: 'Green',
          id: '795f2499-ddb0-4e44-a095-4699833772b6',
          category: 'webcam',
+         slug: 'green-extreme-t200',
       },
       {
          name: 'Adesso CyberTrack H3',
@@ -5836,6 +6317,7 @@ export const data = {
          manufacturer: 'Adesso',
          id: '7a93da70-d43e-4922-b89e-e2451aa4c9f1',
          category: 'webcam',
+         slug: 'adesso-cybertrack-h3',
       },
       {
          name: 'Logitech C925e',
@@ -5848,6 +6330,7 @@ export const data = {
          manufacturer: 'Logitech',
          id: '78e97ead-2342-4190-b13d-0ce826acd73c',
          category: 'webcam',
+         slug: 'logitech-c925e',
       },
       {
          name: 'Razer Kiyo X',
@@ -5860,6 +6343,7 @@ export const data = {
          manufacturer: 'Razer',
          id: '5acf002c-9739-4b37-9399-c6327cdaa17e',
          category: 'webcam',
+         slug: 'razer-kiyo-x',
       },
       {
          name: 'Logitech StreamCam',
@@ -5872,6 +6356,7 @@ export const data = {
          manufacturer: 'Logitech',
          id: 'b522c098-ca40-4ade-8c66-830fc9b834e8',
          category: 'webcam',
+         slug: 'logitech-streamcam',
       },
       {
          name: 'aoni A31',
@@ -5884,6 +6369,7 @@ export const data = {
          manufacturer: 'aoni',
          id: 'b44ed6ac-1410-4a7b-90ac-b1f3e7cf4e38',
          category: 'webcam',
+         slug: 'aoni-a31',
       },
       {
          name: 'OBSBOT Tiny 4K',
@@ -5896,6 +6382,7 @@ export const data = {
          manufacturer: 'OBSBOT',
          id: 'b749baf5-01c8-4402-ac4f-cfd89dc6f13e',
          category: 'webcam',
+         slug: 'obsbot-tiny-4k',
       },
       {
          name: 'Logitech StreamCam',
@@ -5908,6 +6395,7 @@ export const data = {
          manufacturer: 'Logitech',
          id: '65c28d72-5816-4a5e-ae18-768472f4cb02',
          category: 'webcam',
+         slug: 'logitech-streamcam',
       },
       {
          name: 'Adesso Cybertrack H6',
@@ -5920,6 +6408,7 @@ export const data = {
          manufacturer: 'Adesso',
          id: '895608a8-8883-404c-b71a-cb8b29b3c682',
          category: 'webcam',
+         slug: 'adesso-cybertrack-h6',
       },
       {
          name: 'Avermedia PW513',
@@ -5932,6 +6421,7 @@ export const data = {
          manufacturer: 'Avermedia',
          id: '78d43c3e-cee8-4e71-954c-82ccefeef316',
          category: 'webcam',
+         slug: 'avermedia-pw513',
       },
       {
          name: 'Adesso Cybertrack H2',
@@ -5944,6 +6434,7 @@ export const data = {
          manufacturer: 'Adesso',
          id: 'd7946e1d-9e35-49e2-a87d-a0b2862233c3',
          category: 'webcam',
+         slug: 'adesso-cybertrack-h2',
       },
    ],
    'wired-network-card': [
@@ -5955,6 +6446,7 @@ export const data = {
          manufacturer: 'TP-Link',
          id: 'f2979731-cb27-479d-bb70-292113e1f264',
          category: 'wired-network-card',
+         slug: 'tp-link-tg-3468',
       },
       {
          name: 'Intel E1G44ET2BLK',
@@ -5964,6 +6456,7 @@ export const data = {
          manufacturer: 'Intel',
          id: 'd51473c8-b234-4477-a70c-b255ebf3e5b3',
          category: 'wired-network-card',
+         slug: 'intel-e1g44et2blk',
       },
       {
          name: 'Asus XG-C100C',
@@ -5973,6 +6466,7 @@ export const data = {
          manufacturer: 'Asus',
          id: '16f50bfe-a09a-4543-ab0e-443ec73442e5',
          category: 'wired-network-card',
+         slug: 'asus-xg-c100c',
       },
       {
          name: 'Intel X540-T2',
@@ -5982,6 +6476,7 @@ export const data = {
          manufacturer: 'Intel',
          id: 'd393b322-51cd-4977-b78a-bb76246fcb74',
          category: 'wired-network-card',
+         slug: 'intel-x540-t2',
       },
       {
          name: 'TP-Link TX201',
@@ -5991,6 +6486,7 @@ export const data = {
          manufacturer: 'TP-Link',
          id: '811b42f5-1ee8-4f1f-bdac-6844873ae31a',
          category: 'wired-network-card',
+         slug: 'tp-link-tx201',
       },
       {
          name: 'StarTech ST1000SPEX42',
@@ -6000,6 +6496,7 @@ export const data = {
          manufacturer: 'StarTech',
          id: 'edbbbb64-69dd-4fe4-8b5f-486b50e8fcb7',
          category: 'wired-network-card',
+         slug: 'startech-st1000spex42',
       },
       {
          name: 'Intel X550-T2',
@@ -6009,6 +6506,7 @@ export const data = {
          manufacturer: 'Intel',
          id: '6cca6c7c-e337-4f9b-a964-1c15bbffad07',
          category: 'wired-network-card',
+         slug: 'intel-x550-t2',
       },
       {
          name: 'TP-Link TX401',
@@ -6018,6 +6516,7 @@ export const data = {
          manufacturer: 'TP-Link',
          id: '29d2e1dd-70f7-4f99-93d4-25dacab38f97',
          category: 'wired-network-card',
+         slug: 'tp-link-tx401',
       },
       {
          name: 'Intel EXPI9301CTBLK',
@@ -6027,6 +6526,7 @@ export const data = {
          manufacturer: 'Intel',
          id: '3f358d51-3183-4eb0-8e20-9d6cdc9e365b',
          category: 'wired-network-card',
+         slug: 'intel-expi9301ctblk',
       },
       {
          name: 'Intel E1G42ETBLK',
@@ -6036,6 +6536,7 @@ export const data = {
          manufacturer: 'Intel',
          id: '635d5122-faf2-4813-a02b-c24101242dad',
          category: 'wired-network-card',
+         slug: 'intel-e1g42etblk',
       },
       {
          name: 'Gigabyte GC-AQC107',
@@ -6045,6 +6546,7 @@ export const data = {
          manufacturer: 'Gigabyte',
          id: 'b465f9e4-fc1c-49da-be96-14c00e386e46',
          category: 'wired-network-card',
+         slug: 'gigabyte-gc-aqc107',
       },
       {
          name: 'TRENDnet TRENDnet TEG-10GECTX 10 Gigabit PCIe Network Adapter',
@@ -6054,6 +6556,7 @@ export const data = {
          manufacturer: 'TRENDnet',
          id: 'eb27c015-b279-4b70-b0cd-50f7854efbc0',
          category: 'wired-network-card',
+         slug: 'trendnet-trendnet-teg-10gectx-10-gigabit-pcie-network-adapter',
       },
       {
          name: 'QNAP QXG2G2TI225',
@@ -6063,6 +6566,7 @@ export const data = {
          manufacturer: 'QNAP',
          id: '63b8f140-76b5-405a-b081-0b44c74ea56c',
          category: 'wired-network-card',
+         slug: 'qnap-qxg2g2ti225',
       },
       {
          name: 'Intel X520-DA1',
@@ -6072,6 +6576,7 @@ export const data = {
          manufacturer: 'Intel',
          id: '3964eb35-17ba-4a9f-a52d-27e02705c99c',
          category: 'wired-network-card',
+         slug: 'intel-x520-da1',
       },
       {
          name: 'StarTech ST10GSPEXNB2',
@@ -6081,6 +6586,7 @@ export const data = {
          manufacturer: 'StarTech',
          id: '468f5d5a-ae8b-4beb-bbdd-10e22b62b16f',
          category: 'wired-network-card',
+         slug: 'startech-st10gspexnb2',
       },
       {
          name: 'Syba SY-ADA24029',
@@ -6090,6 +6596,7 @@ export const data = {
          manufacturer: 'Syba',
          id: 'bd706233-25f7-4e02-a7bb-dd52889f1d90',
          category: 'wired-network-card',
+         slug: 'syba-sy-ada24029',
       },
       {
          name: 'Intel X710-T2L',
@@ -6099,6 +6606,7 @@ export const data = {
          manufacturer: 'Intel',
          id: 'c96a7d4f-6993-4072-8465-44a580bfb35e',
          category: 'wired-network-card',
+         slug: 'intel-x710-t2l',
       },
       {
          name: 'Intel E1G44HTBLK',
@@ -6108,6 +6616,7 @@ export const data = {
          manufacturer: 'Intel',
          id: '968e8363-b11f-4e03-8f5b-cd1257cbba4c',
          category: 'wired-network-card',
+         slug: 'intel-e1g44htblk',
       },
       {
          name: 'TRENDnet TEG-25GECTX',
@@ -6117,6 +6626,7 @@ export const data = {
          manufacturer: 'TRENDnet',
          id: '32fddbab-59b3-47ce-87d4-9de0ad961cad',
          category: 'wired-network-card',
+         slug: 'trendnet-teg-25gectx',
       },
       {
          name: 'Intel EXPI9301CT',
@@ -6126,6 +6636,7 @@ export const data = {
          manufacturer: 'Intel',
          id: '92b4e6c7-e1c1-4248-ba08-bcd9bb1e73a2',
          category: 'wired-network-card',
+         slug: 'intel-expi9301ct',
       },
       {
          name: 'Syba SI-PEX24042',
@@ -6135,6 +6646,7 @@ export const data = {
          manufacturer: 'Syba',
          id: 'ef72a6ff-1074-4c93-86fe-555a721ec19e',
          category: 'wired-network-card',
+         slug: 'syba-si-pex24042',
       },
       {
          name: 'Linksys USB3GIG',
@@ -6144,6 +6656,7 @@ export const data = {
          manufacturer: 'Linksys',
          id: '3b2a565d-0b97-4e1d-baf0-10669c5666c6',
          category: 'wired-network-card',
+         slug: 'linksys-usb3gig',
       },
       {
          name: 'TRENDnet TUC-ET2G',
@@ -6153,6 +6666,7 @@ export const data = {
          manufacturer: 'TRENDnet',
          id: 'ceb02d62-ca06-4c84-b875-455ccd4f4b0f',
          category: 'wired-network-card',
+         slug: 'trendnet-tuc-et2g',
       },
       {
          name: 'TP-Link UE300',
@@ -6162,6 +6676,7 @@ export const data = {
          manufacturer: 'TP-Link',
          id: '7529b64a-6c72-4845-a1ac-9361c1190b0a',
          category: 'wired-network-card',
+         slug: 'tp-link-ue300',
       },
       {
          name: 'QNAP QXG5G1T111C',
@@ -6171,6 +6686,7 @@ export const data = {
          manufacturer: 'QNAP',
          id: 'ca62c1e9-af6c-45b8-af03-59790768ece8',
          category: 'wired-network-card',
+         slug: 'qnap-qxg5g1t111c',
       },
    ],
    'wireless-network-card': [
@@ -6183,6 +6699,7 @@ export const data = {
          manufacturer: 'Gigabyte',
          id: '1f949d7f-bb6e-4e6c-a48c-9c3f1943c039',
          category: 'wireless-network-card',
+         slug: 'gigabyte-gc-wbax210',
       },
       {
          name: 'Asus PCE-AX3000',
@@ -6193,6 +6710,7 @@ export const data = {
          manufacturer: 'Asus',
          id: '108c0c28-281e-40a9-be1d-bd7205226a26',
          category: 'wireless-network-card',
+         slug: 'asus-pce-ax3000',
       },
       {
          name: 'TP-Link TL-WN881ND',
@@ -6203,6 +6721,7 @@ export const data = {
          manufacturer: 'TP-Link',
          id: '99feafd0-d51a-4a3d-8c81-77db2390af0f',
          category: 'wireless-network-card',
+         slug: 'tp-link-tl-wn881nd',
       },
       {
          name: 'Intel AX200',
@@ -6213,6 +6732,7 @@ export const data = {
          manufacturer: 'Intel',
          id: 'b313f354-a1fb-43e2-bdb3-26a4a489f588',
          category: 'wireless-network-card',
+         slug: 'intel-ax200',
       },
       {
          name: 'TP-Link Archer TX3000E',
@@ -6223,6 +6743,7 @@ export const data = {
          manufacturer: 'TP-Link',
          id: '918f15da-e27a-4bfa-be70-14664640acc6',
          category: 'wireless-network-card',
+         slug: 'tp-link-archer-tx3000e',
       },
       {
          name: 'EDUP EP-9651GS',
@@ -6233,6 +6754,7 @@ export const data = {
          manufacturer: 'EDUP',
          id: 'cdee3bc5-7229-4808-b92e-cb9ad9d6e9e7',
          category: 'wireless-network-card',
+         slug: 'edup-ep-9651gs',
       },
       {
          name: 'Asus USB-N53',
@@ -6243,6 +6765,7 @@ export const data = {
          manufacturer: 'Asus',
          id: 'a471a572-bb5e-4db2-8b4d-e974d41965c0',
          category: 'wireless-network-card',
+         slug: 'asus-usb-n53',
       },
       {
          name: 'TP-Link Archer TX55E',
@@ -6253,6 +6776,7 @@ export const data = {
          manufacturer: 'TP-Link',
          id: 'db466510-f4d0-4900-8de3-ffe595fd578b',
          category: 'wireless-network-card',
+         slug: 'tp-link-archer-tx55e',
       },
       {
          name: 'Asus PCE-AXE58BT',
@@ -6263,6 +6787,7 @@ export const data = {
          manufacturer: 'Asus',
          id: 'fbadba67-1caa-43ca-befb-0f658fa194d3',
          category: 'wireless-network-card',
+         slug: 'asus-pce-axe58bt',
       },
       {
          name: 'TP-Link Archer TX50E',
@@ -6273,6 +6798,7 @@ export const data = {
          manufacturer: 'TP-Link',
          id: '673946a8-5643-45fa-aaf6-971bb735c33b',
          category: 'wireless-network-card',
+         slug: 'tp-link-archer-tx50e',
       },
       {
          name: 'Asus PCE-AC88',
@@ -6283,6 +6809,7 @@ export const data = {
          manufacturer: 'Asus',
          id: '0ae764e5-915f-4ec3-8cf2-1c348a655ed6',
          category: 'wireless-network-card',
+         slug: 'asus-pce-ac88',
       },
       {
          name: 'Gigabyte GC-WBAX200',
@@ -6293,6 +6820,7 @@ export const data = {
          manufacturer: 'Gigabyte',
          id: '64d57399-d75a-424d-a1cf-c611a89be85f',
          category: 'wireless-network-card',
+         slug: 'gigabyte-gc-wbax200',
       },
       {
          name: 'TP-Link ARCHER T2U PLUS',
@@ -6303,6 +6831,7 @@ export const data = {
          manufacturer: 'TP-Link',
          id: 'df786c9d-bcf3-4194-88a4-0e97aec28370',
          category: 'wireless-network-card',
+         slug: 'tp-link-archer-t2u-plus',
       },
       {
          name: 'TP-Link ARCHER T2E',
@@ -6313,6 +6842,7 @@ export const data = {
          manufacturer: 'TP-Link',
          id: '17d84de6-1736-4e6b-82fc-4183e4fbdaca',
          category: 'wireless-network-card',
+         slug: 'tp-link-archer-t2e',
       },
       {
          name: 'TP-Link Archer T5E',
@@ -6323,6 +6853,7 @@ export const data = {
          manufacturer: 'TP-Link',
          id: '014eb244-783c-4967-ad72-1661f33880d7',
          category: 'wireless-network-card',
+         slug: 'tp-link-archer-t5e',
       },
       {
          name: 'EDUP EP-9636GS-BL',
@@ -6333,6 +6864,7 @@ export const data = {
          manufacturer: 'EDUP',
          id: '104d4cb7-964e-416e-9712-91c141295510',
          category: 'wireless-network-card',
+         slug: 'edup-ep-9636gs-bl',
       },
       {
          name: 'Ziyituod ZYT-AX210S',
@@ -6343,6 +6875,7 @@ export const data = {
          manufacturer: 'Ziyituod',
          id: '1c2a0419-5843-48c8-95ae-94e251a522ea',
          category: 'wireless-network-card',
+         slug: 'ziyituod-zyt-ax210s',
       },
       {
          name: 'TP-Link Archer T3U Plus',
@@ -6353,6 +6886,7 @@ export const data = {
          manufacturer: 'TP-Link',
          id: 'aad24d4a-5fad-4c7a-b7de-c04b66503fee',
          category: 'wireless-network-card',
+         slug: 'tp-link-archer-t3u-plus',
       },
       {
          name: 'EDUP EP-9651',
@@ -6363,6 +6897,7 @@ export const data = {
          manufacturer: 'EDUP',
          id: '64927ee6-7799-4fd8-b421-1a9a7149cc53',
          category: 'wireless-network-card',
+         slug: 'edup-ep-9651',
       },
       {
          name: 'TP-Link TL-WDN4800',
@@ -6373,6 +6908,7 @@ export const data = {
          manufacturer: 'TP-Link',
          id: '1ddff8c7-02c0-4910-82ec-8319ecc13ff1',
          category: 'wireless-network-card',
+         slug: 'tp-link-tl-wdn4800',
       },
       {
          name: 'Patriot PCBOWAU2-N',
@@ -6383,6 +6919,7 @@ export const data = {
          manufacturer: 'Patriot',
          id: '0c71df67-d337-4faf-bf5c-fff77559e004',
          category: 'wireless-network-card',
+         slug: 'patriot-pcbowau2-n',
       },
       {
          name: 'TP-Link TL-WN725N',
@@ -6393,6 +6930,7 @@ export const data = {
          manufacturer: 'TP-Link',
          id: '74183ff4-bc97-47d0-abbd-837bb1e1f07d',
          category: 'wireless-network-card',
+         slug: 'tp-link-tl-wn725n',
       },
       {
          name: 'TP-Link Archer T4E',
@@ -6403,6 +6941,7 @@ export const data = {
          manufacturer: 'TP-Link',
          id: '2720558a-9206-44f6-9615-9a6f2731dd71',
          category: 'wireless-network-card',
+         slug: 'tp-link-archer-t4e',
       },
       {
          name: 'TP-Link Archer TX20U plus',
@@ -6413,6 +6952,7 @@ export const data = {
          manufacturer: 'TP-Link',
          id: 'c14967a0-ce5f-4b2c-9710-5c3522f1fc59',
          category: 'wireless-network-card',
+         slug: 'tp-link-archer-tx20u-plus',
       },
    ],
 };

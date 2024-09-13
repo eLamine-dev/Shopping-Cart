@@ -9,7 +9,7 @@ function ProductCard({ product, selectedCategory, selectedManufacturer }) {
          <p>Price: ${product.price}</p>
          {selectedManufacturer ? (
             <NavLink
-               to={`/shop/${selectedCategory}/${selectedManufacturer}/${product.id}`}
+               to={`/shop/${selectedCategory}/manufacturer/${selectedManufacturer}/${product.id}`}
             >
                View Details
             </NavLink>
@@ -25,7 +25,7 @@ function ProductCard({ product, selectedCategory, selectedManufacturer }) {
 
 ProductCard.propTypes = {
    product: PropTypes.object.isRequired,
-   selectedCategory: PropTypes.string.isRequired,
+   selectedCategory: PropTypes.string,
    selectedManufacturer: PropTypes.string,
 };
 
