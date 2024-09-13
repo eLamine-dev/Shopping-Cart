@@ -7,13 +7,20 @@ import Filter from '../components/FilterSidebar';
 function ShopPage() {
    const products = useOutletContext();
    const [randomProducts, setRandomProducts] = useState([]);
-   const { category } = useParams();
+   const { category, manufacturer } = useParams();
+   const [filteredProducts, setFilteredProducts] = useState([]);
 
-   const [filters, setFilters] = useState({
-      category: '',
-      manufacturer: '',
-      priceRange: { min: 0, max: 10000 },
-   });
+   useEffect(() => {
+      const filteredProductsList = category
+         ? manufacturer
+            ? products[category].filter(
+                 (product) => product.manufacturer === manufacturer
+              )
+            : products[category]
+         : [];
+      setFilteredProducts(filteredProductsList);
+      window.scrollTo(0, 0);
+   }, [category, manufacturer]);
 
    useEffect(() => {
       const allProducts = Object.values(products).flat();
@@ -23,31 +30,31 @@ function ShopPage() {
    return (
       <>
          <h1>Shop</h1>
-         <div style={{ display: 'flex' }}>
-            <Filter categories={Object.keys(products)} />
-            {category && (
-               <div className="product-grid">
-                  {products[category].map((product) => (
-                     <ProductLi
-                        key={product.id}
-                        product={product}
-                        category={category}
-                     />
-                  ))}
-               </div>
-            )}
+         <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+            <Filter
+               categories={Object.keys(products)}
+               selectedCategory={category}
+            />
 
-            {!category && (
-               <div className="product-grid">
-                  {randomProducts.map((product) => (
-                     <ProductCard
-                        key={product.id}
-                        product={product}
-                        category={product.category}
-                     />
-                  ))}
-               </div>
-            )}
+            <div className="product-grid">
+               {category
+                  ? filteredProducts.map((product) => (
+                       <ProductLi
+                          key={product.id}
+                          product={product}
+                          selectedCategory={category}
+                          selectedManufacturer={manufacturer}
+                       />
+                    ))
+                  : randomProducts.map((product) => (
+                       <ProductCard
+                          key={product.id}
+                          product={product}
+                          category={product.category}
+                          selectedManufacturer={manufacturer}
+                       />
+                    ))}
+            </div>
          </div>
       </>
    );

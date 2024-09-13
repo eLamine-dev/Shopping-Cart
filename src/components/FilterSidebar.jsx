@@ -1,46 +1,50 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { PropTypes } from 'prop-types';
-import { Link, NavLink, useOutletContext } from 'react-router-dom';
+import { NavLink, useOutletContext } from 'react-router-dom';
 
-export function Filter({ categories }) {
-   let products = useOutletContext();
-   let manufacturers = [];
+function Filter({ categories, selectedCategory }) {
+   const products = useOutletContext();
+   const [manufacturers, setManufacturers] = useState([]);
 
-   const [selectedCategory, setSelectedCategory] = useState(null);
+   useEffect(() => {
+      if (selectedCategory) {
+         const manufacturersList = [
+            ...new Set(
+               products[selectedCategory].map((product) => product.manufacturer)
+            ),
+         ];
+         setManufacturers(manufacturersList);
+      } else {
+         setManufacturers([]);
+      }
+   }, [selectedCategory, products]);
 
-   if (selectedCategory) {
-      products[selectedCategory].forEach((product) => {
-         if (!manufacturers.includes(product.manufacturer)) {
-            manufacturers.push(product.manufacturer);
-         }
-      });
-   }
-
-   function handleCategoryClick(category) {
-      setSelectedCategory(category);
-   }
    return (
       <div>
-         {categories.map((category) => (
-            <li key={category}>
+         <div style={{ display: 'flex', flexDirection: 'column' }}>
+            {categories.map((category) => (
                <NavLink
+                  key={category}
                   to={`/shop/${category}`}
-                  onClick={() => handleCategoryClick(category)}
+                  style={{ textAlign: 'start' }}
                >
                   {category}
                </NavLink>
-            </li>
-         ))}
-         {selectedCategory && (
-            <ul>
+            ))}
+         </div>
+
+         {selectedCategory && manufacturers.length > 0 && (
+            <div style={{ display: 'flex', flexDirection: 'column' }}>
                {manufacturers.map((manufacturer) => (
-                  <li key={manufacturer}>
-                     <Link to={`/shop/${selectedCategory}/${manufacturer}`}>
-                        {manufacturer}
-                     </Link>
-                  </li>
+                  <NavLink
+                     key={manufacturer}
+                     to={`/shop/${selectedCategory}/manufacturers/${manufacturer}`}
+                     style={{ textAlign: 'start' }}
+                  >
+                     {manufacturer}
+                  </NavLink>
                ))}
-            </ul>
+            </div>
          )}
       </div>
    );
@@ -48,6 +52,7 @@ export function Filter({ categories }) {
 
 Filter.propTypes = {
    categories: PropTypes.array.isRequired,
+   selectedCategory: PropTypes.string,
 };
 
 export default Filter;

@@ -2,20 +2,31 @@ import { PropTypes } from 'prop-types';
 import { Link, NavLink } from 'react-router-dom';
 import AddButton from './AddButton';
 
-function ProductLi({ product, category }) {
+function ProductLi({ product, selectedCategory, selectedManufacturer }) {
    return (
-      <li className="product-card">
+      <div className="product-card">
          <h2>{product.name}</h2>
          <p>Price: ${product.price}</p>
-         <NavLink to={`/shop/${category}/${product.id}`}>View Details</NavLink>
+         {selectedManufacturer ? (
+            <NavLink
+               to={`/shop/${selectedCategory}/manufacturer/${selectedManufacturer}/${product.id}`}
+            >
+               View Details
+            </NavLink>
+         ) : (
+            <NavLink to={`/shop/${selectedCategory}/${product.id}`}>
+               View Details
+            </NavLink>
+         )}
          <AddButton product={product} />
-      </li>
+      </div>
    );
 }
 
 ProductLi.propTypes = {
    product: PropTypes.object.isRequired,
-   category: PropTypes.string.isRequired,
+   selectedCategory: PropTypes.string.isRequired,
+   selectedManufacturer: PropTypes.string,
 };
 
 export default ProductLi;
