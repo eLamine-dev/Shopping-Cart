@@ -9,12 +9,12 @@ function ProductLi({ product, selectedCategory, selectedManufacturer }) {
          <p>Price: ${product.price}</p>
          {selectedManufacturer ? (
             <NavLink
-               to={`/shop/${selectedCategory}/manufacturer/${selectedManufacturer}/${product.id}`}
+               to={`/shop/${selectedCategory}/manufacturer/${selectedManufacturer}/${product.slug}`}
             >
                View Details
             </NavLink>
          ) : (
-            <NavLink to={`/shop/${selectedCategory}/${product.id}`}>
+            <NavLink to={`/shop/${selectedCategory}/${product.slug}`}>
                View Details
             </NavLink>
          )}

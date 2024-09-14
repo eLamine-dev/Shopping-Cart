@@ -9,8 +9,14 @@ const BuilderPage = () => {
 
    const [selectedParts, setSelectedParts] = useState({
       cpu: '',
+      'cpu-cooler': '',
+      motherboard: '',
       'video-card': '',
       memory: '',
+      'internal-hard-drive': '',
+      case: '',
+      os: '',
+      'power-supply': '',
    });
 
    const handlePartSelection = (category, event) => {
@@ -66,8 +72,8 @@ const BuilderPage = () => {
             <div>
                <h2>Select GPU</h2>
                <select
-                  value={selectedParts.gpu?.id || ''}
-                  onChange={(e) => handlePartSelection('gpu', e)}
+                  value={selectedParts['video-card']?.id || ''}
+                  onChange={(e) => handlePartSelection('video-card', e)}
                >
                   <option value="">Select a GPU</option>
                   {products['video-card'].map((product) => (
@@ -77,7 +83,7 @@ const BuilderPage = () => {
                   ))}
                </select>
                {selectedParts['video-card'] && (
-                  <span> - ${selectedParts.gpu.price}</span>
+                  <span> - ${selectedParts['video-card'].price}</span>
                )}
             </div>
          </form>

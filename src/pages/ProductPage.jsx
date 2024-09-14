@@ -2,24 +2,28 @@ import { useOutletContext, useParams } from 'react-router-dom';
 import { useLoaderData } from 'react-router-dom';
 import { useContext } from 'react';
 import { CartContext } from '../contexts/CartContext';
+import SpecsTable from '../components/SpecsTable';
 
 function ProductPage() {
-   const { selectedCategory, slectedManufacturer, productId } = useParams();
+   const { selectedCategory, slectedManufacturer, productSlug } = useParams();
 
    const { addToCart } = useContext(CartContext);
    const Products = useOutletContext();
    let product = Object.values(Products)
       .flat()
-      .find((p) => p.id === productId);
+      .find((p) => p.slug === productSlug);
 
    if (!product) {
       return <p>Product not found.</p>;
    }
+
    return (
       <div>
          <h2>{product.name}</h2>
          <p>{product.description}</p>
          <p>{product.price}</p>
+
+         <SpecsTable product={product} />
          <button onClick={() => addToCart(product)}>Add to Cart</button>
       </div>
    );
