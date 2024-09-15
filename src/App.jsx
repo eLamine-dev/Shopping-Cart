@@ -1,10 +1,10 @@
 import Header from './components/Header';
 import Footer from './components/Footer';
-import { Outlet } from 'react-router-dom';
+import { Outlet, useLoaderData } from 'react-router-dom';
 import { CartProvider } from './contexts/CartContext';
-import { useLoaderData } from 'react-router-dom';
+import styled from 'styled-components';
 
-import './assets/css/App.css';
+const Layout = styled.div``;
 
 const App = () => {
    const products = useLoaderData();

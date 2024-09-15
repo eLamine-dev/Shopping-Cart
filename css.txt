@@ -1,0 +1,89 @@
+Within Drupal 10 core, we’re implementing a new auto-filling CSS Grid technique that I think is cool enough to share with the world.
+
+The requirements are:
+
+    The user specifies a maximum number of columns. This is the auto-filling grid’s “natural” state.
+    If a grid cell goes under a user-specified width, the auto-filling grid will readjust itself and decrease the number of columns.
+    The grid cells should always stretch to fit the auto-filling grid container’s width, no matter the column count.
+    All of this should work independent of viewport width and should not require JavaScript.
+
+Screenshot showing the auto-filling CSS Grid's settings in Drupal.
+The auto-filling CSS Grid in action
+
+Here’s how the resulting auto-filling CSS grid behaves when it is compressed by the draggable div element to its left.
+Here’s the code
+
+If you’re not looking for the theory behind the auto-filling grid, and just want to copy/paste code, here you go!
+
+.grid-container {
+  /**
+   * User input values.
+   */
+  --grid-layout-gap: 10px;
+  --grid-column-count: 4;
+  --grid-item--min-width: 100px;
+
+  /**
+   * Calculated values.
+   */
+  --gap-count: calc(var(--grid-column-count) - 1);
+  --total-gap-width: calc(var(--gap-count) * var(--grid-layout-gap));
+  --grid-item--max-width: calc((100% - var(--total-gap-width)) / var(--grid-column-count));
+
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(max(var(--grid-item--min-width), var(--grid-item--max-width)), 1fr));
+  grid-gap: var(--grid-layout-gap);
+}
+
+Theory and tools behind the auto-filling CSS Grid
+
+The code above uses several modern CSS tools including CSS Grid’s repeat(), auto-fill(), and minmax() functions, as well as the CSS max(), and calc() functions. Here’s how it works.
+CSS Grid’s auto-fill() function
+
+The key to all of this is auto-fill(). We need each row to fill up with as many columns as possible. For more info on auto-fill, check out Sara Soueidan’s awesome article on the difference between auto-fill and auto-fit, which includes this helpful video showing how it works.
+
+But how to we make sure that it doesn’t fill in too many columns?
+The CSS max() function
+
+That’s where the max() function comes in! We want each grid cell’s width to max out at a certain percentage, say 25% for a four-column grid. But, we can’t have it go below the user-specified minimum width.
+
+So, assuming a four-column grid and minimum cell width of 100px, the max() function would look something like: max(25%, 100px).
+
+However, the 25% value is still not quite correct because it doesn’t take the grid gaps into account. What we really need is something like this instead:
+
+max(calc(25% - <grid-gap-for-one-cell>), 100px)
+
+We can calc()-ulate this in CSS! (Who says CSS isn’t programming?)
+
+--gap-count: calc(var(--grid-column-count) - 1);
+--total-gap-width: calc(var(--gap-count) * var(--grid-layout-gap));
+--grid-item--max-width: calc((100% - var(--total-gap-width)) / var(--grid-column-count));
+
+Now we have another key to making this work! This will tell the grid cell to go to its maximum width — which takes into account the user-specified columns) — but will never go under 100px.
+
+max(100px, var(--grid-item--max-width))
+
+Learn more about the max() function with Chris Coyier’s article on the CSS min(),max(), and clamp() functions.
+CSS Grid’s minmax() function
+
+We’re getting close, but there’s one key ingredient that’s missing: The grid doesn’t always stretch to its parent’s container’s width.
+
+This is exactly what the minmax() function is designed to do. The following CSS will set the minimum width to the <grid-item-width>, and if it has room, it’ll stretch all the cells out equally to fit the parent’s width!
+
+minmax(<grid-item-width>, 1fr)
+
+Let’s put it all together and make some magic!
+
+Using the tools above, we can put together this magic bit of code that does exactly what we want!
+
+--gap-count: calc(var(--grid-column-count) - 1);
+--total-gap-width: calc(var(--gap-count) * var(--grid-layout-gap));
+--grid-item--max-width: calc((100% - var(--total-gap-width)) / var(--grid-column-count));
+
+grid-template-columns: repeat(auto-fill, minmax(max(var(--grid-item--min-width), var(--grid-item--max-width)), 1fr));
+
+CSS is fun!
+
+CSS has really come a long way. I had a lot of fun working on this, and I’m so happy that use-cases like this are now possible without the use of JavaScript.
+
+Special thanks to Andy Blum, who suggested auto-fill() over auto-fit(). Also, an extremely special thanks to all of the implementors and spec writers who make advanced functions like this standardized and possible.

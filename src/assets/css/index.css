@@ -30,6 +30,15 @@ body {
    min-height: 100vh;
 }
 
+#root {
+   display: grid;
+   grid-template-rows: 140px auto 3rem;
+   flex-grow: 1;
+   /* max-width: 1600px; */
+   /* margin: 0 auto; */
+   min-height: 100vh;
+}
+
 h1 {
    font-size: 3.2em;
    line-height: 1.1;
