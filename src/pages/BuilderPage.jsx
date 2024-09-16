@@ -1,7 +1,7 @@
-import { useState } from 'react';
+import { styled } from 'styled-components';
+import { useState, useContext } from 'react';
 import { useOutletContext } from 'react-router-dom';
 import { CartContext } from '../contexts/CartContext';
-import { useContext } from 'react';
 
 const BuilderPage = () => {
    const products = useOutletContext();
@@ -11,13 +11,15 @@ const BuilderPage = () => {
       cpu: '',
       'cpu-cooler': '',
       motherboard: '',
-      'video-card': '',
       memory: '',
       'internal-hard-drive': '',
+      'video-card': '',
       case: '',
       os: '',
       'power-supply': '',
    });
+
+   const [buildName, setBuildName] = useState('');
 
    const handlePartSelection = (category, event) => {
       const selectedProductId = event.target.value;
@@ -37,10 +39,14 @@ const BuilderPage = () => {
    );
 
    const handleAddToCart = () => {
+      if (!buildName) {
+         alert('Please provide a name for your build.');
+         return;
+      }
+
       const builtPC = {
          id: new Date().toISOString(),
-         name: 'Custom PC Build',
-         description: `Custom PC with selected parts: CPU, GPU, Memory, etc.`,
+         name: buildName,
          price: totalPrice,
          parts: selectedParts,
       };
@@ -49,43 +55,58 @@ const BuilderPage = () => {
    };
 
    return (
-      <div>
+      <Wrapper>
          <h1>Build Your Custom PC</h1>
 
-         <form>
-            <div>
-               <h2>Select CPU</h2>
-               <select
-                  value={selectedParts.cpu?.id || ''}
-                  onChange={(e) => handlePartSelection('cpu', e)}
-               >
-                  <option value="">Select a CPU</option>
-                  {products.cpu.map((product) => (
-                     <option key={product.id} value={product.id}>
-                        {product.name}
-                     </option>
-                  ))}
-               </select>
-               {selectedParts.cpu && <span> - ${selectedParts.cpu.price}</span>}
-            </div>
+         <div>
+            <label htmlFor="build-name">Build Name</label>
+            <input
+               type="text"
+               id="build-name"
+               name="name"
+               value={buildName}
+               onChange={(e) => setBuildName(e.target.value)}
+               placeholder="Enter build name"
+               required
+            />
+         </div>
 
-            <div>
-               <h2>Select GPU</h2>
-               <select
-                  value={selectedParts['video-card']?.id || ''}
-                  onChange={(e) => handlePartSelection('video-card', e)}
-               >
-                  <option value="">Select a GPU</option>
-                  {products['video-card'].map((product) => (
-                     <option key={product.id} value={product.id}>
-                        {product.name}
+         <form>
+            {[
+               'cpu',
+               'cpu-cooler',
+               'motherboard',
+               'memory',
+               'internal-hard-drive',
+               'video-card',
+               'case',
+               'os',
+               'power-supply',
+            ].map((category) => (
+               <div key={category} className="part-choice">
+                  <h4>
+                     {category === 'internal-hard-drive'
+                        ? 'Storage'
+                        : category.replace(/-/g, ' ')}
+                  </h4>
+                  <select
+                     value={selectedParts[category]?.id || ''}
+                     onChange={(e) => handlePartSelection(category, e)}
+                  >
+                     <option value="">
+                        Select a {category.replace(/-/g, ' ')}
                      </option>
-                  ))}
-               </select>
-               {selectedParts['video-card'] && (
-                  <span> - ${selectedParts['video-card'].price}</span>
-               )}
-            </div>
+                     {products[category].map((product) => (
+                        <option key={product.id} value={product.id}>
+                           {product.name}
+                        </option>
+                     ))}
+                  </select>
+                  {selectedParts[category] && (
+                     <span> - ${selectedParts[category].price}</span>
+                  )}
+               </div>
+            ))}
          </form>
 
          <div>
@@ -93,8 +114,44 @@ const BuilderPage = () => {
          </div>
 
          <button onClick={handleAddToCart}>Add to Cart</button>
-      </div>
+      </Wrapper>
    );
 };
+
+const Wrapper = styled.div`
+   padding: 1rem;
+
+   .part-choice {
+      margin-bottom: 20px;
+   }
+
+   .part-choice h2 {
+      margin-bottom: 10px;
+   }
+
+   .part-choice select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 5px;
+   }
+
+   input#build-name {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+   }
+
+   button {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      cursor: pointer;
+   }
+
+   button:hover {
+      background-color: #0056b3;
+   }
+`;
 
 export default BuilderPage;

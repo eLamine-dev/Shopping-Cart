@@ -5,82 +5,118 @@ import AddButton from './AddButton';
 import { useEffect } from 'react';
 
 function ProductLi({ product, selectedCategory, selectedManufacturer }) {
-   const productSpecs = Object.values(product).filter(
-      (val) =>
-         ![
-            product.name,
-            product.price,
-            product.slug,
-            product.id,
-            product.category,
-            product.manufacturer,
-         ].includes(val)
-   );
-   // .map((key) => ({
-   //    label: key.replace(/_/g, ' '), // Replace underscores with spaces
-   //    value: Array.isArray(product[key])
-   //       ? product[key].join(' - ')
-   //       : product[key], // Join arrays with " - "
-   // }));
+   const productSpecs = Object.keys(product)
+      .filter(
+         (key) =>
+            ![
+               'name',
+               'price',
+               'slug',
+               'id',
+               'category',
+               'manufacturer',
+            ].includes(key)
+      )
+      .reduce((specs, key) => {
+         const value = product[key];
+
+         specs[key] =
+            value === true
+               ? 'Yes'
+               : value === false
+               ? 'No'
+               : value == null
+               ? '-'
+               : Array.isArray(value)
+               ? value.join(' - ')
+               : value;
+
+         return specs;
+      }, {});
 
    console.log(productSpecs);
 
    return (
       <Wrapper specsNumber={productSpecs.length - 1}>
-         {selectedManufacturer ? (
-            <NavLink
-               className="name"
-               to={`/shop/${selectedCategory}/manufacturer/${selectedManufacturer}/${product.slug}`}
-            >
-               {product.name}
-            </NavLink>
-         ) : (
-            <NavLink
-               className="name"
-               to={`/shop/${selectedCategory}/${product.slug}`}
-            >
-               {product.name}
-            </NavLink>
-         )}
-         <div className="specs">
-            {productSpecs.map((val) => (
-               <span className="spec" key={val}>
-                  {Array.isArray(val) ? val.join(' - ') : val || 'N/A'}
-               </span>
-            ))}
-            <span className="spec">{product.price} $</span>
+         {/* <div className="image"></div> */}
+         <div className="left-side">
+            {selectedManufacturer ? (
+               <NavLink
+                  className="name"
+                  to={`/shop/${selectedCategory}/manufacturer/${selectedManufacturer}/${product.slug}`}
+               >
+                  {product.name}
+               </NavLink>
+            ) : (
+               <NavLink
+                  className="name"
+                  to={`/shop/${selectedCategory}/${product.slug}`}
+               >
+                  {product.name}
+               </NavLink>
+            )}
+            <div className="specs">
+               {Object.entries(productSpecs).map(([label, value]) => (
+                  <div key={label}>
+                     <span>
+                        {label.charAt(0).toUpperCase() +
+                           label.slice(1).replace(/_/g, ' ')}
+                        :
+                     </span>
+                     <span> {value}</span>
+                  </div>
+               ))}
+            </div>
+         </div>
+         <div className="right-side">
+            <span className="price">$ {product.price}</span>
             <AddButton product={product} />
          </div>
-
-         {/* <AddButton product={product} /> */}
       </Wrapper>
    );
 }
 
 const Wrapper = styled.div`
-   /* display: flex;
+   display: flex;
    justify-content: space-between;
-   align-items: center;
    border-top: 1px solid rgba(255, 255, 255, 0.1);
-   height: 3rem; */
+   padding: 1rem;
 
-   --specsNumber: ${(props) => props.specsNumber};
+   /* --specsNumber: ${(props) => props.specsNumber};
 
    display: grid;
-   grid-template-columns: 1fr repeat(--specsNumber, 1fr) 1fr;
+   grid-template-columns: 1fr repeat(--specsNumber, 1fr) 1fr; */
 
    .name {
       flex-grow: 1;
+      font-size: 1.2rem;
+      color: #fff;
+   }
+
+   .name:hover {
+      color: #9fa4ef;
    }
 
    .specs {
-      display: flex;
-      align-items: center;
-      justify-items: center;
-      gap: 1rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
    }
    .spec {
       width: 100px;
+   }
+
+   .right-side {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: end;
+   }
+   .left-side {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      flex-grow: 1;
+      gap: 1rem;
    }
 `;
 

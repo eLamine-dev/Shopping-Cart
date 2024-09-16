@@ -9,7 +9,7 @@ function Header() {
       <Wrapper>
          <div className="upper-row">
             <div className="logo-cart">
-               <h3>Logo</h3>
+               <h3>PC Build</h3>
                <Link to="cart">Cart ({cart.length})</Link>
             </div>
          </div>
@@ -24,6 +24,10 @@ function Header() {
                <NavLink className="nav" to="builder">
                   Builder
                </NavLink>
+               <div className="empty-div"></div>
+               <div className="search-bar">
+                  <input type="search" name="" id="" placeholder="Search" />
+               </div>
             </div>
          </div>
       </Wrapper>
@@ -36,28 +40,42 @@ const Wrapper = styled.header`
    grid-template-rows: 3fr 2fr;
 
    .upper-row {
+      display: flex;
+      align-items: center;
       border-bottom: 1px solid var(--border-color);
+      background-color: #020616;
    }
 
    .lower-row {
+      display: flex;
+      align-items: center;
       border-bottom: 1px solid var(--border-color);
+      background-color: #141828;
    }
 
    .logo-cart {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      max-width: 1700px;
+      max-width: 1400px;
       margin: 0 auto;
+      padding: 0 1.5rem;
+      flex-grow: 1;
    }
 
    .nav-bar {
       display: flex;
-      justify-content: start;
-
-      max-width: 1700px;
+      justify-content: space-between;
+      max-width: 1400px;
       margin: 0 auto;
-      height: 100%;
+      flex-grow: 1;
+
+      /* height: 100%; */
+   }
+
+   .empty-div {
+      flex-grow: 1;
+      border-right: 1px solid var(--border-color);
    }
 
    .nav {
@@ -65,12 +83,26 @@ const Wrapper = styled.header`
       text-decoration: none;
       color: white;
       text-align: center;
-      width: 100px;
-      border-left: 1px solid var(--border-color);
+      width: 160px;
+      border-right: 1px solid var(--border-color);
    }
 
-   .nav:hover {
-      background-color: var(--border-color);
+   .search-bar {
+      display: flex;
+      justify-content: end;
+      height: 100%;
+      border: none;
+      border-right: 1px solid var(--border-color);
+      padding: 0 1.5rem;
+   }
+
+   input {
+      border: #141828;
+      background-color: #020616;
+      height: 2rem;
+      padding: 0 1rem;
+      border-radius: 5px;
+      outline: none;
    }
 `;
 
