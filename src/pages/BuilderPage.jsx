@@ -29,7 +29,7 @@ const BuilderPage = () => {
 
       setSelectedParts((prevParts) => ({
          ...prevParts,
-         [category]: selectedProduct,
+         [category]: selectedProduct ?? '',
       }));
    };
 
@@ -58,59 +58,64 @@ const BuilderPage = () => {
       <Wrapper>
          <h1>Build Your Custom PC</h1>
 
-         <div>
-            <label htmlFor="build-name">Build Name</label>
-            <input
-               type="text"
-               id="build-name"
-               name="name"
-               value={buildName}
-               onChange={(e) => setBuildName(e.target.value)}
-               placeholder="Enter build name"
-               required
-            />
-         </div>
+         <div className="form-container">
+            <div className="build-name">
+               <h3>
+                  <label htmlFor="name">Build Name</label>
+               </h3>
+               <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  value={buildName}
+                  onChange={(e) => setBuildName(e.target.value)}
+                  placeholder="Enter build name"
+                  required
+               />
+            </div>
 
-         <form>
-            {[
-               'cpu',
-               'cpu-cooler',
-               'motherboard',
-               'memory',
-               'internal-hard-drive',
-               'video-card',
-               'case',
-               'os',
-               'power-supply',
-            ].map((category) => (
-               <div key={category} className="part-choice">
-                  <h4>
-                     {category === 'internal-hard-drive'
-                        ? 'Storage'
-                        : category.replace(/-/g, ' ')}
-                  </h4>
-                  <select
-                     value={selectedParts[category]?.id || ''}
-                     onChange={(e) => handlePartSelection(category, e)}
-                  >
-                     <option value="">
-                        Select a {category.replace(/-/g, ' ')}
-                     </option>
-                     {products[category].map((product) => (
-                        <option key={product.id} value={product.id}>
-                           {product.name}
+            <form>
+               {[
+                  'cpu',
+                  'cpu-cooler',
+                  'motherboard',
+                  'memory',
+                  'internal-hard-drive',
+                  'video-card',
+                  'case',
+                  'os',
+                  'power-supply',
+               ].map((category) => (
+                  <div key={category} className="part-choice">
+                     <h3 className="part-name">
+                        {category === 'internal-hard-drive'
+                           ? 'Storage'
+                           : category.replace(/-/g, ' ')}
+                     </h3>
+                     <select
+                        value={selectedParts[category]?.id || ''}
+                        onChange={(e) => handlePartSelection(category, e)}
+                     >
+                        <option value="">
+                           + Choose {category.replace(/-/g, ' ')}
                         </option>
-                     ))}
-                  </select>
-                  {selectedParts[category] && (
-                     <span> - ${selectedParts[category].price}</span>
-                  )}
-               </div>
-            ))}
-         </form>
+                        {products[category].map((product) => (
+                           <option key={product.id} value={product.id}>
+                              {product.name}
+                           </option>
+                        ))}
+                     </select>
 
-         <div>
-            <h3>Total Price: ${totalPrice.toFixed(2)}</h3>
+                     <span className="price">
+                        ${selectedParts[category].price ?? 0}
+                     </span>
+                  </div>
+               ))}
+            </form>
+
+            <div className="total-price">
+               Total Price: <strong>${totalPrice.toFixed(2)}</strong>
+            </div>
          </div>
 
          <button onClick={handleAddToCart}>Add to Cart</button>
@@ -119,26 +124,70 @@ const BuilderPage = () => {
 };
 
 const Wrapper = styled.div`
-   padding: 1rem;
-
-   .part-choice {
-      margin-bottom: 20px;
+   .form-container {
+      margin: 0 auto;
+      max-width: 1200px;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      gap: 1rem;
+      background-color: #020616;
+      border-radius: 10px;
+      padding: 1rem;
    }
 
-   .part-choice h2 {
-      margin-bottom: 10px;
+   .build-name {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 0 1rem;
+      border-bottom: 1px solid #cccccc47;
+   }
+
+   .part-choice {
+      display: grid;
+      grid-template-columns: 1fr 2fr 1fr;
+      align-items: center;
+      gap: 1rem;
+      border-bottom: 1px solid #cccccc47;
+   }
+
+   .part-choice h3 {
+      text-transform: capitalize;
+      padding-left: 1rem;
    }
 
    .part-choice select {
-      width: 100%;
       padding: 10px;
-      margin-bottom: 5px;
+      color: #afb8c6;
    }
 
-   input#build-name {
-      width: 100%;
-      padding: 10px;
-      margin-bottom: 20px;
+   .price {
+      justify-self: end;
+      padding-right: 1rem;
+   }
+
+   .total-price {
+      padding: 1rem;
+      text-align: right;
+      font-size: larger;
+   }
+
+   input#name {
+      font-size: larger;
+   }
+
+   input {
+      background-color: #020616;
+      outline: none;
+      border: none;
+   }
+
+   select {
+      background-color: #020616;
+      outline: none;
+      border: none;
+      font-size: medium;
    }
 
    button {

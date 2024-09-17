@@ -90,6 +90,7 @@ const Wrapper = styled.div`
    .name {
       flex-grow: 1;
       font-size: 1.2rem;
+      font-weight: 600;
       color: #fff;
    }
 

@@ -1,6 +1,6 @@
-import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+import { BsGithub } from 'react-icons/bs';
 
 const Footer = () => {
    return (
@@ -57,32 +57,11 @@ const Footer = () => {
                <h3>Follow Us</h3>
                <div className="social-icons">
                   <a
-                     href="https://www.facebook.com"
+                     href="https://github.com/eLamine-dev"
                      target="_blank"
                      rel="noreferrer"
                   >
-                     <i className="fab fa-facebook"></i>
-                  </a>
-                  <a
-                     href="https://www.twitter.com"
-                     target="_blank"
-                     rel="noreferrer"
-                  >
-                     <i className="fab fa-twitter"></i>
-                  </a>
-                  <a
-                     href="https://www.instagram.com"
-                     target="_blank"
-                     rel="noreferrer"
-                  >
-                     <i className="fab fa-instagram"></i>
-                  </a>
-                  <a
-                     href="https://www.youtube.com"
-                     target="_blank"
-                     rel="noreferrer"
-                  >
-                     <i className="fab fa-youtube"></i>
+                     <BsGithub />
                   </a>
                </div>
             </FooterSection>
