@@ -56,7 +56,9 @@ const BuilderPage = () => {
 
    return (
       <Wrapper>
-         <h1>Build Your Custom PC</h1>
+         <div className="title">
+            <h2>Build Your Custom PC</h2>
+         </div>
 
          <div className="form-container">
             <div className="build-name">
@@ -124,6 +126,14 @@ const BuilderPage = () => {
 };
 
 const Wrapper = styled.div`
+   display: flex;
+   flex-direction: column;
+   .title {
+      align-content: center;
+      text-align: center;
+      background-color: #0d1121;
+      height: 120px;
+   }
    .form-container {
       margin: 0 auto;
       max-width: 1200px;
@@ -196,6 +206,7 @@ const Wrapper = styled.div`
       color: white;
       border: none;
       cursor: pointer;
+      align-self: center;
    }
 
    button:hover {

@@ -1,14 +1,15 @@
 import { useOutletContext, useParams } from 'react-router-dom';
-import { useLoaderData } from 'react-router-dom';
-import { useContext } from 'react';
+import { useContext, useState } from 'react';
 import { CartContext } from '../contexts/CartContext';
 import SpecsTable from '../components/SpecsTable';
+import AddToCart from '../components/AddToCart';
+import styled from 'styled-components';
 
 function ProductPage() {
-   const { selectedCategory, slectedManufacturer, productSlug } = useParams();
+   const { selectedCategory, selectedManufacturer, productSlug } = useParams();
 
-   const { addToCart } = useContext(CartContext);
    const Products = useOutletContext();
+
    let product = Object.values(Products)
       .flat()
       .find((p) => p.slug === productSlug);
@@ -18,15 +19,19 @@ function ProductPage() {
    }
 
    return (
-      <div>
+      <Wrapper>
          <h2>{product.name}</h2>
-         <p>{product.description}</p>
-         <p>{product.price}</p>
-
+         <p>Price: {product.price}</p>
          <SpecsTable product={product} />
-         <button onClick={() => addToCart(product)}>Add to Cart</button>
-      </div>
+         <AddToCart product={product} />
+      </Wrapper>
    );
 }
+
+const Wrapper = styled.div`
+   max-width: 1400px;
+   margin: 0 auto;
+   min-height: 90vh;
+`;
 
 export default ProductPage;

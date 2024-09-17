@@ -1,7 +1,6 @@
 import { styled } from 'styled-components';
 import { PropTypes } from 'prop-types';
 import { Link, NavLink } from 'react-router-dom';
-import AddButton from './AddButton';
 
 function ProductCard({ product, selectedCategory, selectedManufacturer }) {
    return (
@@ -21,7 +20,6 @@ function ProductCard({ product, selectedCategory, selectedManufacturer }) {
                   View Details
                </NavLink>
             )}
-            <AddButton product={product} />
          </div>
       </Wrapper>
    );

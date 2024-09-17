@@ -1,7 +1,7 @@
 import { styled } from 'styled-components';
 import { PropTypes } from 'prop-types';
 import { NavLink } from 'react-router-dom';
-import AddButton from './AddButton';
+import AddToCart from './AddToCart';
 import { useEffect } from 'react';
 
 function ProductLi({ product, selectedCategory, selectedManufacturer }) {
@@ -70,7 +70,7 @@ function ProductLi({ product, selectedCategory, selectedManufacturer }) {
          </div>
          <div className="right-side">
             <span className="price">$ {product.price}</span>
-            <AddButton product={product} />
+            <AddToCart product={product} />
          </div>
       </Wrapper>
    );

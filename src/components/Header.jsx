@@ -19,10 +19,16 @@ function Header() {
                   Home
                </NavLink>
                <NavLink className="nav" to="shop">
-                  Shop
+                  Products
                </NavLink>
                <NavLink className="nav" to="builder">
                   Builder
+               </NavLink>
+               <NavLink className="nav" to="guides">
+                  Guides
+               </NavLink>
+               <NavLink className="nav" to="Benchmarks">
+                  Benchmarks
                </NavLink>
                <div className="empty-div"></div>
                <div className="search-bar">
@@ -73,6 +79,10 @@ const Wrapper = styled.header`
       /* height: 100%; */
    }
 
+   .nav-bar:first-child {
+      border-left: 1px solid var(--border-color);
+   }
+
    .empty-div {
       flex-grow: 1;
       border-right: 1px solid var(--border-color);
@@ -83,8 +93,10 @@ const Wrapper = styled.header`
       text-decoration: none;
       color: white;
       text-align: center;
-      width: 160px;
+      width: 120px;
       border-right: 1px solid var(--border-color);
+      font-size: large;
+      font-weight: 500;
    }
 
    .search-bar {
