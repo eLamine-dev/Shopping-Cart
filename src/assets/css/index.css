@@ -1,9 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-   --main-width: 1300px;
-   /* font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; */
    font-family: 'Urbanist', sans-serif;
+   --main-width: 1300px;
+   --black: #030712;
+   --dark1: #020617;
+   --dark2: #0d1121;
+   --dark3: #141828
+
+   /* font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; */
+
    line-height: 1.5;
    font-weight: 400;
 

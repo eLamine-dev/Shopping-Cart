@@ -10,18 +10,28 @@ function ShopPage() {
    const [randomProducts, setRandomProducts] = useState([]);
    const { category, manufacturer } = useParams();
    const [filteredProducts, setFilteredProducts] = useState([]);
+   const [priceRange, setPriceRange] = useState([0, 1000]);
 
+   // Filter products by category, manufacturer, and price range
    useEffect(() => {
-      const filteredProductsList = category
-         ? manufacturer
+      if (category) {
+         const filteredByCategory = manufacturer
             ? products[category].filter(
                  (product) => product.manufacturer === manufacturer
               )
-            : products[category]
-         : [];
-      setFilteredProducts(filteredProductsList);
+            : products[category];
+
+         const filteredByPrice = filteredByCategory.filter(
+            (product) =>
+               product.price >= priceRange[0] && product.price <= priceRange[1]
+         );
+
+         setFilteredProducts(filteredByPrice);
+      } else {
+         setFilteredProducts([]);
+      }
       window.scrollTo(0, 0);
-   }, [category, manufacturer]);
+   }, [category, manufacturer, priceRange, products]);
 
    useEffect(() => {
       const allProducts = Object.values(products).flat();
@@ -36,6 +46,7 @@ function ShopPage() {
          <Filter
             categories={Object.keys(products)}
             selectedCategory={category}
+            setPriceRange={setPriceRange}
          />
 
          <div className={category ? 'list-view' : 'grid-view'}>

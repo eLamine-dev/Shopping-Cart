@@ -15,7 +15,7 @@ const App = () => {
          <main>
             <Outlet context={products} />
          </main>
-         {/* <Footer /> */}
+         <Footer />
       </CartProvider>
    );
 };

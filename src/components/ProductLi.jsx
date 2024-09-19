@@ -34,8 +34,6 @@ function ProductLi({ product, selectedCategory, selectedManufacturer }) {
          return specs;
       }, {});
 
-   console.log(productSpecs);
-
    return (
       <Wrapper specsNumber={productSpecs.length - 1}>
          {/* <div className="image"></div> */}

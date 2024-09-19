@@ -91,9 +91,10 @@ const Footer = () => {
 };
 
 const FooterWrapper = styled.footer`
-   background-color: #282c34;
+   background-color: #1f2937;
    color: white;
    padding: 50px 20px 20px;
+   margin-top: 10rem;
 `;
 
 const FooterContainer = styled.div`

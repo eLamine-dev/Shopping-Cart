@@ -27,8 +27,8 @@ const CartPage = () => {
                      <img src={item.image_url} alt={item.name} />
                   </div>
                   <div className="details">
-                     <h3>{item.name}</h3>
-                     <p>Price: ${item.price.toFixed(2)}</p>
+                     <h3>{item.productData.name}</h3>
+                     <p>Price: ${item.productData.price.toFixed(2)}</p>
                      <div className="quantity">
                         <span>Quantity:</span>
                         <button
@@ -50,7 +50,10 @@ const CartPage = () => {
                      </div>
                   </div>
                   <div className="total">
-                     <p>Total: ${(item.price * item.quantity).toFixed(2)}</p>
+                     <p>
+                        Total: $
+                        {(item.productData.price * item.quantity).toFixed(2)}
+                     </p>
                      <button
                         className="remove-button"
                         onClick={() => removeFromCart(item.id)}
@@ -66,7 +69,11 @@ const CartPage = () => {
                <h3>
                   Total: $
                   {cart
-                     .reduce((sum, item) => sum + item.price * item.quantity, 0)
+                     .reduce(
+                        (sum, item) =>
+                           sum + item.productData.price * item.quantity,
+                        0
+                     )
                      .toFixed(2)}
                </h3>
             </div>
@@ -80,15 +87,14 @@ const CartPage = () => {
 
 export default CartPage;
 
-/* Styled Components */
-
 const Wrapper = styled.div`
    max-width: 1200px;
    margin: 30px auto;
    padding: 20px;
-   min-height: 90vh;
+   /* min-height: 70vh; */
    background-color: #020616;
    border-radius: 10px;
+   padding-bottom: 10rem;
 
    h2.title {
       font-size: 2rem;
