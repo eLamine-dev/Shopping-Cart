@@ -8,29 +8,30 @@ import Filter from '../components/FilterSidebar';
 function ShopPage() {
    const products = useOutletContext();
    const [randomProducts, setRandomProducts] = useState([]);
-   const { category, manufacturer } = useParams();
+   const { category } = useParams();
+   const [manufacturer, setManufacturer] = useState(null);
    const [filteredProducts, setFilteredProducts] = useState([]);
    const [priceRange, setPriceRange] = useState([0, 1000]);
 
-   // Filter products by category, manufacturer, and price range
    useEffect(() => {
       if (category) {
-         const filteredByCategory = manufacturer
+         let filteredProducts = manufacturer
             ? products[category].filter(
                  (product) => product.manufacturer === manufacturer
               )
             : products[category];
 
-         const filteredByPrice = filteredByCategory.filter(
+         filteredProducts = filteredProducts.filter(
             (product) =>
                product.price >= priceRange[0] && product.price <= priceRange[1]
          );
 
-         setFilteredProducts(filteredByPrice);
+         setFilteredProducts(filteredProducts);
       } else {
          setFilteredProducts([]);
       }
-      window.scrollTo(0, 0);
+
+      // window.scrollTo(0, 0);
    }, [category, manufacturer, priceRange, products]);
 
    useEffect(() => {
@@ -47,6 +48,8 @@ function ShopPage() {
             categories={Object.keys(products)}
             selectedCategory={category}
             setPriceRange={setPriceRange}
+            setManufacturer={setManufacturer}
+            selectedManufacturer={manufacturer}
          />
 
          <div className={category ? 'list-view' : 'grid-view'}>

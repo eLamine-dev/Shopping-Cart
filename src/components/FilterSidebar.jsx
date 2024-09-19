@@ -3,20 +3,22 @@ import { NavLink } from 'react-router-dom';
 import { useOutletContext } from 'react-router-dom';
 import styled from 'styled-components';
 import { PropTypes } from 'prop-types';
+import Slider from 'rc-slider';
+import 'rc-slider/assets/index.css';
 
 function Filter({
    categories,
    selectedCategory,
-
+   setManufacturer,
    setPriceRange,
+   selectedManufacturer,
 }) {
    const products = useOutletContext();
    const [manufacturers, setManufacturers] = useState([]);
-   const [priceRange, setLocalPriceRange] = useState([0, 1000]);
+   const [localPriceRange, setLocalPriceRange] = useState([0, 1000]);
    const [minPrice, setMinPrice] = useState(0);
    const [maxPrice, setMaxPrice] = useState(1000);
 
-   // Update manufacturers list when a category is selected
    useEffect(() => {
       if (selectedCategory) {
          const manufacturersList = [
@@ -26,80 +28,82 @@ function Filter({
          ];
          setManufacturers(manufacturersList);
 
-         // Get min and max prices from products in the selected category
-         const prices = products[selectedCategory].map(
-            (product) => product.price
-         );
+         const shownProducts = selectedManufacturer
+            ? products[selectedCategory].filter(
+                 (product) => product.manufacturer === selectedManufacturer
+              )
+            : products[selectedCategory];
+
+         const prices = shownProducts.map((product) => product.price);
+
          setMinPrice(Math.min(...prices));
          setMaxPrice(Math.max(...prices));
          setLocalPriceRange([Math.min(...prices), Math.max(...prices)]);
+         setPriceRange([Math.min(...prices), Math.max(...prices)]);
       } else {
          setManufacturers([]);
       }
-   }, [selectedCategory, products]);
+   }, [selectedCategory, products, selectedManufacturer]);
 
-   // Handle price range changes
-   const handlePriceChange = (e) => {
-      const newRange = [Number(e.target.min), Number(e.target.max)];
+   const handlePriceChange = (newRange) => {
       setLocalPriceRange(newRange);
       setPriceRange(newRange);
    };
 
    return (
       <Wrapper>
+         {/* Categories Section */}
          <div className="category-section">
             <h3>Categories</h3>
-            {categories.map((category) => (
-               <NavLink
-                  key={category}
-                  to={`/shop/${category}`}
-                  className="category-link"
-               >
-                  {category}
-               </NavLink>
-            ))}
+            <ul className="category-list">
+               {categories.map((category) => (
+                  <li key={category}>
+                     <StyledNavLink
+                        to={`/shop/${category}`}
+                        isSelected={category === selectedCategory}
+                        onClick={() => setManufacturer(null)}
+                     >
+                        {category}
+                     </StyledNavLink>
+                  </li>
+               ))}
+            </ul>
          </div>
 
+         {/* Manufacturers Section */}
          {selectedCategory && manufacturers.length > 0 && (
             <div className="manufacturer-section">
                <h3>Manufacturers</h3>
-               {manufacturers.map((manufacturer) => (
-                  <NavLink
-                     key={manufacturer}
-                     to={`/shop/${selectedCategory}/manufacturer/${manufacturer}`}
-                     className="manufacturer-link"
-                  >
-                     {manufacturer}
-                  </NavLink>
-               ))}
+               <div className="manufacturer-list">
+                  {manufacturers.map((manufacturer) => (
+                     <label key={manufacturer} className="manufacturer-radio">
+                        <input
+                           type="radio"
+                           value={manufacturer}
+                           checked={manufacturer === selectedManufacturer}
+                           onChange={() => setManufacturer(manufacturer)}
+                        />
+                        <span>{manufacturer}</span>
+                     </label>
+                  ))}
+               </div>
             </div>
          )}
 
-         {/* Filter by Price */}
          {selectedCategory && (
             <div className="price-filter-section">
                <h3>Filter by Price</h3>
                <div className="price-range">
                   <label htmlFor="priceRange">
-                     ${priceRange[0]} - ${priceRange[1]}
+                     ${localPriceRange[0]} - ${localPriceRange[1]}
                   </label>
-                  <input
-                     type="range"
-                     id="priceRange"
+                  <Slider
+                     range
                      min={minPrice}
                      max={maxPrice}
-                     value={priceRange[0]}
+                     defaultValue={localPriceRange}
+                     value={localPriceRange}
                      onChange={handlePriceChange}
-                     step="10"
-                  />
-                  <input
-                     type="range"
-                     id="priceRangeMax"
-                     min={minPrice}
-                     max={maxPrice}
-                     value={priceRange[1]}
-                     onChange={handlePriceChange}
-                     step="10"
                   />
                </div>
             </div>
@@ -113,7 +117,7 @@ export default Filter;
 /* Styled Components */
 
 const Wrapper = styled.div`
-   background-color: #f8f9fa;
+   background-color: var(--dark1);
    padding: 20px;
    border-radius: 10px;
    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
@@ -124,7 +128,9 @@ const Wrapper = styled.div`
 
    h3 {
       font-size: 1.2rem;
-      margin-bottom: 15px;
+      margin-bottom: 10px;
+      padding-bottom: 5px;
+      border-bottom: 1px solid #ddd;
    }
 
    .category-section,
@@ -133,21 +139,24 @@ const Wrapper = styled.div`
       margin-bottom: 20px;
    }
 
-   .category-link,
-   .manufacturer-link {
-      display: block;
-      padding: 10px;
-      text-decoration: none;
-      color: #333;
-      font-size: 1rem;
-      background-color: #ffffff;
-      border-radius: 5px;
-      margin-bottom: 10px;
-      transition: background-color 0.3s ease;
+   .manufacturer-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+   }
 
-      &:hover {
-         background-color: #007bff;
-         color: white;
+   .manufacturer-radio {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      input[type='radio'] {
+         accent-color: #007bff;
+         cursor: pointer;
+      }
+
+      span {
+         font-size: 1rem;
       }
    }
 
@@ -160,36 +169,36 @@ const Wrapper = styled.div`
          font-size: 1rem;
          color: #333;
       }
-
-      input[type='range'] {
-         width: 100%;
-         -webkit-appearance: none;
-         appearance: none;
-         background: #ddd;
-         border-radius: 5px;
-         height: 6px;
-         outline: none;
-         margin: 5px 0;
-
-         &::-webkit-slider-thumb {
-            -webkit-appearance: none;
-            appearance: none;
-            width: 20px;
-            height: 20px;
-            border-radius: 50%;
-            background-color: #007bff;
-            cursor: pointer;
-         }
-
-         &::-moz-range-thumb {
-            width: 20px;
-            height: 20px;
-            border-radius: 50%;
-            background-color: #007bff;
-            cursor: pointer;
-         }
-      }
    }
+`;
+
+const StyledNavLink = styled(NavLink)`
+   text-decoration: none;
+   color: #333;
+   padding: 8px 0;
+   font-size: 1rem;
+   display: inline-block;
+   position: relative;
+   transition: all 0.3s ease;
+
+   &:hover {
+      color: #007bff;
+   }
+
+   ${({ isSelected }) =>
+      isSelected &&
+      `
+         color: #007bff;
+         &:after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background-color: #007bff;
+            bottom: -3px;
+            left: 0;
+         }
+      `}
 `;
 
 Filter.propTypes = {
