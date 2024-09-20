@@ -4,14 +4,24 @@ import ProductCard from '../components/ProductCard';
 import ProductLi from '../components/ProductLi';
 import { useOutletContext, useParams } from 'react-router-dom';
 import Filter from '../components/FilterSidebar';
+import { Link } from 'react-router-dom';
+import MosaicGrid from '../components/ShopGrid';
 
 function ShopPage() {
    const products = useOutletContext();
    const { category } = useParams();
    const [manufacturer, setManufacturer] = useState(null);
-   const [randomProducts, setRandomProducts] = useState([]);
    const [filteredProducts, setFilteredProducts] = useState([]);
    const [priceRange, setPriceRange] = useState([0, 1000]);
+
+   // Predefined category images (or you can add more categories)
+   const categoryImages = {
+      cpu: '/images/cpu.jpg',
+      gpu: '/images/gpu.jpg',
+      memory: '/images/memory.jpg',
+      motherboard: '/images/motherboard.jpg',
+      'power-supply': '/images/power-supply.jpg',
+   };
 
    useEffect(() => {
       if (category) {
@@ -30,50 +40,46 @@ function ShopPage() {
       } else {
          setFilteredProducts([]);
       }
-
-      // window.scrollTo(0, 0);
    }, [category, manufacturer, priceRange, products]);
-
-   useEffect(() => {
-      const allProducts = Object.values(products).flat();
-      setRandomProducts(allProducts.sort(() => 0.5 - Math.random()));
-   }, [products]);
 
    return (
       <Wrapper>
          <h2 className="title">
-            {category ? `${category}` : 'Find your next part'}
+            {category ? `${category}` : 'Explore PC Parts'}
          </h2>
-         <Filter
-            categories={Object.keys(products)}
-            selectedCategory={category}
-            setPriceRange={setPriceRange}
-            setManufacturer={setManufacturer}
-            selectedManufacturer={manufacturer}
-         />
 
-         <div className={category ? 'list-view' : 'grid-view'}>
-            {category
-               ? filteredProducts.map((product) => (
-                    <ProductLi
-                       key={product.id}
-                       product={product}
-                       selectedCategory={category}
-                       selectedManufacturer={manufacturer}
-                    />
-                 ))
-               : randomProducts.map((product) => (
-                    <ProductCard
-                       key={product.id}
-                       product={product}
-                       selectedCategory={product.category}
-                       selectedManufacturer={manufacturer}
-                    />
-                 ))}
-         </div>
+         {/* Mosaic Grid for Categories */}
+         {!category && <MosaicGrid />}
+
+         {/* Render product list if a category is selected */}
+         {category && (
+            <>
+               <Filter
+                  categories={Object.keys(products)}
+                  selectedCategory={category}
+                  setPriceRange={setPriceRange}
+                  setManufacturer={setManufacturer}
+                  selectedManufacturer={manufacturer}
+               />
+               <div className="list-view">
+                  {filteredProducts.map((product) => (
+                     <ProductLi
+                        key={product.id}
+                        product={product}
+                        selectedCategory={category}
+                        selectedManufacturer={manufacturer}
+                     />
+                  ))}
+               </div>
+            </>
+         )}
       </Wrapper>
    );
 }
+
+export default ShopPage;
+
+/* Styled Components */
 
 const Wrapper = styled.div`
    display: grid;
@@ -90,38 +96,8 @@ const Wrapper = styled.div`
       align-items: center;
    }
 
-   .grid-view,
-   .list-view {
-      background-color: var(--dark1);
-   }
-
-   .grid-view {
-      --grid-layout-gap: 20px;
-      --grid-column-count: 4;
-      --grid-item--min-width: 250px;
-
-      --gap-count: calc(var(--grid-column-count) - 1);
-      --total-gap-width: calc(var(--gap-count) * var(--grid-layout-gap));
-      --grid-item--max-width: calc(
-         (100% - var(--total-gap-width)) / var(--grid-column-count)
-      );
-
-      display: grid;
-      grid-template-columns: repeat(
-         auto-fill,
-         minmax(
-            max(var(--grid-item--min-width), var(--grid-item--max-width)),
-            1fr
-         )
-      );
-      grid-template-rows: 500px;
-      grid-auto-rows: 500px;
-   }
-
    .list-view {
       display: flex;
       flex-direction: column;
    }
 `;
-
-export default ShopPage;

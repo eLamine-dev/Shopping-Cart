@@ -107,6 +107,7 @@ const Wrapper = styled.header`
    display: grid;
    grid-template-rows: 3fr 2fr;
    position: relative;
+   overflow: hidden;
 
    .upper-row {
       display: flex;
@@ -158,6 +159,11 @@ const Wrapper = styled.header`
       border-right: 1px solid var(--border-color);
       font-size: large;
       font-weight: 500;
+      cursor: pointer;
+
+      &:hover {
+         color: #007bff;
+      }
    }
 
    .dropdown {
