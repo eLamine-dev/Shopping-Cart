@@ -23,13 +23,13 @@ const HomePage = () => {
 
          <BuildingGuides>
             <div className="section-header">
-               <h2>Latest Guides</h2>
+               <h2>Our Guides</h2>
                <p>
                   Learn how to build your ultimate PC and start your own
                   journey.
                </p>
                <Link to="/guides">
-                  <button>View our guides</button>
+                  <button>View our Guides</button>
                </Link>
             </div>
             <div className="guide-cards">

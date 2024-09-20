@@ -7,9 +7,9 @@ import Filter from '../components/FilterSidebar';
 
 function ShopPage() {
    const products = useOutletContext();
-   const [randomProducts, setRandomProducts] = useState([]);
    const { category } = useParams();
    const [manufacturer, setManufacturer] = useState(null);
+   const [randomProducts, setRandomProducts] = useState([]);
    const [filteredProducts, setFilteredProducts] = useState([]);
    const [priceRange, setPriceRange] = useState([0, 1000]);
 
@@ -88,6 +88,11 @@ const Wrapper = styled.div`
       display: flex;
       justify-content: center;
       align-items: center;
+   }
+
+   .grid-view,
+   .list-view {
+      background-color: var(--dark1);
    }
 
    .grid-view {

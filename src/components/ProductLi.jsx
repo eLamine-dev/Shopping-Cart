@@ -35,8 +35,7 @@ function ProductLi({ product, selectedCategory, selectedManufacturer }) {
       }, {});
 
    return (
-      <Wrapper specsNumber={productSpecs.length - 1}>
-         {/* <div className="image"></div> */}
+      <Wrapper>
          <div className="left-side">
             {selectedManufacturer ? (
                <NavLink
