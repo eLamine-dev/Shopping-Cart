@@ -26,7 +26,7 @@ function AddToCart({ product }) {
    };
 
    const handleSubmit = () => {
-      const cartItem = { id: uuidv4(), productData: { ...product }, quantity };
+      const cartItem = { cartId: uuidv4(), ...product, quantity };
       addToCart(cartItem);
    };
 

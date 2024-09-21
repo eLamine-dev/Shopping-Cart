@@ -8,18 +8,27 @@ export const CartProvider = ({ children }) => {
 
    const addToCart = (cartItem) => {
       setCart((prevCart) => [...prevCart, cartItem]);
+      console.log(cart);
    };
 
    const removeFromCart = (cartItemId) => {
       setCart((prevCart) =>
-         prevCart.filter((cartItem) => cartItem.id !== cartItemId)
+         prevCart.filter((cartItem) => cartItem.cartId !== cartItemId)
+      );
+   };
+
+   const updateBuild = (updatedBuild) => {
+      setCart((prevCart) =>
+         prevCart.map((item) =>
+            item.cartId === updatedBuild.cartId ? updatedBuild : item
+         )
       );
    };
 
    const updateQuantity = (cartItemId, newQuantity) => {
       setCart((prevCart) =>
          prevCart.map((cartItem) =>
-            cartItem.id === cartItemId
+            cartItem.cartId === cartItemId
                ? { ...cartItem, quantity: newQuantity }
                : cartItem
          )
@@ -28,7 +37,13 @@ export const CartProvider = ({ children }) => {
 
    return (
       <CartContext.Provider
-         value={{ cart, addToCart, removeFromCart, updateQuantity }}
+         value={{
+            cart,
+            addToCart,
+            removeFromCart,
+            updateQuantity,
+            updateBuild,
+         }}
       >
          {children}
       </CartContext.Provider>

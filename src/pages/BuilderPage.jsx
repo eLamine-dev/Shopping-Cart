@@ -1,11 +1,14 @@
 import { styled } from 'styled-components';
-import { useState, useContext } from 'react';
-import { useOutletContext } from 'react-router-dom';
+import { useState, useContext, useEffect } from 'react';
+import { useOutletContext, useParams } from 'react-router-dom';
 import { CartContext } from '../contexts/CartContext';
+import { v4 as uuidv4 } from 'uuid';
 
 const BuilderPage = () => {
    const products = useOutletContext();
-   const { addToCart } = useContext(CartContext);
+   const { cart, addToCart, updateBuild } = useContext(CartContext);
+   const { cartId } = useParams();
+   const [buildName, setBuildName] = useState('');
 
    const [selectedParts, setSelectedParts] = useState({
       cpu: '',
@@ -19,7 +22,15 @@ const BuilderPage = () => {
       'power-supply': '',
    });
 
-   const [buildName, setBuildName] = useState('');
+   useEffect(() => {
+      if (cartId) {
+         const existingBuild = cart.find((build) => build.cartId === cartId);
+         if (existingBuild) {
+            setBuildName(existingBuild.name);
+            setSelectedParts(existingBuild.parts);
+         }
+      }
+   }, [cartId, cart]);
 
    const handlePartSelection = (category, event) => {
       const selectedProductId = event.target.value;
@@ -38,20 +49,25 @@ const BuilderPage = () => {
       0
    );
 
-   const handleAddToCart = () => {
+   const handleAddOrUpdateBuild = () => {
       if (!buildName) {
          alert('Please provide a name for your build.');
          return;
       }
 
       const builtPC = {
-         id: new Date().toISOString(),
+         category: 'build',
+         cartId: cartId || uuidv4(),
          name: buildName,
          price: totalPrice,
          parts: selectedParts,
       };
 
-      addToCart(builtPC);
+      if (cartId) {
+         updateBuild(builtPC);
+      } else {
+         addToCart(builtPC);
+      }
    };
 
    return (
@@ -120,7 +136,9 @@ const BuilderPage = () => {
             </div>
          </div>
 
-         <button onClick={handleAddToCart}>Add to Cart</button>
+         <button onClick={handleAddOrUpdateBuild}>
+            {cartId ? 'Update Build' : 'Add to Cart'}
+         </button>
       </Wrapper>
    );
 };

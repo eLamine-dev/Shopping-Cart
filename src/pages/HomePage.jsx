@@ -54,14 +54,18 @@ const HomePage = () => {
             </div>
          </BuildingGuides>
 
-         <LatestBuildsSection>
+         <PartsShopSection>
             <div className="section-header">
-               <h2>Latest Builds</h2>
-               <p>Check out our latest builds from our community.</p>
-               <Link to="/builder">
-                  <button>Build Your Computer</button>
+               <h2>Popular PC Parts</h2>
+               <p>Find the latest parts on the market and upgrade your PC</p>
+               <Link to="/shop">
+                  <button>Shop Now</button>
                </Link>
             </div>
+            <div className="img"></div>
+         </PartsShopSection>
+
+         <LatestBuildsSection>
             <div className="build-cards">
                <BuildCard>
                   <div className="img"></div>
@@ -84,37 +88,47 @@ const HomePage = () => {
                   <div className="rating">⭐⭐⭐⭐</div>
                </BuildCard>
             </div>
-         </LatestBuildsSection>
-
-         <PopularPartsSection>
             <div className="section-header">
-               <h2>Popular PC Parts</h2>
-               <p>Find the latest parts on the market and upgrade your PC</p>
-               <Link to="/shop">
-                  <button>Shop Now</button>
+               <h2>Latest Builds</h2>
+               <p>Check out our latest builds from our community.</p>
+               <Link to="/builder">
+                  <button>Build Your Computer</button>
                </Link>
             </div>
-            <div className="parts-grid">
-               <PartCard>
-                  <div className="img"></div>
-                  <h3>Intel Core i9</h3>
-                  <p>Price: $499.99</p>
-                  <div className="rating">⭐⭐⭐⭐⭐</div>
-               </PartCard>
-               <PartCard>
-                  <div className="img"></div>
-                  <h3>NVIDIA RTX 3080</h3>
-                  <p>Price: $699.99</p>
-                  <div className="rating">⭐⭐⭐⭐⭐</div>
-               </PartCard>
-               <PartCard>
-                  <div className="img"></div>
-                  <h3>Corsair Vengeance RAM</h3>
-                  <p>Price: $159.99</p>
-                  <div className="rating">⭐⭐⭐⭐⭐</div>
-               </PartCard>
+         </LatestBuildsSection>
+
+         <TestimonialsSection>
+            <div className="section-header">
+               <h2>What Users Say</h2>
             </div>
-         </PopularPartsSection>
+            <div className="Testimonial-cards">
+               <TestimonialCard>
+                  <p>
+                     As a first-time builder, this site was incredibly helpful!
+                     The guides made everything so easy to understand. I
+                     successfully built my PC and couldn’t be happier!
+                  </p>
+                  <strong>— Emily J.</strong>
+               </TestimonialCard>
+               <TestimonialCard>
+                  <p>
+                     Fantastic resource for PC enthusiasts! The detailed guides
+                     and part recommendations helped me optimize my build. I
+                     love how easy it is to find quality components here.
+                  </p>
+                  <strong>— Sara P.</strong>
+               </TestimonialCard>
+               <TestimonialCard>
+                  <p>
+                     As a seasoned builder, I appreciate the comprehensive
+                     guides and curated parts selection. This site is my go-to
+                     for reliable components and expert insights. Highly
+                     recommended for all skill levels!
+                  </p>
+                  <strong>— Michael S.</strong>
+               </TestimonialCard>
+            </div>
+         </TestimonialsSection>
       </Wrapper>
    );
 };
@@ -124,39 +138,7 @@ export default HomePage;
 const Wrapper = styled.div`
    display: flex;
    flex-direction: column;
-
-   .section-header {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      text-align: center;
-      width: min-content;
-      min-width: 300px;
-
-      h2 {
-         font-size: 2.5rem;
-         margin: 0;
-      }
-
-      p {
-         font-size: 1.2rem;
-         margin: 0;
-         margin-bottom: 20px;
-      }
-
-      button {
-         background-color: #007bff;
-         color: white;
-         padding: 10px 20px;
-         border: none;
-         cursor: pointer;
-         border-radius: 5px;
-
-         &:hover {
-            background-color: #0056b3;
-         }
-      }
-   }
+   gap: 50px;
 `;
 
 const HeroSection = styled.section`
@@ -225,6 +207,39 @@ const BuildingGuides = styled.section`
    margin-bottom: 50px;
    align-items: center;
 
+   .section-header {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      width: min-content;
+      min-width: 300px;
+
+      h2 {
+         font-size: 2.5rem;
+         margin: 0;
+      }
+
+      p {
+         font-size: 1.2rem;
+         margin: 0;
+         margin-bottom: 20px;
+      }
+
+      button {
+         background-color: #007bff;
+         color: white;
+         padding: 10px 20px;
+         border: none;
+         cursor: pointer;
+         border-radius: 5px;
+
+         &:hover {
+            background-color: #0056b3;
+         }
+      }
+   }
+
    .guide-cards {
       display: flex;
       flex-wrap: wrap;
@@ -261,10 +276,43 @@ const LatestBuildsSection = styled.section`
    margin: 0 auto;
    display: flex;
    justify-content: center;
-   flex-wrap: wrap;
+   flex-wrap: wrap-reverse;
    gap: 30px;
    margin-bottom: 50px;
    align-items: center;
+
+   .section-header {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      width: min-content;
+      min-width: 300px;
+
+      h2 {
+         font-size: 2.5rem;
+         margin: 0;
+      }
+
+      p {
+         font-size: 1.2rem;
+         margin: 0;
+         margin-bottom: 20px;
+      }
+
+      button {
+         background-color: #007bff;
+         color: white;
+         padding: 10px 20px;
+         border: none;
+         cursor: pointer;
+         border-radius: 5px;
+
+         &:hover {
+            background-color: #0056b3;
+         }
+      }
+   }
 
    .build-cards {
       display: flex;
@@ -299,31 +347,17 @@ const BuildCard = styled.div`
    }
 `;
 
-const PopularPartsSection = styled.section`
+const PartsShopSection = styled.section`
    max-width: var(--main-width);
    margin: 0 auto;
    display: flex;
-   justify-content: center;
+   justify-content: space-between;
    flex-wrap: wrap;
    gap: 30px;
    margin-bottom: 50px;
    align-items: center;
-
-   .parts-grid {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-   }
-`;
-
-const PartCard = styled.div`
-   background-color: #06121f;
-   width: 300px;
-   border-radius: 10px;
-   text-align: center;
-   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-   cursor: pointer;
-   margin: 10px;
+   background-color: var(--dark2);
+   width: 100%;
 
    .img {
       width: 300px;
@@ -334,8 +368,52 @@ const PartCard = styled.div`
       background-position: center;
       border-radius: 10px 10px 0 0;
    }
+`;
 
-   h3 {
-      margin-bottom: 10px;
+const TestimonialsSection = styled.section`
+   max-width: var(--main-width);
+   margin: 0 auto;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   gap: 30px;
+   margin-bottom: 50px;
+   align-items: center;
+
+   .section-header {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      width: min-content;
+      min-width: 300px;
+
+      h2 {
+         font-size: 2.5rem;
+         margin: 0;
+      }
+   }
+
+   .Testimonial-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      justify-content: space-between;
+      width: 100%;
+      gap: 20px;
+   }
+`;
+
+const TestimonialCard = styled.div`
+   display: flex;
+   flex-direction: column;
+   background-color: #06121f;
+   min-width: 400px;
+   border-radius: 10px;
+   text-align: center;
+   height: 300px;
+   padding: 20px;
+
+   p {
+      font-size: 1rem;
    }
 `;

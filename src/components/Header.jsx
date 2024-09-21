@@ -1,6 +1,6 @@
 import { styled } from 'styled-components';
 import { Link, NavLink } from 'react-router-dom';
-import { useState, useContext, useEffect, useRef } from 'react';
+import { useState, useContext, useEffect } from 'react';
 import { CartContext } from '../contexts/CartContext';
 
 function Header() {
@@ -28,7 +28,6 @@ function Header() {
       'ups',
       'video-card',
       'webcam',
-      // 'wired-network-card',
       'wireless-network-card',
    ];
 
@@ -94,7 +93,7 @@ function Header() {
                </NavLink>
                <div className="empty-div"></div>
                <div className="search-bar">
-                  <input type="search" name="" id="" placeholder="Search" />
+                  <input type="search" placeholder="Search" />
                </div>
             </div>
          </div>
@@ -107,7 +106,7 @@ const Wrapper = styled.header`
    display: grid;
    grid-template-rows: 3fr 2fr;
    position: relative;
-   overflow: hidden;
+   overflow: visible;
 
    .upper-row {
       display: flex;
@@ -169,21 +168,20 @@ const Wrapper = styled.header`
    .dropdown {
       display: flex;
       justify-content: center;
-
       position: absolute;
       top: 100%;
       left: 0;
       width: 100vw;
       background-color: var(--dark2);
-
       overflow: hidden;
+
       max-height: 0;
-      transition: max-height 0.4s ease-in-out;
+      transition: max-height 0.4s ease-in-out, visibility 0.2s ease-in-out;
       z-index: 999;
 
       &.open {
          max-height: 500px;
-         transition: max-height 0.4s ease-in-out;
+         transition: max-height 0.4s ease-in-out, visibility 0.2s ease-in-out;
       }
 
       .dropdown-menu {

@@ -22,45 +22,47 @@ const CartPage = () => {
          <h2 className="title">Your Cart</h2>
          <ProductList>
             {cart.map((item) => (
-               <CartItem key={item.id}>
+               <CartItem key={item.cartId}>
                   <div className="image-container">
                      <img src={item.image_url} alt={item.name} />
                   </div>
                   <div className="details">
-                     <h3>{item.productData.name}</h3>
-                     <p>Price: ${item.productData.price.toFixed(2)}</p>
-                     <div className="quantity">
-                        <span>Quantity:</span>
-                        <button
-                           onClick={() =>
-                              updateQuantity(item.id, item.quantity - 1)
-                           }
-                           disabled={item.quantity <= 1}
-                        >
-                           -
-                        </button>
-                        <span>{item.quantity}</span>
-                        <button
-                           onClick={() =>
-                              updateQuantity(item.id, item.quantity + 1)
-                           }
-                        >
-                           +
-                        </button>
-                     </div>
+                     <h3>{item.name}</h3>
+                     <p>Price: ${item.price.toFixed(2)}</p>
+                     {item.quantity && (
+                        <div className="quantity">
+                           <span>Quantity:</span>
+                           <button
+                              onClick={() =>
+                                 updateQuantity(item.cartId, item.quantity - 1)
+                              }
+                              disabled={item.quantity <= 1}
+                           >
+                              -
+                           </button>
+                           <span>{item.quantity}</span>
+                           <button
+                              onClick={() =>
+                                 updateQuantity(item.cartId, item.quantity + 1)
+                              }
+                           >
+                              +
+                           </button>
+                        </div>
+                     )}
                   </div>
                   <div className="total">
-                     <p>
-                        Total: $
-                        {(item.productData.price * item.quantity).toFixed(2)}
-                     </p>
+                     <p>Total: ${(item.price * item.quantity).toFixed(2)}</p>
                      <button
                         className="remove-button"
-                        onClick={() => removeFromCart(item.id)}
+                        onClick={() => removeFromCart(item.cartId)}
                      >
                         Remove
                      </button>
                   </div>
+                  {item.category === 'build' && (
+                     <Link to={`/builder/${item.cartId}`}>Edit Build</Link>
+                  )}
                </CartItem>
             ))}
          </ProductList>
@@ -69,11 +71,7 @@ const CartPage = () => {
                <h3>
                   Total: $
                   {cart
-                     .reduce(
-                        (sum, item) =>
-                           sum + item.productData.price * item.quantity,
-                        0
-                     )
+                     .reduce((sum, item) => sum + item.price * item.quantity, 0)
                      .toFixed(2)}
                </h3>
             </div>
