@@ -61,6 +61,7 @@ const BuilderPage = () => {
          name: buildName,
          price: totalPrice,
          parts: selectedParts,
+         quantity: 1,
       };
 
       if (cartId) {

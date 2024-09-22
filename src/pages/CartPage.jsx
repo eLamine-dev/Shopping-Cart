@@ -29,7 +29,7 @@ const CartPage = () => {
                   <div className="details">
                      <h3>{item.name}</h3>
                      <p>Price: ${item.price.toFixed(2)}</p>
-                     {item.quantity && (
+                     {item.category !== 'build' && (
                         <div className="quantity">
                            <span>Quantity:</span>
                            <button

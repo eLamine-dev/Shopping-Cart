@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
+import StarRating from '../components/StarRating';
 
 const HomePage = () => {
    return (
@@ -34,22 +35,22 @@ const HomePage = () => {
             </div>
             <div className="guide-cards">
                <GuideCard>
-                  <div className="img"></div>
                   <h3>Gaming PC Build Guide</h3>
                   <p>Step-by-step guide for building a high-end gaming PC.</p>
+                  <img src="guide-1.jpg" alt="guid-1" />
                </GuideCard>
                <GuideCard>
-                  <div className="img"></div>
                   <h3>Choose your motherboard</h3>
                   <p>Learn to choose the best motherboard for your PC.</p>
+                  <img src="guide-2.jpg" alt="guid-2" />
                </GuideCard>
                <GuideCard>
-                  <div className="img"></div>
                   <h3>Upgrade your old PC</h3>
                   <p>
                      Guide for upgrading your existing rig with compatible
                      parts.
                   </p>
+                  <img src="guide-3.jpg" alt="guid-3" />
                </GuideCard>
             </div>
          </BuildingGuides>
@@ -62,35 +63,66 @@ const HomePage = () => {
                   <button>Shop Now</button>
                </Link>
             </div>
-            <div className="img"></div>
+            <img src="shop-section.png" alt="shop-section-img" />
          </PartsShopSection>
 
          <LatestBuildsSection>
             <div className="build-cards">
                <BuildCard>
-                  <div className="img"></div>
-                  <h3>Gaming Beast</h3>
-                  <p>Built for high-end gaming with the latest GPU.</p>
-                  <div className="rating">⭐⭐⭐⭐⭐</div>
+                  <img src="build-1.jpg" alt="Ultimate Gaming Powerhouse" />
+                  <div className="build-info">
+                     <h3>Ultimate Gaming Powerhouse</h3>
+                     <p>High-end setup for immersive gaming experiences.</p>
+                     <StarRating rating={5} />
+                  </div>
+                  <div className="key-specs">
+                     <h4>Key Specs</h4>
+                     <li>Windows 11 Pro</li>
+                     <li>Intel Core i9-13900K</li>
+                     <li>NVIDIA GeForce RTX 4090</li>
+                  </div>
+                  <div className="price">$4,199.00</div>
                </BuildCard>
                <BuildCard>
-                  <div className="img"></div>
-                  <h3>Workstation Pro</h3>
-                  <p>Ultimate performance for designers and creators.</p>
-                  <div className="rating">⭐⭐⭐⭐</div>
+                  <img src="build-2.jpg" alt="Creator's Dream Workstation" />
+                  <div className="build-info">
+                     <h3>Creator's Dream Workstation</h3>
+                     <p>
+                        Designed for seamless content creation and multitasking.
+                     </p>
+                     <StarRating rating={4.8} />
+                  </div>
+                  <div className="key-specs">
+                     <h4>Key Specs</h4>
+                     <li>Windows 11 Pro</li>
+                     <li>AMD Ryzen 9 7950X</li>
+                     <li>NVIDIA GeForce RTX 4080</li>
+                  </div>
+                  <div className="price">$3,299.00</div>
                </BuildCard>
                <BuildCard>
-                  <div className="img"></div>
-                  <h3>Budget Build</h3>
-                  <p>
-                     Affordable build with great performance for everyday use.
-                  </p>
-                  <div className="rating">⭐⭐⭐⭐</div>
+                  <img src="build-3.jpg" alt="Engineering Excellence Machine" />
+                  <div className="build-info">
+                     <h3>Engineering Precision Machine</h3>
+                     <p>Optimized for CAD and complex simulations.</p>
+                     <StarRating rating={4.5} />
+                  </div>
+                  <div className="key-specs">
+                     <h4>Key Specs</h4>
+                     <li>Windows 11 Pro</li>
+                     <li>Intel Xeon W-1390P</li>
+                     <li>NVIDIA Quadro RTX A5000</li>
+                  </div>
+                  <div className="price">$3,999.00</div>
                </BuildCard>
             </div>
+
             <div className="section-header">
                <h2>Latest Builds</h2>
-               <p>Check out our latest builds from our community.</p>
+               <p>
+                  Check out our latest community builds, ranging from budget to
+                  high-end setups.
+               </p>
                <Link to="/builder">
                   <button>Build Your Computer</button>
                </Link>
@@ -255,15 +287,12 @@ const GuideCard = styled.div`
    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
    cursor: pointer;
    margin: 10px;
+   padding: 8px;
 
-   .img {
-      width: 300px;
-      height: 200px;
-      background-image: url('placeholder.avif');
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-position: center;
-      border-radius: 10px 10px 0 0;
+   img {
+      width: 100%;
+
+      border-radius: 10px;
    }
 
    h3 {
@@ -324,26 +353,49 @@ const LatestBuildsSection = styled.section`
 `;
 
 const BuildCard = styled.div`
+   display: flex;
+   flex-direction: column;
    background-color: #06121f;
    width: 300px;
    border-radius: 10px;
-   text-align: center;
-   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+   text-align: left;
+
    cursor: pointer;
    margin: 10px;
 
-   .img {
-      width: 300px;
-      height: 200px;
-      background-image: url('placeholder.avif');
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-position: center;
+   img {
+      width: 100%;
       border-radius: 10px 10px 0 0;
    }
 
-   h3 {
-      margin-bottom: 10px;
+   h3,
+   h4,
+   p {
+      margin: 4px 0;
+   }
+
+   .build-info {
+      display: flex;
+      flex-direction: column;
+
+      padding: 8px 20px;
+   }
+
+   .key-specs {
+      padding: 8px 20px;
+      border-top: 1px solid #b1becd39;
+   }
+
+   .price {
+      font-size: 1rem;
+      font-weight: bold;
+      margin-top: auto;
+      padding: 10px 20px;
+      border-top: 1px solid #b1becd39;
+   }
+
+   li {
+      list-style: none;
    }
 `;
 
@@ -358,15 +410,36 @@ const PartsShopSection = styled.section`
    align-items: center;
    background-color: var(--dark2);
    width: 100%;
+   height: 300px;
+   border-radius: 20px;
+   justify-items: baseline;
+   background-image: linear-gradient(
+      to right,
+      #38bdf8,
+      #4ba1d4,
+      #5186b0,
+      #4f6d8c,
+      #475569
+   );
 
-   .img {
-      width: 300px;
-      height: 200px;
-      background-image: url('placeholder.avif');
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-position: center;
-      border-radius: 10px 10px 0 0;
+   .section-header {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      width: min-content;
+      min-width: 300px;
+      flex-grow: 1;
+
+      h2 {
+         font-size: 2.5rem;
+         margin: 0;
+      }
+   }
+
+   img {
+      height: 100%;
+      border-radius: 0 10px 10px 0;
    }
 `;
 
@@ -406,11 +479,12 @@ const TestimonialsSection = styled.section`
 const TestimonialCard = styled.div`
    display: flex;
    flex-direction: column;
+   justify-content: space-around;
    background-color: #06121f;
    min-width: 400px;
    border-radius: 10px;
    text-align: center;
-   height: 300px;
+   height: 200px;
    padding: 20px;
 
    p {
