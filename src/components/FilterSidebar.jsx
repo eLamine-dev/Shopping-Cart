@@ -50,6 +50,11 @@ function Filter({
       setPriceRange(newRange);
    };
 
+   const handleCategoryChange = () => {
+      setManufacturer(null);
+      window.moveTo(0, 0);
+   };
+
    return (
       <Wrapper>
          <div className="category-section">
@@ -60,7 +65,7 @@ function Filter({
                      key={category}
                      to={`/shop/${category}`}
                      isSelected={category === selectedCategory}
-                     onClick={() => setManufacturer(null)}
+                     onClick={() => handleCategoryChange()}
                   >
                      {category.replace(/-/g, ' ')}
                   </StyledNavLink>

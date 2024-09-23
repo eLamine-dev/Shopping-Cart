@@ -98,7 +98,7 @@ const GridWrapper = styled.div`
          left: 0;
          width: 100%;
          height: 100%;
-         background: rgba(0, 0, 0, 0.5); /* Darken overlay */
+         background: rgba(0, 0, 0, 0.5);
          display: flex;
          flex-direction: column;
          justify-content: center;

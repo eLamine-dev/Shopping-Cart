@@ -138,7 +138,7 @@ const BuilderPage = () => {
          </div>
 
          <button onClick={handleAddOrUpdateBuild}>
-            {cartId ? 'Update Build' : 'Add to Cart'}
+            {cartId ? 'Update Build' : 'Save to Cart'}
          </button>
       </Wrapper>
    );
@@ -169,6 +169,7 @@ const Wrapper = styled.div`
       background-color: var(--sl-1);
       border-radius: 10px;
       padding: 1rem;
+      margin-bottom: -28px;
    }
 
    .build-name {
@@ -226,10 +227,10 @@ const Wrapper = styled.div`
    }
 
    button {
-      padding: 10px 20px;
+      padding: 16px 40px;
       background-color: #007bff;
-
-      color: white;
+      font-size: 1.2rem;
+      color: var(--white);
       border: none;
       cursor: pointer;
       align-self: center;

@@ -24,30 +24,58 @@ const CartPage = () => {
             {cart.map((item) => (
                <CartItem key={item.cartId}>
                   <div className="image-container">
-                     <img src={item.image_url} alt={item.name} />
+                     {/* <img src={item.image_url} alt={item.name} /> */}
+                     <img src="/placeholder.avif" />
                   </div>
                   <div className="details">
-                     <h3>{item.name}</h3>
-                     <p>Price: ${item.price.toFixed(2)}</p>
+                     {item.category === 'build' ? (
+                        <Link
+                           className="product-name"
+                           to={`/builder/${item.cartId}`}
+                        >
+                           {item.name}
+                        </Link>
+                     ) : (
+                        <Link
+                           className="product-name"
+                           to={`/shop/${item.category}/${item.slug}`}
+                        >
+                           {item.name}
+                        </Link>
+                     )}
+
+                     <p className="unit-price">
+                        1 unit Price: ${item.price.toFixed(2)}
+                     </p>
                      {item.category !== 'build' && (
                         <div className="quantity">
-                           <span>Quantity:</span>
-                           <button
-                              onClick={() =>
-                                 updateQuantity(item.cartId, item.quantity - 1)
-                              }
-                              disabled={item.quantity <= 1}
-                           >
-                              -
-                           </button>
-                           <span>{item.quantity}</span>
-                           <button
-                              onClick={() =>
-                                 updateQuantity(item.cartId, item.quantity + 1)
-                              }
-                           >
-                              +
-                           </button>
+                           <span>Quantity </span>
+                           <div className="quantity-btns">
+                              <button
+                                 onClick={() =>
+                                    updateQuantity(
+                                       item.cartId,
+                                       item.quantity - 1
+                                    )
+                                 }
+                                 disabled={item.quantity <= 1}
+                              >
+                                 -
+                              </button>
+                              <span className="quantity-value">
+                                 {item.quantity}
+                              </span>
+                              <button
+                                 onClick={() =>
+                                    updateQuantity(
+                                       item.cartId,
+                                       item.quantity + 1
+                                    )
+                                 }
+                              >
+                                 +
+                              </button>
+                           </div>
                         </div>
                      )}
                   </div>
@@ -60,20 +88,15 @@ const CartPage = () => {
                         Remove
                      </button>
                   </div>
-                  {item.category === 'build' && (
-                     <Link to={`/builder/${item.cartId}`}>Edit Build</Link>
-                  )}
                </CartItem>
             ))}
          </ProductList>
          <CheckoutSection>
             <div className="total-price">
-               <h3>
-                  Total: $
-                  {cart
-                     .reduce((sum, item) => sum + item.price * item.quantity, 0)
-                     .toFixed(2)}
-               </h3>
+               Total: $
+               {cart
+                  .reduce((sum, item) => sum + item.price * item.quantity, 0)
+                  .toFixed(2)}
             </div>
             <Link to="/checkout" className="checkout-button">
                Proceed to Checkout
@@ -90,9 +113,9 @@ const Wrapper = styled.div`
    margin: 30px auto;
    padding: 20px;
    /* min-height: 70vh; */
-   background-color: #020616;
+   background-color: var(--sl-1);
    border-radius: 10px;
-   padding-bottom: 10rem;
+   padding-bottom: 5rem;
 
    h2.title {
       font-size: 2rem;
@@ -125,7 +148,6 @@ const EmptyCartMessage = styled.div`
 const ProductList = styled.div`
    display: flex;
    flex-direction: column;
-   gap: 20px;
 `;
 
 const CartItem = styled.div`
@@ -133,20 +155,32 @@ const CartItem = styled.div`
    justify-content: space-between;
    align-items: center;
    border-top: 1px solid #cccccc47;
-   padding: 20px;
+   padding: 16px;
+
+   .product-name {
+      font-size: 1.2rem;
+      font-weight: bold;
+      text-decoration: none;
+      color: var(--white);
+
+      &:hover {
+         color: #68a9ef;
+      }
+   }
 
    .image-container {
-      flex-basis: 20%;
+      width: 120px;
+      height: 120px;
       img {
          width: 100%;
          height: auto;
-         border-radius: 10px;
       }
    }
 
    .details {
       flex-basis: 60%;
       text-align: left;
+      align-self: flex-start;
       h3 {
          margin-bottom: 10px;
       }
@@ -154,32 +188,43 @@ const CartItem = styled.div`
          margin-bottom: 10px;
       }
 
+      .unit-price {
+         font-size: 1.1rem;
+      }
+
       .quantity {
          display: flex;
          align-items: center;
-         gap: 10px;
+         gap: 8px;
+         font-size: 1.1rem;
 
-         button {
-            padding: 5px 10px;
-            background-color: #007bff;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 1rem;
+         .quantity-btns {
+            display: flex;
+            gap: 5px;
 
-            &:hover {
-               background-color: #0056b3;
+            button {
+               padding: 5px 10px;
+               background-color: #007bff;
+               color: white;
+               border: none;
+               border-radius: 5px;
+               cursor: pointer;
+               font-size: 1rem;
+
+               &:hover {
+                  background-color: #0056b3;
+               }
+
+               &:disabled {
+                  background-color: #4fa3fc;
+                  cursor: not-allowed;
+               }
             }
 
-            &:disabled {
-               background-color: #ccc;
-               cursor: not-allowed;
+            .quantity-value {
+               margin: 0 10px;
+               width: 10px;
             }
-         }
-
-         span {
-            font-size: 1.2rem;
          }
       }
    }
@@ -187,6 +232,8 @@ const CartItem = styled.div`
    .total {
       flex-basis: 20%;
       text-align: right;
+      font-size: large;
+      font-weight: bold;
 
       .remove-button {
          background-color: #dc3545;
@@ -218,10 +265,10 @@ const CheckoutSection = styled.div`
    justify-content: space-between;
    align-items: center;
    padding: 20px 0;
-   margin-top: 30px;
+
    border-top: 1px solid #cccccc47;
 
-   .total-price h3 {
+   .total-price {
       font-size: 1.5rem;
       font-weight: bold;
    }

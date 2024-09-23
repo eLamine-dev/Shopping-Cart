@@ -36,6 +36,9 @@ function ProductLi({ product, selectedCategory, selectedManufacturer }) {
 
    return (
       <Wrapper>
+         <div className="product-img">
+            <img src="/placeholder.avif" alt={product.name} />
+         </div>
          <div className="left-side">
             {selectedManufacturer ? (
                <NavLink
@@ -54,13 +57,13 @@ function ProductLi({ product, selectedCategory, selectedManufacturer }) {
             )}
             <div className="specs">
                {Object.entries(productSpecs).map(([label, value]) => (
-                  <div key={label}>
-                     <span>
+                  <div className="spec" key={label}>
+                     <span className="spec-name">
                         {label.charAt(0).toUpperCase() +
                            label.slice(1).replace(/_/g, ' ')}
                         :
                      </span>
-                     <span> {value}</span>
+                     <span className="spec-value"> {value}</span>
                   </div>
                ))}
             </div>
@@ -76,13 +79,24 @@ function ProductLi({ product, selectedCategory, selectedManufacturer }) {
 const Wrapper = styled.div`
    display: flex;
    justify-content: space-between;
-   border-top: 1px solid rgba(255, 255, 255, 0.1);
+   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
    padding: 1rem;
+   align-items: start;
+   gap: 20px;
 
    /* --specsNumber: ${(props) => props.specsNumber};
 
    display: grid;
    grid-template-columns: 1fr repeat(--specsNumber, 1fr) 1fr; */
+
+   .product-img {
+      height: 120px;
+      align-self: center;
+      img {
+         height: 100%;
+         object-fit: cover;
+      }
+   }
 
    .name {
       flex-grow: 1;
@@ -97,22 +111,27 @@ const Wrapper = styled.div`
 
    .specs {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: repeat(2, minmax(200px, 1fr));
+      grid-template-rows: repeat(3, 1fr);
    }
    .spec {
-      width: 100px;
+      .spec-name {
+         font-weight: 600;
+         text-transform: capitalize;
+         color: var(--gr-5);
+      }
    }
 
    .right-side {
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
+      justify-content: center;
       align-items: end;
    }
    .left-side {
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
+      justify-content: center;
       flex-grow: 1;
       gap: 1rem;
    }

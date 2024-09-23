@@ -112,14 +112,14 @@ const Wrapper = styled.header`
       display: flex;
       align-items: center;
       border-bottom: 1px solid var(--border-color);
-      background-color: #020616;
+      background-color: var(--black);
    }
 
    .lower-row {
       display: flex;
       align-items: center;
       border-bottom: 1px solid var(--border-color);
-      background-color: #141828;
+      background-color: var(--sl-3);
    }
 
    .logo-cart {
@@ -172,7 +172,7 @@ const Wrapper = styled.header`
       top: 100%;
       left: 0;
       width: 100vw;
-      background-color: var(--dark2);
+      background-color: var(--sl-2);
       overflow: hidden;
 
       max-height: 0;

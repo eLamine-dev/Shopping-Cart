@@ -65,6 +65,9 @@ function ShopPage() {
             />
 
             <div className="list-view">
+               <div className="list-title">
+                  {filteredProducts.length} products
+               </div>
                {filteredProducts.map((product) => (
                   <ProductLi
                      key={product.id}
@@ -115,5 +118,12 @@ const Wrapper = styled.div`
       background-color: var(--sl-1);
       padding: 20px;
       border-radius: 10px;
+
+      .list-title {
+         font-weight: bold;
+         background-color: var(--gr-3);
+         border-radius: 3px;
+         padding: 10px;
+      }
    }
 `;
