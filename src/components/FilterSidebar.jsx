@@ -52,25 +52,22 @@ function Filter({
 
    return (
       <Wrapper>
-         {/* Categories Section */}
          <div className="category-section">
             <h3>Categories</h3>
-            <ul className="category-list">
+            <div className="category-list">
                {categories.map((category) => (
-                  <li key={category}>
-                     <StyledNavLink
-                        to={`/shop/${category}`}
-                        isSelected={category === selectedCategory}
-                        onClick={() => setManufacturer(null)}
-                     >
-                        {category}
-                     </StyledNavLink>
-                  </li>
+                  <StyledNavLink
+                     key={category}
+                     to={`/shop/${category}`}
+                     isSelected={category === selectedCategory}
+                     onClick={() => setManufacturer(null)}
+                  >
+                     {category.replace(/-/g, ' ')}
+                  </StyledNavLink>
                ))}
-            </ul>
+            </div>
          </div>
 
-         {/* Manufacturers Section */}
          {selectedCategory && manufacturers.length > 0 && (
             <div className="manufacturer-section">
                <h3>Manufacturers</h3>
@@ -117,18 +114,17 @@ export default Filter;
 /* Styled Components */
 
 const Wrapper = styled.div`
-   background-color: var(--dark1);
+   background-color: var(--sl-1);
    padding: 20px;
    border-radius: 10px;
    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
    display: flex;
    flex-direction: column;
-   gap: 20px;
    max-width: 300px;
 
    h3 {
       font-size: 1.2rem;
-      margin-bottom: 10px;
+
       padding-bottom: 5px;
       border-bottom: 1px solid #ddd;
    }
@@ -136,13 +132,20 @@ const Wrapper = styled.div`
    .category-section,
    .manufacturer-section,
    .price-filter-section {
-      margin-bottom: 20px;
+      /* margin-bottom: 10px; */
+   }
+
+   .category-list {
+      display: flex;
+      flex-direction: column;
+      text-transform: capitalize;
+      padding-left: 20px;
    }
 
    .manufacturer-list {
       display: flex;
       flex-direction: column;
-      gap: 10px;
+      /* gap: 10px; */
    }
 
    .manufacturer-radio {
@@ -167,37 +170,29 @@ const Wrapper = styled.div`
 
       label {
          font-size: 1rem;
-         color: #333;
+         color: var(--gr-5);
       }
    }
 `;
 
 const StyledNavLink = styled(NavLink)`
    text-decoration: none;
-   color: #333;
-   padding: 8px 0;
+   color: var(--white);
+   padding: 2px 0;
    font-size: 1rem;
    display: inline-block;
    position: relative;
    transition: all 0.3s ease;
 
    &:hover {
-      color: #007bff;
+      text-decoration: underline;
    }
 
    ${({ isSelected }) =>
       isSelected &&
       `
          color: #007bff;
-         &:after {
-            content: "";
-            position: absolute;
-            width: 100%;
-            height: 2px;
-            background-color: #007bff;
-            bottom: -3px;
-            left: 0;
-         }
+         text-decoration: underline;
       `}
 `;
 

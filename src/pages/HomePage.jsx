@@ -280,7 +280,7 @@ const BuildingGuides = styled.section`
 `;
 
 const GuideCard = styled.div`
-   background-color: #06121f;
+   background-color: var(--gr-3);
    width: 300px;
    border-radius: 10px;
    text-align: center;
@@ -355,7 +355,7 @@ const LatestBuildsSection = styled.section`
 const BuildCard = styled.div`
    display: flex;
    flex-direction: column;
-   background-color: #06121f;
+   background-color: var(--gr-2);
    width: 300px;
    border-radius: 10px;
    text-align: left;
@@ -435,6 +435,18 @@ const PartsShopSection = styled.section`
          font-size: 2.5rem;
          margin: 0;
       }
+      button {
+         background-color: #007bff;
+         color: white;
+         padding: 10px 20px;
+         border: none;
+         cursor: pointer;
+         border-radius: 5px;
+
+         &:hover {
+            background-color: #0056b3;
+         }
+      }
    }
 
    img {
@@ -480,7 +492,7 @@ const TestimonialCard = styled.div`
    display: flex;
    flex-direction: column;
    justify-content: space-around;
-   background-color: #06121f;
+   background-color: var(--gr-2);
    min-width: 400px;
    border-radius: 10px;
    text-align: center;

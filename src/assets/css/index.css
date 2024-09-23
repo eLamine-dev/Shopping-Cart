@@ -4,18 +4,24 @@
    font-family: 'Urbanist', sans-serif;
    --main-width: 1300px;
    --black: #030712;
-   --dark1: #020617;
-   --dark2: #0d1121;
-   --dark3: #141828
-
-   /* font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; */
+   --white: #f8fafc;
+   --sl-1: #020617;
+   --sl-2: #0d1121;
+   --sl-3: #141828;
+   --sl-4: #1e293b;
+   --sl-5: #334155;
+   --gr-1: #111827;
+   --gr-2: #1f2937;
+   --gr-3: #374151;
+   --gr-4: #4b5563;
+   --gr-5: #6b7280;
 
    line-height: 1.5;
-   font-weight: 400;
+   font-weight: 500;
 
    color-scheme: light dark;
    color: rgba(255, 255, 255, 0.87);
-   background-color: #141828;
+   background-color: var(--sl-3);
 
    font-synthesis: none;
    text-rendering: optimizeLegibility;

@@ -73,8 +73,8 @@ const BuilderPage = () => {
 
    return (
       <Wrapper>
-         <div className="title">
-            <h2>Build Your Custom PC</h2>
+         <div className="title-section">
+            <h2 className="product-title">Build Your Custom PC</h2>
          </div>
 
          <div className="form-container">
@@ -147,11 +147,17 @@ const BuilderPage = () => {
 const Wrapper = styled.div`
    display: flex;
    flex-direction: column;
-   .title {
-      align-content: center;
+   .title-section {
       text-align: center;
-      background-color: #0d1121;
-      height: 120px;
+      margin-bottom: -120px;
+      background-color: var(--gr-3);
+      height: 250px;
+
+      .product-title {
+         font-size: 2rem;
+         font-weight: bold;
+         margin-bottom: 5px;
+      }
    }
    .form-container {
       margin: 0 auto;
@@ -160,7 +166,7 @@ const Wrapper = styled.div`
       flex-direction: column;
       align-items: stretch;
       gap: 1rem;
-      background-color: #020616;
+      background-color: var(--sl-1);
       border-radius: 10px;
       padding: 1rem;
    }
@@ -207,13 +213,13 @@ const Wrapper = styled.div`
    }
 
    input {
-      background-color: #020616;
+      background-color: var(--sl-1);
       outline: none;
       border: none;
    }
 
    select {
-      background-color: #020616;
+      background-color: var(--sl-1);
       outline: none;
       border: none;
       font-size: medium;
@@ -222,6 +228,7 @@ const Wrapper = styled.div`
    button {
       padding: 10px 20px;
       background-color: #007bff;
+
       color: white;
       border: none;
       cursor: pointer;

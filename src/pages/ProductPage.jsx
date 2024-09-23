@@ -4,9 +4,10 @@ import { CartContext } from '../contexts/CartContext';
 import SpecsTable from '../components/SpecsTable';
 import AddToCart from '../components/AddToCart';
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 function ProductPage() {
-   const { selectedCategory, selectedManufacturer, productSlug } = useParams();
+   const { productSlug } = useParams();
    const Products = useOutletContext();
 
    let product = Object.values(Products)
@@ -19,112 +20,113 @@ function ProductPage() {
 
    return (
       <Wrapper>
-         <ProductHeader>
-            <div className="product-image">
-               <img src={product.image_url} alt={product.name} />
-            </div>
-            <div className="product-info">
-               <h2>{product.name}</h2>
-               <p className="product-price">${product.price.toFixed(2)}</p>
-               <AddToCart product={product} />
-            </div>
-         </ProductHeader>
+         <div className="title-section">
+            <h2 className="product-title">{product.name}</h2>
+            <Link to={`/shop/${product.category}`} className="back-link">
+               Back to {product.category}
+            </Link>
+         </div>
 
-         <ProductDetails>
-            <h3>Product Specifications</h3>
-            <SpecsTable product={product} />
-         </ProductDetails>
+         <div className="content-section">
+            <div className="content">
+               <div className="left">
+                  <div className="product-image">
+                     {/* <img src={product.image_url} alt={product.name} /> */}
+                     <img src="/placeholder.avif" />
+                  </div>
+                  <p className="product-price">${product.price.toFixed(2)}</p>
+                  <AddToCart product={product} />
+               </div>
+               <SpecsTable product={product} />
+            </div>
+         </div>
       </Wrapper>
    );
 }
 
+export default ProductPage;
+
 const Wrapper = styled.div`
-   max-width: 1200px;
-   margin: 0 auto;
-   padding: 20px;
-   min-height: 90vh;
-`;
-
-const ProductHeader = styled.div`
    display: flex;
-   gap: 30px;
-   margin-bottom: 30px;
-   align-items: center;
-   text-align: left;
+   flex-direction: column;
 
-   .product-image {
-      flex-basis: 40%;
-      img {
-         width: 100%;
-         height: auto;
-         border-radius: 8px;
-         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-      }
-   }
-
-   .product-info {
-      flex-basis: 60%;
-      h2 {
-         font-size: 2rem;
-         margin-bottom: 20px;
-      }
-
-      .product-price {
-         font-size: 1.5rem;
-         font-weight: bold;
-         margin-bottom: 20px;
-         color: #007bff;
-      }
-   }
-
-   @media (max-width: 768px) {
-      flex-direction: column;
+   .title-section {
       text-align: center;
-
-      .product-image,
-      .product-info {
-         flex-basis: 100%;
-      }
-   }
-`;
-
-const ProductDetails = styled.div`
-   margin-top: 40px;
-
-   h3 {
-      font-size: 1.8rem;
       margin-bottom: 20px;
-      text-align: left;
+      background-color: var(--gr-3);
+      height: 140px;
+      overflow: hidden;
+
+      .product-title {
+         font-size: 2rem;
+         font-weight: bold;
+         margin-bottom: 5px;
+         text-transform: capitalize;
+      }
+
+      .back-link {
+         font-size: 1rem;
+         color: #007bff;
+         text-decoration: none;
+
+         &:hover {
+            text-decoration: underline;
+         }
+      }
    }
 
-   table {
+   .content-section {
+      display: flex;
+      max-width: 1200px;
+      align-self: center;
       width: 100%;
-      border-collapse: collapse;
-      margin-bottom: 30px;
 
-      th,
-      td {
-         border: 1px solid #ddd;
-         padding: 15px;
-         text-align: left;
-      }
+      .content {
+         display: grid;
+         grid-template-columns: auto 1fr;
+         gap: 20px;
+         align-items: start;
+         width: 100%;
 
-      th {
-         background-color: #f4f4f4;
-         font-weight: bold;
-      }
-
-      td {
-         background-color: #fff;
-      }
-
-      @media (max-width: 768px) {
-         th,
-         td {
+         .left {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: var(--sl-1);
             padding: 10px;
+            border-radius: 10px;
+
+            .product-image {
+               width: 100%;
+               width: 300px;
+
+               img {
+                  width: 100%;
+                  height: auto;
+                  border-radius: 5px;
+               }
+            }
+
+            .product-price {
+               font-size: 1.5rem;
+               font-weight: bold;
+               margin: 10px 0;
+            }
+
+            button {
+               background-color: #007bff;
+               color: white;
+               padding: 10px 20px;
+               border: none;
+               border-radius: 5px;
+               cursor: pointer;
+               font-size: 1rem;
+
+               &:hover {
+                  background-color: #0056b3;
+               }
+            }
          }
       }
    }
 `;
-
-export default ProductPage;
