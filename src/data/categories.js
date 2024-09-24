@@ -1,0 +1,45 @@
+import { GrFan } from 'react-icons/gr';
+import { FiCpu } from 'react-icons/fi';
+import { PiComputerTowerBold } from 'react-icons/pi';
+import { TbTemperatureSnow } from 'react-icons/tb';
+import { FaRegHardDrive } from 'react-icons/fa6';
+import { AiOutlineControl } from 'react-icons/ai';
+import { FiHeadphones } from 'react-icons/fi';
+import { PiHardDrivesBold } from 'react-icons/pi';
+import { FaRegKeyboard } from 'react-icons/fa';
+import { BsMemory } from 'react-icons/bs';
+import { MdMonitor } from 'react-icons/md';
+import { BsMotherboard } from 'react-icons/bs';
+import { PiMouseMiddleClick } from 'react-icons/pi';
+import { AiOutlineCode } from 'react-icons/ai';
+import { MdOutlineElectricalServices } from 'react-icons/md';
+import { AiOutlineSound } from 'react-icons/ai';
+import { MdOutlineSpeakerGroup } from 'react-icons/md';
+import { FaPowerOff } from 'react-icons/fa6';
+import { PiGraphicsCard } from 'react-icons/pi';
+import { BiWebcam } from 'react-icons/bi';
+import { FaWifi } from 'react-icons/fa6';
+
+export const categories = [
+   { name: 'case-fan', icon: GrFan },
+   { name: 'case', icon: PiComputerTowerBold },
+   { name: 'cpu-cooler', icon: TbTemperatureSnow },
+   { name: 'cpu', icon: FiCpu },
+   { name: 'external-hard-drive', icon: FaRegHardDrive },
+   { name: 'fan-controller', icon: AiOutlineControl },
+   { name: 'headphones', icon: FiHeadphones },
+   { name: 'internal-hard-drive', icon: PiHardDrivesBold },
+   { name: 'keyboard', icon: FaRegKeyboard },
+   { name: 'memory', icon: BsMemory },
+   { name: 'monitor', icon: MdMonitor },
+   { name: 'motherboard', icon: BsMotherboard },
+   { name: 'mouse', icon: PiMouseMiddleClick },
+   { name: 'os', icon: AiOutlineCode },
+   { name: 'power-supply', icon: MdOutlineElectricalServices },
+   { name: 'sound-card', icon: AiOutlineSound },
+   { name: 'speakers', icon: MdOutlineSpeakerGroup },
+   { name: 'ups', icon: FaPowerOff },
+   { name: 'video-card', icon: PiGraphicsCard },
+   { name: 'webcam', icon: BiWebcam },
+   { name: 'wireless-network-card', icon: FaWifi },
+];

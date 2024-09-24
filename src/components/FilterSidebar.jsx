@@ -61,14 +61,16 @@ function Filter({
             <h3>Categories</h3>
             <div className="category-list">
                {categories.map((category) => (
-                  <StyledNavLink
+                  <NavLink
                      key={category}
                      to={`/shop/${category}`}
-                     isSelected={category === selectedCategory}
+                     className={({ isActive }) =>
+                        isActive ? 'category-link active' : 'category-link'
+                     }
                      onClick={() => handleCategoryChange()}
                   >
                      {category.replace(/-/g, ' ')}
-                  </StyledNavLink>
+                  </NavLink>
                ))}
             </div>
          </div>
@@ -178,27 +180,25 @@ const Wrapper = styled.div`
          color: var(--gr-5);
       }
    }
-`;
 
-const StyledNavLink = styled(NavLink)`
-   text-decoration: none;
-   color: var(--white);
-   padding: 2px 0;
-   font-size: 1rem;
-   display: inline-block;
-   position: relative;
-   transition: all 0.3s ease;
+   .category-link {
+      text-decoration: none;
+      color: var(--white);
+      padding: 2px 0;
+      font-size: 1rem;
+      display: inline-block;
+      position: relative;
+      transition: all 0.3s ease;
 
-   &:hover {
-      text-decoration: underline;
-   }
+      &:hover {
+         text-decoration: underline;
+      }
 
-   ${({ isSelected }) =>
-      isSelected &&
-      `
+      &.active {
          color: #007bff;
          text-decoration: underline;
-      `}
+      }
+   }
 `;
 
 Filter.propTypes = {

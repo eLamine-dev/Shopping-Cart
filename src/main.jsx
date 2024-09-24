@@ -7,30 +7,36 @@ import ShopPage from './pages/ShopPage';
 import ProductPage from './pages/ProductPage';
 import BuilderPage from './pages/BuilderPage';
 import CartPage from './pages/CartPage';
-import './assets/css/index.css';
+import NotFound from './pages/NotFound';
 import { ProductsLoader } from './data/ProductsLoader.jsx';
+import ProductsProvider from './contexts/ProductsContext.jsx';
+import './assets/css/index.css';
 
 const router = createBrowserRouter([
    {
       path: '/',
       element: <App />,
-      loader: ProductsLoader,
+
       children: [
-         { path: '', element: <HomePage /> },
-         { path: 'shop', element: <ShopPage /> },
+         { path: '/', element: <HomePage /> },
          {
-            path: 'shop/:category/manufacturer/:manufacturer/:productSlug',
-            element: <ProductPage />,
+            path: '/', // Product routes need products provider
+            element: <ProductsProvider />, // Acts as a product provider
+            loader: ProductsLoader,
+            children: [
+               {
+                  path: 'shop/:category/:productSlug',
+                  element: <ProductPage />,
+               },
+               { path: 'shop/:category', element: <ShopPage /> },
+               { path: 'shop', element: <ShopPage /> },
+               { path: 'builder/:cartId', element: <BuilderPage /> },
+               { path: 'builder', element: <BuilderPage /> },
+            ],
          },
-         {
-            path: 'shop/:category/manufacturer/:manufacturer',
-            element: <ShopPage />,
-         },
-         { path: 'shop/:category/:productSlug', element: <ProductPage /> },
-         { path: 'shop/:category', element: <ShopPage /> },
-         { path: 'builder/:cartId', element: <BuilderPage /> },
-         { path: 'builder', element: <BuilderPage /> },
+
          { path: 'cart', element: <CartPage /> },
+         { path: '*', element: <NotFound /> },
       ],
    },
 ]);

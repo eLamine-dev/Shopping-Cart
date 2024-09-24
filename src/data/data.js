@@ -1,4 +1,4 @@
-export const data = {
+export const productsData = {
    'case-fan': [
       {
          name: 'Corsair iCUE SP120 RGB ELITE 3-Pack',
@@ -212,7 +212,7 @@ export const data = {
       },
       {
          name: 'Lian Li UNI FAN SL-INF Reverse Blade',
-         price: null,
+         price: 47,
          size: 120,
          color: 'White / Black',
          rpm: [200, 2100],
@@ -438,7 +438,7 @@ export const data = {
       },
       {
          name: 'Deepcool CC560',
-         price: null,
+         price: 140,
          type: 'ATX Mid Tower',
          color: 'Black',
          psu: null,
@@ -1319,7 +1319,7 @@ export const data = {
       },
       {
          name: 'Sabrent Rocket XTRM-Q',
-         price: null,
+         price: 310,
          type: 'Desktop',
          interface: 'USB Type-C 3.2 Gen 2',
          capacity: 16000,
@@ -1540,7 +1540,7 @@ export const data = {
       },
       {
          name: 'Samsung T5',
-         price: null,
+         price: 302,
          type: 'Portable',
          interface: 'USB Type-C 3.2 Gen 1',
          capacity: 1000,
@@ -1659,7 +1659,7 @@ export const data = {
       },
       {
          name: 'NZXT SENTRY 3',
-         price: null,
+         price: 87,
          channels: 5,
          channel_wattage: 15,
          pwm: true,
@@ -1672,7 +1672,7 @@ export const data = {
       },
       {
          name: 'Thermaltake Commander F6 RGB',
-         price: null,
+         price: 95,
          channels: 6,
          channel_wattage: 0.03,
          pwm: true,
@@ -1685,7 +1685,7 @@ export const data = {
       },
       {
          name: 'Lamptron FC-CF525-BK',
-         price: null,
+         price: 89,
          channels: 5,
          channel_wattage: 60,
          pwm: true,
@@ -1698,7 +1698,7 @@ export const data = {
       },
       {
          name: 'Lamptron FC-FC5V3-BK',
-         price: null,
+         price: 81,
          channels: 6,
          channel_wattage: 30,
          pwm: true,
@@ -1711,7 +1711,7 @@ export const data = {
       },
       {
          name: 'Aerocool Touch 2100',
-         price: null,
+         price: 91,
          channels: 5,
          channel_wattage: 25,
          pwm: false,
@@ -1724,7 +1724,7 @@ export const data = {
       },
       {
          name: 'Deepcool ROCK MASTER V3.0',
-         price: null,
+         price: 89,
          channels: 4,
          channel_wattage: 10,
          pwm: true,
@@ -1737,7 +1737,7 @@ export const data = {
       },
       {
          name: 'Lamptron FC2',
-         price: null,
+         price: 67,
          channels: 6,
          channel_wattage: 45,
          pwm: true,
@@ -1750,7 +1750,7 @@ export const data = {
       },
       {
          name: 'Kingwin FPX-005',
-         price: null,
+         price: 68,
          channels: 5,
          channel_wattage: 8,
          pwm: true,
@@ -1763,7 +1763,7 @@ export const data = {
       },
       {
          name: 'NZXT Sentry LX',
-         price: null,
+         price: 83,
          channels: 5,
          channel_wattage: 6,
          pwm: false,
@@ -1776,7 +1776,7 @@ export const data = {
       },
       {
          name: 'NZXT Sentry Mesh',
-         price: null,
+         price: 96,
          channels: 5,
          channel_wattage: 30,
          pwm: false,
@@ -1789,7 +1789,7 @@ export const data = {
       },
       {
          name: 'Thermaltake AC-001-BN1NAN-A1',
-         price: null,
+         price: 76,
          channels: 5,
          channel_wattage: 8,
          pwm: true,
@@ -1802,7 +1802,7 @@ export const data = {
       },
       {
          name: 'Kingwin FPX-003',
-         price: null,
+         price: 72,
          channels: 4,
          channel_wattage: 8,
          pwm: false,
@@ -1815,7 +1815,7 @@ export const data = {
       },
       {
          name: 'Scythe Kaze Master Flat II',
-         price: null,
+         price: 74,
          channels: 4,
          channel_wattage: 36,
          pwm: false,
@@ -1841,7 +1841,7 @@ export const data = {
       },
       {
          name: 'NZXT Sentry 2',
-         price: null,
+         price: 90,
          channels: 5,
          channel_wattage: 10,
          pwm: false,
@@ -1854,7 +1854,7 @@ export const data = {
       },
       {
          name: 'BitFenix Recon (Black)',
-         price: null,
+         price: 71,
          channels: 5,
          channel_wattage: 10,
          pwm: true,
@@ -1867,7 +1867,7 @@ export const data = {
       },
       {
          name: 'Lamptron FC9',
-         price: null,
+         price: 75,
          channels: 4,
          channel_wattage: 50,
          pwm: true,
@@ -1880,7 +1880,7 @@ export const data = {
       },
       {
          name: 'Silverstone FP59B',
-         price: null,
+         price: 98,
          channels: 1,
          channel_wattage: null,
          pwm: false,
@@ -1893,7 +1893,7 @@ export const data = {
       },
       {
          name: 'Aerocool CoolTouch-R Black',
-         price: null,
+         price: 70,
          channels: 4,
          channel_wattage: 20,
          pwm: true,
@@ -1906,7 +1906,7 @@ export const data = {
       },
       {
          name: 'Aerocool Touch 2000',
-         price: null,
+         price: 94,
          channels: 4,
          channel_wattage: 6,
          pwm: false,
@@ -1919,7 +1919,7 @@ export const data = {
       },
       {
          name: 'Lamptron Fanatic',
-         price: null,
+         price: 76,
          channels: 5,
          channel_wattage: 60,
          pwm: true,
@@ -2032,7 +2032,7 @@ export const data = {
       },
       {
          name: 'HP HyperX Cloud',
-         price: null,
+         price: 519,
          type: 'Circumaural',
          frequency_response: [15, 25],
          microphone: true,
@@ -2144,7 +2144,7 @@ export const data = {
       },
       {
          name: 'Beyerdynamic DT 990 Pro 250',
-         price: null,
+         price: 430,
          type: 'Circumaural',
          frequency_response: [5, 35],
          microphone: false,
@@ -3270,7 +3270,7 @@ export const data = {
       },
       {
          name: 'Corsair Vengeance RGB Pro 64 GB',
-         price: null,
+         price: 91,
          speed: [4, 3200],
          modules: [4, 16],
          price_per_gb: null,
@@ -3342,7 +3342,7 @@ export const data = {
       },
       {
          name: 'KOORUI 24E3',
-         price: null,
+         price: 1465,
          screen_size: 24,
          resolution: [1920, 1080],
          refresh_rate: 165,
@@ -3608,7 +3608,7 @@ export const data = {
       },
       {
          name: 'Asus ProArt PQ22UC',
-         price: null,
+         price: 1151,
          screen_size: 21.6,
          resolution: [3840, 2160],
          refresh_rate: 60,
@@ -4198,7 +4198,7 @@ export const data = {
       },
       {
          name: 'Glorious MODEL O',
-         price: null,
+         price: 131,
          tracking_method: 'Optical',
          connection_type: 'Wired',
          max_dpi: 12000,
@@ -4262,7 +4262,7 @@ export const data = {
       },
       {
          name: 'Microsoft Windows 10 Home (64-bit)',
-         price: null,
+         price: 144,
          mode: 64,
          max_memory: 128,
          manufacturer: 'Microsoft',
@@ -4292,7 +4292,7 @@ export const data = {
       },
       {
          name: 'Microsoft Windows 10 Pro (64-bit)',
-         price: null,
+         price: 202,
          mode: 64,
          max_memory: 2048,
          manufacturer: 'Microsoft',
@@ -4332,7 +4332,7 @@ export const data = {
       },
       {
          name: 'Microsoft Windows 10 Pro (64-bit)',
-         price: null,
+         price: 159,
          mode: 64,
          max_memory: 2048,
          manufacturer: 'Microsoft',
@@ -4342,7 +4342,7 @@ export const data = {
       },
       {
          name: 'Microsoft Windows 10 Home (64-bit)',
-         price: null,
+         price: 162,
          mode: 64,
          max_memory: 128,
          manufacturer: 'Microsoft',
@@ -4352,7 +4352,7 @@ export const data = {
       },
       {
          name: 'Microsoft Windows 10 Pro (32/64-bit)',
-         price: null,
+         price: 206,
          mode: [32, 64],
          max_memory: 2048,
          manufacturer: 'Microsoft',
@@ -4362,7 +4362,7 @@ export const data = {
       },
       {
          name: 'Microsoft Windows 10 Pro (32/64-bit)',
-         price: null,
+         price: 207,
          mode: [32, 64],
          max_memory: 2048,
          manufacturer: 'Microsoft',
@@ -4372,7 +4372,7 @@ export const data = {
       },
       {
          name: 'Microsoft Windows 10 Home (64-bit)',
-         price: null,
+         price: 162,
          mode: 64,
          max_memory: 128,
          manufacturer: 'Microsoft',
@@ -4382,7 +4382,7 @@ export const data = {
       },
       {
          name: 'Microsoft Windows 10 Pro (32/64-bit)',
-         price: null,
+         price: 143,
          mode: [32, 64],
          max_memory: 2048,
          manufacturer: 'Microsoft',
@@ -4392,7 +4392,7 @@ export const data = {
       },
       {
          name: 'Microsoft Windows 10 Home (32/64-bit)',
-         price: null,
+         price: 182,
          mode: [32, 64],
          max_memory: 128,
          manufacturer: 'Microsoft',
@@ -4422,7 +4422,7 @@ export const data = {
       },
       {
          name: 'Microsoft Windows 10 Pro (32/64-bit)',
-         price: null,
+         price: 177,
          mode: [32, 64],
          max_memory: 2048,
          manufacturer: 'Microsoft',
@@ -4432,7 +4432,7 @@ export const data = {
       },
       {
          name: 'Microsoft Windows 10 Home (32/64-bit)',
-         price: null,
+         price: 195,
          mode: [32, 64],
          max_memory: 128,
          manufacturer: 'Microsoft',
@@ -4442,7 +4442,7 @@ export const data = {
       },
       {
          name: 'Microsoft Windows 10 Home (32/64-bit)',
-         price: null,
+         price: 170,
          mode: [32, 64],
          max_memory: 128,
          manufacturer: 'Microsoft',
@@ -4452,7 +4452,7 @@ export const data = {
       },
       {
          name: 'Microsoft Windows 10 Home (32/64-bit)',
-         price: null,
+         price: 193,
          mode: [32, 64],
          max_memory: 128,
          manufacturer: 'Microsoft',
@@ -4462,7 +4462,7 @@ export const data = {
       },
       {
          name: 'Microsoft Windows 10 Home (32-bit)',
-         price: null,
+         price: 182,
          mode: 32,
          max_memory: 4,
          manufacturer: 'Microsoft',
@@ -4472,7 +4472,7 @@ export const data = {
       },
       {
          name: 'Microsoft Windows 10 Pro (32-bit)',
-         price: null,
+         price: 159,
          mode: 32,
          max_memory: 4,
          manufacturer: 'Microsoft',
@@ -4492,7 +4492,7 @@ export const data = {
       },
       {
          name: 'Microsoft Windows 7 Ultimate SP1 (64-bit)',
-         price: null,
+         price: 145,
          mode: 64,
          max_memory: 192,
          manufacturer: 'Microsoft',
@@ -4502,7 +4502,7 @@ export const data = {
       },
       {
          name: 'Microsoft Windows 8 Pro (32-bit)',
-         price: null,
+         price: 196,
          mode: 32,
          max_memory: 4,
          manufacturer: 'Microsoft',
@@ -4512,7 +4512,7 @@ export const data = {
       },
       {
          name: 'Microsoft Windows 7 Home Premium SP1 (32-bit)',
-         price: null,
+         price: 210,
          mode: 32,
          max_memory: 4,
          manufacturer: 'Microsoft',
@@ -4532,7 +4532,7 @@ export const data = {
       },
       {
          name: 'Microsoft Windows 8 (32-bit)',
-         price: null,
+         price: 160,
          mode: 32,
          max_memory: 4,
          manufacturer: 'Microsoft',
@@ -4542,7 +4542,7 @@ export const data = {
       },
       {
          name: 'Microsoft Windows 7 Professional SP1 (64-bit)',
-         price: null,
+         price: 156,
          mode: 64,
          max_memory: 192,
          manufacturer: 'Microsoft',
@@ -4552,7 +4552,7 @@ export const data = {
       },
       {
          name: 'Microsoft Windows 7 Pro SP1 DE (64-bit)',
-         price: null,
+         price: 171,
          mode: 64,
          max_memory: 192,
          manufacturer: 'Microsoft',
@@ -4562,7 +4562,7 @@ export const data = {
       },
       {
          name: 'Microsoft Windows 7 Ultimate SP1 (32-bit)',
-         price: null,
+         price: 156,
          mode: 32,
          max_memory: 4,
          manufacturer: 'Microsoft',
@@ -4572,7 +4572,7 @@ export const data = {
       },
       {
          name: 'Microsoft Windows 7 Home Premium SP1 (64-bit)',
-         price: null,
+         price: 148,
          mode: 64,
          max_memory: 16,
          manufacturer: 'Microsoft',
@@ -4582,7 +4582,7 @@ export const data = {
       },
       {
          name: 'Microsoft Windows 7 Ultimate (32/64-bit)',
-         price: null,
+         price: 211,
          mode: [32, 64],
          max_memory: 192,
          manufacturer: 'Microsoft',
@@ -4592,7 +4592,7 @@ export const data = {
       },
       {
          name: 'Microsoft Windows 7 Home Premium SP1 (32-bit)',
-         price: null,
+         price: 183,
          mode: 32,
          max_memory: 4,
          manufacturer: 'Microsoft',
@@ -4890,7 +4890,7 @@ export const data = {
       },
       {
          name: 'Corsair CV650',
-         price: null,
+         price: 118,
          type: 'ATX',
          efficiency: 'bronze',
          wattage: 650,
@@ -5044,7 +5044,7 @@ export const data = {
       },
       {
          name: 'Asus Xonar Essence STX',
-         price: null,
+         price: 153,
          channels: 7.1,
          digital_audio: 24,
          snr: 124,
@@ -5058,7 +5058,7 @@ export const data = {
       },
       {
          name: 'Creative Labs Sound BlasterX AE-5 Plus Pure',
-         price: null,
+         price: 151,
          channels: 5.1,
          digital_audio: 32,
          snr: 122,
@@ -5100,7 +5100,7 @@ export const data = {
       },
       {
          name: 'Asus Xonar Phoebus',
-         price: null,
+         price: 114,
          channels: 7.1,
          digital_audio: 24,
          snr: 118,
@@ -5170,7 +5170,7 @@ export const data = {
       },
       {
          name: 'Creative Labs Sound Blaster Z w/Shield',
-         price: null,
+         price: 157,
          channels: 5.1,
          digital_audio: 24,
          snr: 116,
@@ -5184,7 +5184,7 @@ export const data = {
       },
       {
          name: 'EVGA NU AUDIO PRO',
-         price: null,
+         price: 128,
          channels: 2,
          digital_audio: 32,
          snr: 123,
@@ -5198,7 +5198,7 @@ export const data = {
       },
       {
          name: 'Asus Xonar DGX',
-         price: null,
+         price: 135,
          channels: 5.1,
          digital_audio: 24,
          snr: 105,
@@ -5212,7 +5212,7 @@ export const data = {
       },
       {
          name: 'Creative Labs Sound Blaster X-Fi Titanium HD',
-         price: null,
+         price: 118,
          channels: 7.1,
          digital_audio: 24,
          snr: 122,
@@ -5226,7 +5226,7 @@ export const data = {
       },
       {
          name: 'EVGA NU',
-         price: null,
+         price: 110,
          channels: 5.1,
          digital_audio: 24,
          snr: 123,
@@ -5240,7 +5240,7 @@ export const data = {
       },
       {
          name: 'Asus Essence STX II',
-         price: null,
+         price: 140,
          channels: 2,
          digital_audio: 24,
          snr: 124,
@@ -5352,7 +5352,7 @@ export const data = {
       },
       {
          name: 'KEF LSXWH',
-         price: null,
+         price: 217,
          configuration: 2,
          wattage: 200,
          frequency_response: [49, 47],
@@ -5606,7 +5606,7 @@ export const data = {
       },
       {
          name: 'APC SRT10KXLI',
-         price: null,
+         price: 2312,
          capacity_w: 10000,
          capacity_va: 10000,
          manufacturer: 'APC',
@@ -5766,7 +5766,7 @@ export const data = {
       },
       {
          name: 'APC SMT2200I',
-         price: null,
+         price: 2666,
          capacity_w: 1980,
          capacity_va: 2200,
          manufacturer: 'APC',
@@ -6540,7 +6540,7 @@ export const data = {
       },
       {
          name: 'Gigabyte GC-AQC107',
-         price: null,
+         price: 98,
          interface: 'PCIe x4',
          color: 'Black / White',
          manufacturer: 'Gigabyte',
@@ -6630,7 +6630,7 @@ export const data = {
       },
       {
          name: 'Intel EXPI9301CT',
-         price: null,
+         price: 104,
          interface: 'PCIe x1',
          color: null,
          manufacturer: 'Intel',

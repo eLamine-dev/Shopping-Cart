@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import StarRating from '../components/StarRating';
+import heroBackground from '/hero-background.jpg';
 
 const HomePage = () => {
    return (
@@ -21,146 +22,155 @@ const HomePage = () => {
                </div>
             </HeroText>
          </HeroSection>
-
-         <BuildingGuides>
-            <div className="section-header">
-               <h2>Our Guides</h2>
-               <p>
-                  Learn how to build your ultimate PC and start your own
-                  journey.
-               </p>
-               <Link to="/guides">
-                  <button>View our Guides</button>
-               </Link>
-            </div>
-            <div className="guide-cards">
-               <GuideCard>
-                  <h3>Gaming PC Build Guide</h3>
-                  <p>Step-by-step guide for building a high-end gaming PC.</p>
-                  <img src="guide-1.jpg" alt="guid-1" />
-               </GuideCard>
-               <GuideCard>
-                  <h3>Choose your motherboard</h3>
-                  <p>Learn to choose the best motherboard for your PC.</p>
-                  <img src="guide-2.jpg" alt="guid-2" />
-               </GuideCard>
-               <GuideCard>
-                  <h3>Upgrade your old PC</h3>
+         <div className="page-content">
+            <BuildingGuides>
+               <div className="section-header">
+                  <h2>Our Guides</h2>
                   <p>
-                     Guide for upgrading your existing rig with compatible
-                     parts.
+                     Learn how to build your ultimate PC and start your own
+                     journey.
                   </p>
-                  <img src="guide-3.jpg" alt="guid-3" />
-               </GuideCard>
-            </div>
-         </BuildingGuides>
-
-         <PartsShopSection>
-            <div className="section-header">
-               <h2>Popular PC Parts</h2>
-               <p>Find the latest parts on the market and upgrade your PC</p>
-               <Link to="/shop">
-                  <button>Shop Now</button>
-               </Link>
-            </div>
-            <img src="shop-section.png" alt="shop-section-img" />
-         </PartsShopSection>
-
-         <LatestBuildsSection>
-            <div className="build-cards">
-               <BuildCard>
-                  <img src="build-1.jpg" alt="Ultimate Gaming Powerhouse" />
-                  <div className="build-info">
-                     <h3>Ultimate Gaming Powerhouse</h3>
-                     <p>High-end setup for immersive gaming experiences.</p>
-                     <StarRating rating={5} />
-                  </div>
-                  <div className="key-specs">
-                     <h4>Key Specs</h4>
-                     <li>Windows 11 Pro</li>
-                     <li>Intel Core i9-13900K</li>
-                     <li>NVIDIA GeForce RTX 4090</li>
-                  </div>
-                  <div className="price">$4,199.00</div>
-               </BuildCard>
-               <BuildCard>
-                  <img src="build-2.jpg" alt="Creator's Dream Workstation" />
-                  <div className="build-info">
-                     <h3>Creator's Dream Workstation</h3>
+                  <Link to="/guides">
+                     <button>View our Guides</button>
+                  </Link>
+               </div>
+               <div className="guide-cards">
+                  <GuideCard>
+                     <h3>Gaming PC Build Guide</h3>
                      <p>
-                        Designed for seamless content creation and multitasking.
+                        Step-by-step guide for building a high-end gaming PC.
                      </p>
-                     <StarRating rating={4.8} />
-                  </div>
-                  <div className="key-specs">
-                     <h4>Key Specs</h4>
-                     <li>Windows 11 Pro</li>
-                     <li>AMD Ryzen 9 7950X</li>
-                     <li>NVIDIA GeForce RTX 4080</li>
-                  </div>
-                  <div className="price">$3,299.00</div>
-               </BuildCard>
-               <BuildCard>
-                  <img src="build-3.jpg" alt="Engineering Excellence Machine" />
-                  <div className="build-info">
-                     <h3>Engineering Precision Machine</h3>
-                     <p>Optimized for CAD and complex simulations.</p>
-                     <StarRating rating={4.5} />
-                  </div>
-                  <div className="key-specs">
-                     <h4>Key Specs</h4>
-                     <li>Windows 11 Pro</li>
-                     <li>Intel Xeon W-1390P</li>
-                     <li>NVIDIA Quadro RTX A5000</li>
-                  </div>
-                  <div className="price">$3,999.00</div>
-               </BuildCard>
-            </div>
+                     <img src="guide-1.jpg" alt="guid-1" />
+                  </GuideCard>
+                  <GuideCard>
+                     <h3>Choose your motherboard</h3>
+                     <p>Learn to choose the best motherboard for your PC.</p>
+                     <img src="guide-2.jpg" alt="guid-2" />
+                  </GuideCard>
+                  <GuideCard>
+                     <h3>Upgrade your old PC</h3>
+                     <p>
+                        Guide for upgrading your existing rig with compatible
+                        parts.
+                     </p>
+                     <img src="guide-3.jpg" alt="guid-3" />
+                  </GuideCard>
+               </div>
+            </BuildingGuides>
 
-            <div className="section-header">
-               <h2>Latest Builds</h2>
-               <p>
-                  Check out our latest community builds, ranging from budget to
-                  high-end setups.
-               </p>
-               <Link to="/builder">
-                  <button>Build Your Computer</button>
-               </Link>
-            </div>
-         </LatestBuildsSection>
+            <PartsShopSection>
+               <div className="section-header">
+                  <h2>Popular PC Parts</h2>
+                  <p>Find the latest parts on the market and upgrade your PC</p>
+                  <Link to="/shop">
+                     <button>Shop Now</button>
+                  </Link>
+               </div>
+               <img src="shop-section.png" alt="shop-section-img" />
+            </PartsShopSection>
 
-         <TestimonialsSection>
-            <div className="section-header">
-               <h2>What Users Say</h2>
-            </div>
-            <div className="Testimonial-cards">
-               <TestimonialCard>
+            <LatestBuildsSection>
+               <div className="build-cards">
+                  <BuildCard>
+                     <img src="build-1.jpg" alt="Ultimate Gaming Powerhouse" />
+                     <div className="build-info">
+                        <h3>Ultimate Gaming Powerhouse</h3>
+                        <p>High-end setup for immersive gaming experiences.</p>
+                        <StarRating rating={5} />
+                     </div>
+                     <div className="key-specs">
+                        <h4>Key Specs</h4>
+                        <li>Windows 11 Pro</li>
+                        <li>Intel Core i9-13900K</li>
+                        <li>NVIDIA GeForce RTX 4090</li>
+                     </div>
+                     <div className="price">$4,199.00</div>
+                  </BuildCard>
+                  <BuildCard>
+                     <img src="build-2.jpg" alt="Creator's Dream Workstation" />
+                     <div className="build-info">
+                        <h3>Creator's Dream Workstation</h3>
+                        <p>
+                           Designed for seamless content creation and
+                           multitasking.
+                        </p>
+                        <StarRating rating={4.8} />
+                     </div>
+                     <div className="key-specs">
+                        <h4>Key Specs</h4>
+                        <li>Windows 11 Pro</li>
+                        <li>AMD Ryzen 9 7950X</li>
+                        <li>NVIDIA GeForce RTX 4080</li>
+                     </div>
+                     <div className="price">$3,299.00</div>
+                  </BuildCard>
+                  <BuildCard>
+                     <img
+                        src="build-3.jpg"
+                        alt="Engineering Excellence Machine"
+                     />
+                     <div className="build-info">
+                        <h3>Engineering Precision Machine</h3>
+                        <p>Optimized for CAD and complex simulations.</p>
+                        <StarRating rating={4.5} />
+                     </div>
+                     <div className="key-specs">
+                        <h4>Key Specs</h4>
+                        <li>Windows 11 Pro</li>
+                        <li>Intel Xeon W-1390P</li>
+                        <li>NVIDIA Quadro RTX A5000</li>
+                     </div>
+                     <div className="price">$3,999.00</div>
+                  </BuildCard>
+               </div>
+
+               <div className="section-header">
+                  <h2>Latest Builds</h2>
                   <p>
-                     As a first-time builder, this site was incredibly helpful!
-                     The guides made everything so easy to understand. I
-                     successfully built my PC and couldn’t be happier!
+                     Check out our latest community builds, ranging from budget
+                     to high-end setups.
                   </p>
-                  <strong>— Emily J.</strong>
-               </TestimonialCard>
-               <TestimonialCard>
-                  <p>
-                     Fantastic resource for PC enthusiasts! The detailed guides
-                     and part recommendations helped me optimize my build. I
-                     love how easy it is to find quality components here.
-                  </p>
-                  <strong>— Sara P.</strong>
-               </TestimonialCard>
-               <TestimonialCard>
-                  <p>
-                     As a seasoned builder, I appreciate the comprehensive
-                     guides and curated parts selection. This site is my go-to
-                     for reliable components and expert insights. Highly
-                     recommended for all skill levels!
-                  </p>
-                  <strong>— Michael S.</strong>
-               </TestimonialCard>
-            </div>
-         </TestimonialsSection>
+                  <Link to="/builder">
+                     <button>Build Your Computer</button>
+                  </Link>
+               </div>
+            </LatestBuildsSection>
+
+            <TestimonialsSection>
+               <div className="section-header">
+                  <h2>What Users Say</h2>
+               </div>
+               <div className="Testimonial-cards">
+                  <TestimonialCard>
+                     <p>
+                        As a first-time builder, this site was incredibly
+                        helpful! The guides made everything so easy to
+                        understand. I successfully built my PC and couldn’t be
+                        happier!
+                     </p>
+                     <strong>— Emily J.</strong>
+                  </TestimonialCard>
+                  <TestimonialCard>
+                     <p>
+                        Fantastic resource for PC enthusiasts! The detailed
+                        guides and part recommendations helped me optimize my
+                        build. I love how easy it is to find quality components
+                        here.
+                     </p>
+                     <strong>— Sara P.</strong>
+                  </TestimonialCard>
+                  <TestimonialCard>
+                     <p>
+                        As a seasoned builder, I appreciate the comprehensive
+                        guides and curated parts selection. This site is my
+                        go-to for reliable components and expert insights.
+                        Highly recommended for all skill levels!
+                     </p>
+                     <strong>— Michael S.</strong>
+                  </TestimonialCard>
+               </div>
+            </TestimonialsSection>
+         </div>
       </Wrapper>
    );
 };
@@ -171,19 +181,26 @@ const Wrapper = styled.div`
    display: flex;
    flex-direction: column;
    gap: 50px;
+
+   .page-content {
+      max-width: var(--main-width);
+      margin: 0 auto;
+      padding: 0 20px;
+   }
 `;
 
 const HeroSection = styled.section`
-   height: 500px;
-   /* background-image: url('hero-background.jpg');
+   height: 800px;
+   background-image: url(${heroBackground});
    background-size: cover;
-   background-position: center; */
+   background-position: center;
+   background-repeat: no-repeat;
    display: flex;
    justify-content: center;
    align-items: center;
-   color: white;
+   color: var(--white);
    text-align: center;
-   margin-bottom: 50px;
+   margin-bottom: 20px;
 `;
 
 const HeroText = styled.div`
@@ -230,13 +247,11 @@ const HeroText = styled.div`
 `;
 
 const BuildingGuides = styled.section`
-   max-width: var(--main-width);
-   margin: 0 auto;
    display: flex;
-   justify-content: center;
+   justify-content: space-between;
    flex-wrap: wrap;
    gap: 30px;
-   margin-bottom: 50px;
+   margin-bottom: 30px;
    align-items: center;
 
    .section-header {
@@ -246,6 +261,7 @@ const BuildingGuides = styled.section`
       text-align: center;
       width: min-content;
       min-width: 300px;
+      flex: 1;
 
       h2 {
          font-size: 2.5rem;
@@ -301,13 +317,11 @@ const GuideCard = styled.div`
 `;
 
 const LatestBuildsSection = styled.section`
-   max-width: var(--main-width);
-   margin: 0 auto;
    display: flex;
-   justify-content: center;
+   justify-content: space-between;
    flex-wrap: wrap-reverse;
    gap: 30px;
-   margin-bottom: 50px;
+   margin-bottom: 30px;
    align-items: center;
 
    .section-header {
@@ -317,6 +331,7 @@ const LatestBuildsSection = styled.section`
       text-align: center;
       width: min-content;
       min-width: 300px;
+      flex: 1;
 
       h2 {
          font-size: 2.5rem;
@@ -347,8 +362,6 @@ const LatestBuildsSection = styled.section`
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-
-      /* gap: 20px; */
    }
 `;
 
@@ -400,26 +413,22 @@ const BuildCard = styled.div`
 `;
 
 const PartsShopSection = styled.section`
-   max-width: var(--main-width);
-   margin: 0 auto;
    display: flex;
    justify-content: space-between;
    flex-wrap: wrap;
    gap: 30px;
-   margin-bottom: 50px;
+   margin-bottom: 30px;
    align-items: center;
-   background-color: var(--dark2);
+
    width: 100%;
    height: 300px;
    border-radius: 20px;
    justify-items: baseline;
-   background-image: linear-gradient(
-      to right,
-      #38bdf8,
-      #4ba1d4,
-      #5186b0,
-      #4f6d8c,
-      #475569
+   background: rgb(51, 65, 85);
+   background: linear-gradient(
+      90deg,
+      rgba(51, 65, 85, 0.5) 0%,
+      rgba(107, 114, 128, 0.3) 60%
    );
 
    .section-header {
@@ -450,19 +459,18 @@ const PartsShopSection = styled.section`
    }
 
    img {
+      padding: 30px;
       height: 100%;
       border-radius: 0 10px 10px 0;
    }
 `;
 
 const TestimonialsSection = styled.section`
-   max-width: var(--main-width);
-   margin: 0 auto;
    display: flex;
    justify-content: center;
    flex-direction: column;
    gap: 30px;
-   margin-bottom: 50px;
+   margin-bottom: 30px;
    align-items: center;
 
    .section-header {

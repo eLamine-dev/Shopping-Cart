@@ -1,10 +1,8 @@
 import { styled } from 'styled-components';
 import { useState, useEffect } from 'react';
-import ProductCard from '../components/ProductCard';
 import ProductLi from '../components/ProductLi';
 import { useOutletContext, useParams } from 'react-router-dom';
 import Filter from '../components/FilterSidebar';
-import { Link } from 'react-router-dom';
 
 function ShopPage() {
    const products = useOutletContext();

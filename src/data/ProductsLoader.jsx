@@ -1,9 +1,18 @@
-import { data } from './data';
+import { productsData } from './data';
 
-export const ProductsLoader = () => {
-   // const response = await fetch('');
-   // const products = await response.json();
-   console.log('loader called');
+export const ProductsLoader = async () => {
+   // const apiUrl = 'https://pc-hardware.free.beeceptor.com/products';
 
-   return data;
+   try {
+      const response = await fetch(apiUrl);
+
+      const data = await response.json();
+      console.log('loader called');
+      return data;
+   } catch (error) {
+      console.error('Failed to fetch products data:', error);
+      return productsData; // make sure app keep working if api is down
+
+      // throw new Error('Failed to load products. Please try again later.');
+   }
 };

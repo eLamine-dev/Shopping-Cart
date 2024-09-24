@@ -69,7 +69,7 @@ function ProductLi({ product, selectedCategory, selectedManufacturer }) {
             </div>
          </div>
          <div className="right-side">
-            <span className="price">$ {product.price}</span>
+            <span className="price">${product.price}</span>
             <AddToCart product={product} />
          </div>
       </Wrapper>
@@ -98,42 +98,54 @@ const Wrapper = styled.div`
       }
    }
 
-   .name {
-      flex-grow: 1;
-      font-size: 1.2rem;
-      font-weight: 600;
-      color: #fff;
-   }
-
-   .name:hover {
-      color: #9fa4ef;
-   }
-
-   .specs {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(200px, 1fr));
-      grid-template-rows: repeat(3, 1fr);
-   }
-   .spec {
-      .spec-name {
-         font-weight: 600;
-         text-transform: capitalize;
-         color: var(--gr-5);
-      }
-   }
-
    .right-side {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: end;
+      gap: 1rem;
+
+      .price {
+         font-size: 1.2rem;
+         font-weight: 600;
+         color: var(--white);
+      }
    }
+
    .left-side {
       display: flex;
       flex-direction: column;
       justify-content: center;
       flex-grow: 1;
       gap: 1rem;
+
+      .name {
+         flex-grow: 1;
+         font-size: 1.2rem;
+         font-weight: 600;
+         color: #fff;
+      }
+
+      .name:hover {
+         color: #9fa4ef;
+      }
+
+      .specs {
+         display: grid;
+         grid-template-columns: repeat(2, minmax(200px, 1fr));
+         grid-template-rows: repeat(3, 1fr);
+      }
+
+      .spec {
+         .spec-name {
+            font-weight: 600;
+            text-transform: capitalize;
+            color: var(--gr-5);
+         }
+         .spec-value {
+            font-weight: 500;
+         }
+      }
    }
 `;
 

@@ -2,7 +2,7 @@
 
 :root {
    font-family: 'Urbanist', sans-serif;
-   --main-width: 1300px;
+   --main-width: 1400px;
    --black: #030712;
    --white: #f8fafc;
    --sl-1: #020617;
@@ -30,7 +30,7 @@
 }
 
 a {
-   font-weight: 500;
+   font-weight: 600;
    color: #646cff;
    text-decoration: inherit;
 }

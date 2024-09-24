@@ -58,7 +58,7 @@ const AddToCartWrapper = styled.div`
    flex-direction: column;
    align-items: center;
    gap: 10px;
-   max-width: 200px;
+   max-width: 160px;
 `;
 
 const QuantityControl = styled.div`
@@ -68,8 +68,6 @@ const QuantityControl = styled.div`
    width: 100%;
    background-color: #020616;
    border-radius: 5px;
-   padding: 5px;
-   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 
    button {
       background-color: #007bff;
@@ -114,8 +112,8 @@ const QuantityControl = styled.div`
 `;
 
 const AddButton = styled.button`
-   background-color: #fff;
-   color: #020616;
+   background-color: transparent;
+   color: var(--white);
    border: none;
    padding: 10px 15px;
    font-size: 1.1rem;
@@ -123,9 +121,11 @@ const AddButton = styled.button`
    border-radius: 5px;
    width: 100%;
    transition: background-color 0.3s;
+   border: 1px solid var(--white);
 
    &:hover {
       background-color: #218838;
+      border: 1px solid #218838;
    }
 
    &:disabled {

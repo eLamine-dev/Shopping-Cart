@@ -8,9 +8,9 @@ import { Link } from 'react-router-dom';
 
 function ProductPage() {
    const { productSlug } = useParams();
-   const Products = useOutletContext();
+   const products = useOutletContext();
 
-   let product = Object.values(Products)
+   let product = Object.values(products)
       .flat()
       .find((p) => p.slug === productSlug);
 
@@ -113,7 +113,7 @@ const Wrapper = styled.div`
                margin: 10px 0;
             }
 
-            button {
+            /* button {
                background-color: #007bff;
                color: white;
                padding: 10px 20px;
@@ -125,7 +125,7 @@ const Wrapper = styled.div`
                &:hover {
                   background-color: #0056b3;
                }
-            }
+            } */
          }
       }
    }

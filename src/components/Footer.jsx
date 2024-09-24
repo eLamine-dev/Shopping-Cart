@@ -7,7 +7,7 @@ const Footer = () => {
       <FooterWrapper>
          <FooterContainer>
             <FooterSection>
-               <h2>PC Builder Pro</h2>
+               <h2>eBuilder</h2>
                <p>
                   Your one-stop shop for building the perfect PC for gaming,
                   work, or daily use.
