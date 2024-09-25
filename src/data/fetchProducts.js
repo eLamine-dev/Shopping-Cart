@@ -17,7 +17,7 @@ export const fetchProducts = async () => {
       }
 
       const data = await response.json();
-      console.log('Data fetched from API:', data);
+      console.log('Data fetched from API');
       return data;
    } catch (error) {
       if (error.name === 'AbortError') {

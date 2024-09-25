@@ -17,7 +17,7 @@ function ShopPage() {
    }
 
    if (!products) {
-      return <p>No products available.</p>; //
+      return <p>No products available.</p>;
    }
 
    const getFeaturedProducts = () => {
