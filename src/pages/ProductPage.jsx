@@ -6,17 +6,21 @@ import AddToCart from '../components/AddToCart';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
-function ProductPage({ products }) {
+function ProductPage() {
    const { productSlug } = useParams();
-   // const products = useOutletContext();
+   const { products, isLoading } = useOutletContext();
+
+   if (isLoading) {
+      return <p>Loading products...</p>;
+   }
+
+   if (!products) {
+      return <p>No products available.</p>;
+   }
 
    let product = Object.values(products)
       .flat()
       .find((p) => p.slug === productSlug);
-
-   if (!product) {
-      return <p>Product not found.</p>;
-   }
 
    return (
       <Wrapper>
