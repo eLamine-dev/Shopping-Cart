@@ -5,11 +5,20 @@ import { useOutletContext, useParams } from 'react-router-dom';
 import Filter from '../components/FilterSidebar';
 
 function ShopPage() {
-   const products = useOutletContext();
+   // const products = useOutletContext();
    const { category } = useParams();
    const [manufacturer, setManufacturer] = useState(null);
    const [filteredProducts, setFilteredProducts] = useState([]);
    const [priceRange, setPriceRange] = useState([0, 1000]);
+   const { products, isLoading } = useOutletContext();
+
+   if (isLoading) {
+      return <p>Loading products...</p>;
+   }
+
+   if (!products) {
+      return <p>No products available.</p>; //
+   }
 
    const getFeaturedProducts = () => {
       const featured = [];
@@ -60,6 +69,7 @@ function ShopPage() {
                setPriceRange={setPriceRange}
                setManufacturer={setManufacturer}
                selectedManufacturer={manufacturer}
+               products={products}
             />
 
             <div className="list-view">

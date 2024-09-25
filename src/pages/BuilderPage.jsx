@@ -5,10 +5,18 @@ import { CartContext } from '../contexts/CartContext';
 import { v4 as uuidv4 } from 'uuid';
 
 const BuilderPage = () => {
-   const products = useOutletContext();
    const { cart, addToCart, updateBuild } = useContext(CartContext);
    const { cartId } = useParams();
    const [buildName, setBuildName] = useState('');
+   const { products, isLoading } = useOutletContext();
+
+   if (isLoading) {
+      return <p>Loading products for your build...</p>;
+   }
+
+   if (!products) {
+      return <p>No products available.</p>;
+   }
 
    const [selectedParts, setSelectedParts] = useState({
       cpu: '',

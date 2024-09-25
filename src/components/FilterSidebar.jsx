@@ -12,8 +12,9 @@ function Filter({
    setManufacturer,
    setPriceRange,
    selectedManufacturer,
+   products,
 }) {
-   const products = useOutletContext();
+   // const products = useOutletContext();
    const [manufacturers, setManufacturers] = useState([]);
    const [localPriceRange, setLocalPriceRange] = useState([0, 1000]);
    const [minPrice, setMinPrice] = useState(0);

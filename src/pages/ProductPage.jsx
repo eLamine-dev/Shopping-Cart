@@ -6,9 +6,9 @@ import AddToCart from '../components/AddToCart';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
-function ProductPage() {
+function ProductPage({ products }) {
    const { productSlug } = useParams();
-   const products = useOutletContext();
+   // const products = useOutletContext();
 
    let product = Object.values(products)
       .flat()

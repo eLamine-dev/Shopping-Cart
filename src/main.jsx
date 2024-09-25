@@ -8,8 +8,6 @@ import ProductPage from './pages/ProductPage';
 import BuilderPage from './pages/BuilderPage';
 import CartPage from './pages/CartPage';
 import NotFound from './pages/NotFound';
-import { ProductsLoader } from './data/ProductsLoader.jsx';
-import ProductsProvider from './contexts/ProductsContext.jsx';
 import './assets/css/index.css';
 
 const router = createBrowserRouter([
@@ -19,22 +17,15 @@ const router = createBrowserRouter([
 
       children: [
          { path: '/', element: <HomePage /> },
-         {
-            path: '/', // Product routes need products provider
-            element: <ProductsProvider />, // Acts as a product provider
-            loader: ProductsLoader,
-            children: [
-               {
-                  path: 'shop/:category/:productSlug',
-                  element: <ProductPage />,
-               },
-               { path: 'shop/:category', element: <ShopPage /> },
-               { path: 'shop', element: <ShopPage /> },
-               { path: 'builder/:cartId', element: <BuilderPage /> },
-               { path: 'builder', element: <BuilderPage /> },
-            ],
-         },
 
+         {
+            path: 'shop/:category/:productSlug',
+            element: <ProductPage />,
+         },
+         { path: 'shop/:category', element: <ShopPage /> },
+         { path: 'shop', element: <ShopPage /> },
+         { path: 'builder/:cartId', element: <BuilderPage /> },
+         { path: 'builder', element: <BuilderPage /> },
          { path: 'cart', element: <CartPage /> },
          { path: '*', element: <NotFound /> },
       ],
