@@ -44,9 +44,7 @@ const CartPage = () => {
                         </Link>
                      )}
 
-                     <p className="unit-price">
-                        1 unit Price: ${item.price.toFixed(2)}
-                     </p>
+                     <p className="unit-price">1 unit Price: ${item.price}</p>
                      {item.category !== 'build' && (
                         <div className="quantity">
                            <span>Quantity </span>

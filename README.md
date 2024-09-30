@@ -11,3 +11,61 @@ guide-1 Photo by <a href="https://unsplash.com/@handsel?utm_content=creditCopyTe
 guide-2 Photo by <a href="https://unsplash.com/@zelebb?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Andrey Matveev</a> on <a href="https://unsplash.com/photos/a-close-up-of-a-computer-motherboard-on-a-white-surface-66a07WD8CMo?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
 
 guide-3 Photo by <a href="https://unsplash.com/@tdx_104?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Dong xu</a> on <a href="https://unsplash.com/photos/a-close-up-of-a-cpu-on-top-of-a-motherboard-R9ed2PUrL_w?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+
+```
+Shopping-Cart
+├─ .gitignore
+├─ README.md
+├─ eslint.config.js
+├─ index.html
+├─ package-lock.json
+├─ package.json
+├─ public
+│  ├─ build-1.jpg
+│  ├─ build-2.jpg
+│  ├─ build-3.jpg
+│  ├─ guide-1.jpg
+│  ├─ guide-2.jpg
+│  ├─ guide-3.jpg
+│  ├─ hero-background.jpg
+│  ├─ logo.png
+│  ├─ placeholder.avif
+│  ├─ shop-section.png
+│  ├─ shop-section2.png
+│  └─ vite.svg
+├─ src
+│  ├─ App.jsx
+│  ├─ assets
+│  │  └─ css
+│  │     └─ index.css
+│  ├─ components
+│  │  ├─ AddToCart.jsx
+│  │  ├─ FilterSidebar.jsx
+│  │  ├─ Footer.jsx
+│  │  ├─ Header.jsx
+│  │  ├─ Loading.jsx
+│  │  ├─ ProductCard.jsx
+│  │  ├─ ProductLi.jsx
+│  │  ├─ ShopGrid.jsx
+│  │  ├─ SpecsTable.jsx
+│  │  └─ StarRating.jsx
+│  ├─ contexts
+│  │  ├─ CartContext.jsx
+│  │  └─ ProductsContext.jsx
+│  ├─ data
+│  │  ├─ categories.js
+│  │  ├─ data.js
+│  │  └─ fetchProducts.js
+│  ├─ main.jsx
+│  └─ pages
+│     ├─ BuilderPage.jsx
+│     ├─ CartPage.jsx
+│     ├─ HomePage.jsx
+│     ├─ NotFound.jsx
+│     ├─ ProductPage.jsx
+│     └─ ShopPage.jsx
+├─ tests
+├─ vercel.json
+└─ vite.config.js
+
+```
